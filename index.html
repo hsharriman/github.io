@@ -4,9 +4,45 @@
         <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>My Profile</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+            body {
+                font-family: 'Merriweather', serif;
+            }
+            a {
+                font-family: 'Oswald', sans-serif;
+                font-size: 20px;
+                color: blue;
+                text-decoration: none;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 30px;
+                color: rgb(68, 68, 68);
+            }
+
+            #link {
+                position: fixed;
+                top: 0;
+                right: 0;
+                margin: 2%;
+            }
+        </style>
     </head>
     <!-- this is a comment! -->
     <body>
+        <div id="link">
+            <a href="https://beasleym.github.io">Next Profile &rarr;</a>
+        </div>
         <h1>Hi, my name is Hwei-Shin</h1>
         <img src="profile.jpeg" height="150" alt="My Profile Picture">
         <p>
@@ -23,7 +59,7 @@
             <li><a href="canvas.instructure.com">Canvas</a></li>
         </ol>
         <hr>
-        <h4>A poem I read recently</h4>
+        <h3>A poem I read recently</h3>
         <p>
             Rain in winter&mdash;<br>  <!--a hyphen-->
                 &emsp;unhappy pine tree<br> <!--adds an indent-->
@@ -55,8 +91,5 @@
                 <p>a</p>
                 <p>secret</p>
         </details>
-        <footer>
-            <a href="https://beasleym.github.io">https://beasleym.github.io</a>
-        </footer>
     </body>
 </html>
