@@ -1,0 +1,13 @@
+Instructions:
+1. Create a default html and css file.
+3. Disable scrolling across the entire html document.
+4. Google starry background wallpaper and save the first image result.
+5. Use the saved image to make the background of your webpage.
+6. Create a black tint for the background by creating an element that
+is the same size as the webpage window and setting its color to an 80%
+opaque black.
+7. Create a class for an element that starts with no background color,
+is about the size of a medium-sized star (in comparison to the background
+image), circular, and has a little blur around the edges. Set its
+attributes so that you can position it using absolute values (as
+opposed to relative).
