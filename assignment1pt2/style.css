@@ -1,16 +1,19 @@
 html {
     background-color: rgb(52, 118, 216);
     font-size: 62.5%;
+    overflow: hidden;
 }
 
 @keyframes slide {
     0% {transform: translate(160%, 220%);}
-    50% {transform: translate(160%, 230%);}
+    50% {transform: translate(230%, 160%);}
     100% {transform: translate(160%, 220%);}
 }
 
-@keyframes spin {
-    0% {transform: translate(160%);}
+@keyframes glow {
+    0% {background-color: rgba(52, 118, 216,0);}
+    50% {background-color: rgb(255, 255, 255);}
+    100% {background-color: rgba(0,0,0,0);}
 }
 
 .hr-tag {
@@ -18,11 +21,11 @@ html {
 }
 .firefly {
     position: absolute;
-    background-color: white;
-    width: 4rem;
-    height: 4rem;
+    background-color: rgba(0,0,0,0);
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
-    animation: 2s slide 4s ease-in-out infinite;
+    animation-iteration-count: infinite;
 }
 
 body .firefly:nth-child(1) {
@@ -30,13 +33,13 @@ body .firefly:nth-child(1) {
     /* apply both bug and glow animations to the first child */
     left: 10%; 
     top: 15%;
-    animation-name: slide;
+    animation-name: slide, glow;
     animation-duration: 10s, 4s;
 }
 
 body .firefly:nth-child(2) {
     /* animation: slide2 12s ease-in-out infinite; */
-    animation-name: slide;
+    animation-name: slide, glow;
     animation-duration: 15s, 4s;
     animation-delay: 3s, 3s;
     left: 80%; 
@@ -45,17 +48,17 @@ body .firefly:nth-child(2) {
 }
 
 body .firefly:nth-child(3) {
-    animation-name: slide;
+    animation-name: slide, glow;
     animation-duration: 13s, 4s;
     animation-delay: 1s, 6s;
     left: 15%; 
-    top: 95%;
+    top: 65%;
 }
 
 body .firefly:nth-child(4) {
-    animation-name: slide;
+    animation-name: slide, glow;
     animation-duration: 12s, 4s;
     animation-delay: 5s, 8s;
     left: 83%; 
-    top: 68%;
+    top: 45%;
 }
