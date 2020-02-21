@@ -4,14 +4,13 @@ html {
 }
 
 @keyframes slide {
-    0% {transform: translate(40%, 20%);}
-    50% {transform: translate(87%, 60%);}
-    100% {transform: translate(40%, 20%);}
+    0% {transform: translate(160%, 220%);}
+    50% {transform: translate(160%, 230%);}
+    100% {transform: translate(160%, 220%);}
 }
 
 @keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% { transform: rotate(359deg);}
+    0% {transform: translate(160%);}
 }
 
 .hr-tag {
@@ -19,9 +18,9 @@ html {
 }
 .firefly {
     position: absolute;
-    color: white;
+    background-color: white;
     width: 4rem;
-    height: rem;
+    height: 4rem;
     border-radius: 50%;
     animation: 2s slide 4s ease-in-out infinite;
 }
@@ -42,6 +41,7 @@ body .firefly:nth-child(2) {
     animation-delay: 3s, 3s;
     left: 80%; 
     top: 5%;
+
 }
 
 body .firefly:nth-child(3) {
