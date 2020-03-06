@@ -22,7 +22,7 @@ function popBubble(event) {
 function popBubbles(event) {
     let bubbles = document.querySelectorAll('.bubble');
     bubbles.forEach(function (bubble) {
-        bubble.classList.add('pop');
+        bubble.classList.add('bubble-pop');
         bubble.addEventListener('transitionend', bubblePopped);
     });
 }
