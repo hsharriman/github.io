@@ -1,9 +1,4 @@
 
-var time = new Date();
-console.log(time);
-console.log(time.getTime(), time.getHours(), time.getMinutes(), time.getSeconds());
-
-
 function checkTime() {
     var time = new Date();
     var secs = time.getSeconds();
@@ -17,7 +12,6 @@ function checkTime() {
 }
 
 // function getTime() {
-//     while (true) {
 
 //         var secs = time.getSeconds();
 //         // console.log("check time");
@@ -35,7 +29,6 @@ function checkTime() {
 //             changeToDay();
 //         }
 //             //set timeout to change to day
-//     }
 // }
 
 function changeToNight() {
