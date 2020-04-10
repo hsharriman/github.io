@@ -1,0 +1,56 @@
+:root {
+    --main-pink: rgb(255, 147, 197);
+    --light-pink: rgb(255, 208, 235);
+}
+
+html {
+    background-color: var(--main-pink);
+    font-size: 62.5%;
+}
+
+body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3vh;
+}
+#display-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 97vh;
+}
+
+#donut-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#timeline-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: lightblue;
+    max-height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 2rem;
+    background-color: var(--light-pink);
+}
+
+#title {
+    justify-content: left;
+    color: white;
+}
