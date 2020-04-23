@@ -1,12 +1,23 @@
+var isDay = true;
+// const timeMax = 86400000;
+const interval = 4;
+// const msPerInterval = timeMax / 2;
 
 function checkTime() {
+    const seconds = 60;
+    var secsPerInterval = seconds / interval;
+
     var time = new Date();
     var secs = time.getSeconds();
-    console.log(secs);
-    if (secs == 0 || secs == 30) {
-        changeToDay();
-    } else if (secs == 15 || secs == 45) {
-        changeToNight();
+
+    if (secs % secsPerInterval == 0) {
+        if (isDay) {
+            changeToNight(secsPerInterval);
+            isDay = false;
+        } else {
+            changeToDay(secsPerInterval);
+            isDay = true;
+        }
     }
     setTimeout(checkTime, 1000);
 }
@@ -31,17 +42,24 @@ function checkTime() {
 //             //set timeout to change to day
 // }
 
-function changeToNight() {
+function changeToNight(secsPerInterval) {
     var sun = document.getElementById('sun');
     var sky = document.getElementById('page-container');
+    sun.style.transitionDuration = secsPerInterval.toString() + "s";
+    sky.style.transitionDuration = secsPerInterval.toString() + "s";
+
     sun.classList.remove('sun-glow');
     sun.classList.add('moon-glow');
     sky.style.backgroundColor = "var(--night-sky)";
 }
 
-function changeToDay() {
+function changeToDay(secsPerInterval) {
     var sun = document.getElementById('sun');
     var sky = document.getElementById('page-container');
+
+    sun.style.transitionDuration = secsPerInterval.toString() + "s";
+    sky.style.transitionDuration = secsPerInterval.toString() + "s";
+
     sun.classList.remove('moon-glow');
     sun.classList.add('sun-glow');
     sky.style.backgroundColor = "var(--day-sky)";

@@ -3,145 +3,53 @@
     <head>
         <!-- making sure that things render properly-->
         <meta charset="utf-8">
-        <title>My Profile</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-            @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
-            html {
-                background-color: rgba(161, 66, 132, 0.301);
-                font-size: 62.5%;
-                font-family: 'Oswald', serif;
-                color: white;
-            }
-            a {
-                font-family: 'Oswald', sans-serif;
-                font-size: 2rem;
-                color: rgb(47, 10, 82);
-                text-decoration: none;
-            }
-
-            h1 {
-                font-family: 'Abril Fatface', cursive;
-                font-size: 8rem;
-                font-weight: 500;
-            }
-
-            h3, p, ul, ol, dt, strong, summary {
-                font-size: 3rem;
-                color: rgb(68, 68, 68);
-            }
-
-            dd, blockquote {
-                font-size: 2rem;
-            }
-
-            #link {
-                position: fixed;
-                top: 0;
-                right: 0;
-                margin: 2%;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-rows: repeat(20, 5vw);
-                grid-template-columns: repeat(20, 5vw);
-                grid-column-gap: 4px;
-                grid-row-gap: 4px;
-                border: 1px solid black;
-                width: 100vw;
-                height: 100vw;
-                left: 0;
-                position: 0;
-                overflow: hidden;
-                z-index: -1;
-            }
-
-            #box1 {
-                grid-column: 1/3;
-            }
-
-            @media (max-width: 700px) {
-                html {
-                    font-size: 40%;
-                }
-
-                a, h3, p, ul, ol, dt, strong, summary {
-                    font-size: 4rem;
-                }
-
-                dd, blockquote {
-                    font-size: 3rem;
-                }
-            }
-
-            @media (max-width: 400px) {
-                html {
-                    font-size: 35%;
-                }
-
-                a, h3, p, ul, ol, dt, strong, summary {
-                    font-size: 4rem;
-                }
-
-                dd, blockquote {
-                    font-size: 3rem;
-                }
-            }
-        </style>
+        <title>Hwei-Shin Harriman</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="index.js"></script>
     </head>
     <!-- this is a comment! -->
-    <body>
-        <div id="link">
+    <body onload="onload()">
+        <!-- <div id="link">
             <a href="https://beasleym.github.io">Next Profile &rarr;</a>
+        </div> -->
+        <div id="page-container">
+                <h1 id="header">
+                    <span class="blue">H</span>
+                    <span class="blue">w</span>
+                    <span class="pink">e</span>
+                    <span class="purple">i</span>
+                    <span class="purple">-</span>
+                    <span class="mint">S</span>
+                    <span class="red">h</span>
+                    <span class="blue">i</span>
+                    <span class="mint">n</span>
+                    <span>&nbsp;</span>
+                    <span class="mint">H</span>
+                    <span class="pink">a</span>
+                    <span class="red">r</span>
+                    <span class="red">r</span>
+                    <span class="mint">i</span>
+                    <span class="blue">m</span>
+                    <span class="purple">a</span>
+                    <span class="purple">n</span>
+                 </h1>   
+                <h2>
+                    <span class="blue">Software</span>
+                    <span class="red">Engineer</span> 
+                    <span class="mint">&mdash;</span>
+                    <span class="purple">Graphic</span> 
+                    <span class="pink">Designer</span>
+                </h2>
+            <!-- <div id="links">
+                <a href="projects.html">PROJECTS</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div> -->
+            <div class="about-section">
+                    <h3>She is a junior at Olin College of Engineering</h3> 
+                    <h3>Interested in full stack web development, machine learning, autonomous vehicles, communications design, illustration, and making a positive impact on the world.</h3>
+            </div>
         </div>
-        <h1>Hi, my name is Hwei-Shin</h1>
-        <img src="profile.jpeg" height="150" alt="My Profile Picture">
-        <p>
-            Hey I'm <mark>Hwei-Shin Harriman</mark> and I'm a junior at Olin College of Engineering, studying software engineering.
-            I'm currently in NYC studying Communications Design at Parsons School of Design.
-        </p>
-        <hr>
-        <h3>The websites I visit most:</h3>
-        <ol>
-            <li><a href="https://mail.google.com">Gmail</a></li>
-            <li><a href="https://netflix.com">Netflix</a></li>
-            <li><a href="https://messenger.com">Messenger</a></li>
-            <li><a href="https://calendar.google.com">Google Calendar</a></li>
-            <li><a href="canvas.instructure.com">Canvas</a></li>
-        </ol>
-        <hr>
-        <h3>A poem I read recently</h3>
-        <p>
-            Rain in winter&mdash;<br>  <!--a hyphen-->
-                &emsp;unhappy pine tree<br> <!--adds an indent-->
-                    &emsp;&emsp;longs for snow
-        </p>
-
-        <hr>
-        <h3>Some things about me:</h3>
-        <dl>
-            <dt>My favorite food:</dt>
-            <dd>Dumplings</dd>
-
-            <dt>My favorite color:</dt>
-            <dd><span style="color:purple">Purple</span></dd>
-        </dl>
-        <blockquote>
-                “It’s the ship that made the Kessel run in less than twelve parsecs. <br>
-                I’ve outrun Imperial starships. Not the local bulk cruisers, mind you. <br>
-                I’m talking about the big Corellian ships, now. She’s fast enough for you, old man.”<br> 
-                — Han Solo
-        </blockquote>
-        <strong>This is some important text.</strong>
-        <p>
-            <small>This is some small text.</small>
-        </p>
-        <details>
-            <summary>What's that?</summary>
-                <p>it's</p>
-                <p>a</p>
-                <p>secret</p>
-        </details>
     </body>
 </html>
