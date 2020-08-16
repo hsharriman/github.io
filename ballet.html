@@ -1,0 +1,43 @@
+<html>
+
+    <head>
+        <!-- making sure that things render properly-->
+        <meta charset="utf-8">
+        <title>Hwei-Shin Harriman</title>
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/kursor.css">
+        <link rel="stylesheet" href="style/projectpgs.css">
+        <script src="https://unpkg.com/kursor"></script>
+        <script src="index.js"></script>
+    </head>
+    <body onload="onload()">
+        <a id="home" onclick="window.location.href='index.html'">&#129124; home</a>
+        <a id="next" onclick="window.location.href='index.html'">next&#129122;</a>
+        <div id="right-section">
+            <h2>A Summary of One Ballerina's Experience <br><span class="year">Fall, 2019</span></h2>
+            <div class="tags">#design #Illustrator #datavisualization #python #matplotlib</div>
+            <div class="body">
+                Collected and visualized data of my years as a ballerina using Illustrator and matplotlib.
+            </div>
+            <div class="body">
+                This project was created for "Tell the Story of What You Make", a design course offered at Olin College of Engineering. The prompt was to create a poster based on the Feltron reports, using our own personal dataset.
+            </div>
+            <div class="body">
+                As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences. The results are synthesized in the poster to the left.
+            </div>
+        </div>
+        <div id="left-section">
+            <div style="width: 100%; height: 10vh; background-color: white;"></div>
+            <div class="img"><img src="img/design/ballet/ballet1.png" alt=""></div>
+            <div class="img"><img src="img/design/ballet/ballet2.png" alt=""></div>
+            <div class="img"><img src="img/design/ballet/ballet3.png" alt=""></div>
+        </div>
+    </body>
+    <script>
+        new kursor({
+            type: 2,
+            removeDefaultCursor: true,
+            color: 'rgba(97, 243, 219, 0.2)',
+        });
+    </script>
+</html>

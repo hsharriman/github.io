@@ -31,7 +31,7 @@ h2 {
 #left-section {
     width: 65vw;
     height: auto;
-    background-color: var(--blue);
+    background-color: black;
 }
 
 #right-section {
@@ -74,6 +74,26 @@ img {
     font-family: var(--body);
     font-size: 1.6rem;
     color: white;
+    padding-bottom: 1rem;
+}
+
+.mini-gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumb {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: all .25 ease-in 0s;
+    overflow: hidden;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 1000px) {
