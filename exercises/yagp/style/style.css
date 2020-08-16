@@ -1,0 +1,230 @@
+@import url("https://use.typekit.net/qot1uuw.css");
+
+:root {
+    --main-pink: rgb(117, 117, 117);
+    --light-pink: rgb(255, 214, 237);
+    --dark-pink:rgb(177, 22, 110);
+    --dark-purple: rgb(120, 91, 136);
+    --light-purple: rgb(227, 210, 240);
+    --light-gray: rgb(128, 128, 128);
+}
+
+html {
+    background-color: var(--main-pink);
+    font-size: 62.5%;
+    animation: backcolor 1.5s ease-in 0s;
+}
+@keyframes backcolor {
+    from {background-color: white;}
+    to { background-color: var(--main-pink);}
+}
+body {
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 700;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+    margin: 0;
+    margin-top: 3vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin-left: 5rem;
+}
+
+a {
+    font-size: 2rem;
+    color: var(--light-pink);
+    text-decoration: none;
+    padding: 2rem;
+    transition: all .5s ease-in 0s;
+}
+
+a:hover {
+    color: white;
+}
+
+.title {
+    font-size: 10rem;
+    color: white;
+    max-width: 80%;
+    margin-left: 5rem;
+}
+
+.home {
+    margin: 2rem;
+    padding: 0;
+    font-size: 5rem;
+    border-bottom: 3px solid var(--light-pink);
+}
+
+p {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: var(--light-pink);
+    max-width: 80%;
+}
+
+footer {
+    position: absolute;
+    bottom: 3rem;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#landing-pg {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#display-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, fit-content(100%));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 890px;
+    -webkit-box-shadow: inset 0px 10px 32px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 10px 32px -16px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 10px 32px -16px rgba(0,0,0,0.75);
+}
+
+#donut-container {
+    width: 55vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#top-winners-container {
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    height: auto;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    /* position: relative; */
+    position: absolute;
+    bottom: 8rem;
+    left: 5rem;
+    z-index: 10;
+    width: 40vw;
+    height:auto;
+    background-color: transparent;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+#timeline-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: auto;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+}
+
+#awards-container {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+}
+
+#year {
+    position: absolute;
+    top: 1rem;
+    left: 10rem;
+    z-index: 3;
+    font-size: 6rem;
+    color: lightslategray;
+    cursor: pointer;
+}
+
+.line {
+    width: 90%;
+    margin-top: 4rem;
+    height: 10px;
+    background-color: var(--light-pink);
+}
+
+.tick {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#title {
+    justify-content: left;
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    position: absolute;
+    top: 1vh;
+    right: 0;
+    background-color: none;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+#text-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    background-color: transparent;
+    padding: 3rem;
+}
+
+
+.btn {
+    position: absolute;
+    top: 48%;
+    color: var(--light-pink);
+    z-index: 20;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: var(--light-gray);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in 0s;
+}
+
+.btn:hover {
+    color: white;
+    font-size: 4rem;
+}

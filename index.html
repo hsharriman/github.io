@@ -4,52 +4,321 @@
         <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
+        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/kursor.css">
+        <script src="https://unpkg.com/kursor"></script>
         <script src="index.js"></script>
     </head>
     <!-- this is a comment! -->
     <body onload="onload()">
-        <!-- <div id="link">
-            <a href="https://beasleym.github.io">Next Profile &rarr;</a>
-        </div> -->
+        <div id="loader" class="center"></div>
+        <div id="links">
+            <a onclick="scrollToSection('landing-pg');">upwards &#129121;</a>
+        </div>
         <div id="page-container">
+            <div id="landing-pg">
                 <h1 id="header">
-                    <span class="blue">H</span>
-                    <span class="blue">w</span>
-                    <span class="pink">e</span>
-                    <span class="purple">i</span>
-                    <span class="purple">-</span>
-                    <span class="mint">S</span>
-                    <span class="red">h</span>
-                    <span class="blue">i</span>
-                    <span class="mint">n</span>
+                    <span class="blue" id="0">H</span>
+                    <span class="blue" id="1">W</span>
+                    <span class="pink" id="2">E</span>
+                    <span class="purple" id="3">I</span>
+                    <span class="secondlinebreak"><br></span>
+                    <span class="purple" id="4">-</span>
+
+                    <span class="mint" id="5">S</span>
+                    <span class="red" id="6">H</span>
+                    <span class="blue" id="7">I</span>
+                    <span class="mint" id="8">N</span>
                     <span>&nbsp;</span>
-                    <span class="mint">H</span>
-                    <span class="pink">a</span>
-                    <span class="red">r</span>
-                    <span class="red">r</span>
-                    <span class="mint">i</span>
-                    <span class="blue">m</span>
-                    <span class="purple">a</span>
-                    <span class="purple">n</span>
+                    <span class="linebreak"><br></span>
+                    <span class="mint" id="9">H</span>
+                    <span class="pink" id="10">A</span>
+                    <span class="red" id="11">R</span>
+                    <span class="red" id="12">R</span>
+                    <span class="secondlinebreak"><span class="purple">-</span><br></span>
+                    <span class="mint" id="13">I</span>
+                    <span class="blue" id="14">M</span>
+                    <span class="purple" id="15">A</span>
+                    <span class="purple" id="16">N</span>
                  </h1>   
-                <h2>
-                    <span class="blue">Software</span>
-                    <span class="red">Engineer</span> 
-                    <span class="mint">&mdash;</span>
-                    <span class="purple">Graphic</span> 
-                    <span class="pink">Designer</span>
+                <h2 id="header2">
+                    <span class="blue" id="17">S</span>
+                    <span class="purple" id="18">o</span>
+                    <span class="mint" id="19">f</span>
+                    <span class="pink" id="20">t</span>
+                    <span class="blue" id="21">w</span>
+                    <span class="mint" id="22">a</span>
+                    <span class="pink" id="23">r</span>
+                    <span class="red" id="24">e</span>
+                    <span>&nbsp;</span>
+                    <span class="red" id="25">E</span>
+                    <span class="blue" id="26">n</span>
+                    <span class="blue" id="27">g</span>
+                    <span class="red" id="28">i</span>
+                    <span class="pink" id="29">n</span>
+                    <span class="purple" id="30">e</span>
+                    <span class="mint" id="31">e</span>
+                    <span class="red" id="32">r</span>
+                    <span>&nbsp;</span>
+                    <span class="mint" id="33">&</span>
+                    <span>&nbsp;</span>
+                    <span class="secondlinebreak"></span>
+                    <span class="mint" id="34">D</span>
+                    <span class="purple" id="35">e</span>
+                    <span class="blue" id="36">s</span>
+                    <span class="purple" id="37">i</span> 
+                    <span class="pink" id="38">g</span>
+                    <span class="mint" id="39">n</span>
+                    <span class="red" id="40">e</span>
+                    <span class="pink" id="41">r</span>
                 </h2>
-            <!-- <div id="links">
-                <a href="projects.html">PROJECTS</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div> -->
-            <div class="about-section">
-                    <h3>She is a junior at Olin College of Engineering</h3> 
-                    <h3>Interested in full stack web development, machine learning, autonomous vehicles, communications design, illustration, and making a positive impact on the world.</h3>
+                <h2 style="padding-bottom:25vh;" id="header3">
+                    <span class="blue" id="42">P</span>
+                    <span class="mint" id="43">o</span>
+                    <span class="purple" id="44">r</span>
+                    <span class="pink" id="45">t</span>
+                    <span class="red" id="46">f</span>
+                    <span class="mint" id="47">o</span>
+                    <span class="purple" id="48">l</span>
+                    <span class="pink" id="49">i</span>
+                    <span class="pink" id="50">o</span>
+                    <span class="red" id="51">&nbsp;</span>
+                    <span class="mint" id="52">&</span>
+                    <span class="blue" id="53">&nbsp;</span>
+                    <span class="pink" id="54">P</span>
+                    <span class="blue" id="55">e</span>
+                    <span class="mint" id="56">r</span>
+                    <span class="blue" id="57">s</span>
+                    <span class="pink" id="58">o</span>
+                    <span class="red" id="59">n</span>
+                    <span class="blue" id="60">a</span>
+                    <span class="purple" id="61">l</span>
+                    <span class="purple" id="62">&nbsp;</span>
+                    <span class="pink" id="63">W</span>
+                    <span class="red" id="64">e</span>
+                    <span class="pink" id="65">b</span>
+                    <span class="blue" id="66">s</span>
+                    <span class="mint" id="67">i</span>
+                    <span class="pink" id="68">t</span>
+                    <span class="red" id="69">e</span>
+                </h2>
+                <div class="circle-container">
+                    <div id="circle0" class="circle" onclick="scrollToSection('projects');">Engineering Projects</div>
+                    <div id="circle1" class="circle" onclick="parent.location='https://hweishin.carbonmade.com';" >Design Gallery</div>
+                    <div id="circle2" class="circle circle-m" onclick="window.location.href='about.html'">About Me</div>
+                    <div id="circle3" class="circle circle-s" onclick="scrollToSection('resume');">Resume</div>
+                    <div id="circle4" class="circle circle-s" onclick="scrollToSection('contact');">Contact</div>
+                </div>
+            </div>
+            <div class="subtitle-container"><div class="subtitle">// Software Projects -----------</div></div>
+            <div id="projects">
+                <a href="#projects"></a>
+                <div class="proj-item" onclick="window.location.href='lda.html'">
+                    <img src="img/ldabuddydark.png" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">LDA Research Buddy: Dynamic Topic Modeling</div>
+                        <div class="proj-subtext">Machine Learning, Pytorch <br>Fall, 2020</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/heap.jpg" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Explicit Free List Heap Allocator</div>
+                        <div class="proj-subtext">C, gdb<br>Fall, 2019</div>
+                    </div>
+                </div>
+                <!-- <div class="proj-item">
+                    <img src="img/chest.gif" style="transform: translateX(-8rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">3D Graphics with OpenGL</div>
+                        <div class="proj-subtext">C++, CMake, OpenCV, OpenGL <br>Spring, 2019</div>
+                    </div>
+                </div> -->
+                <!-- <div class="proj-item">
+                    <img src="img/modern3.gif" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Swiss Modernism Poster Generator</div>
+                        <div class="proj-subtext">JavaScript, HTML/CSS<br>Spring, 2020</div>
+                    </div>
+                </div> -->
+                <div class="proj-item">
+                    <img src="img/cnnfull.png" style="transform: translateX(-4rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Convolutional Neural Net Implementation With Numpy</div>
+                        <div class="proj-subtext">Machine Learning, Python <br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/paletteful.png" style="transform: translateX(-4rem);"alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Paletteful: Image-Based Color Palette Generator</div>
+                        <div class="proj-subtext">Python, OpenCV, Tensorflow<br>Spring, 2018</div>
+                        <!-- <div class="proj-subtext">OpenCV Image Processing, Tensorflow, Python<br>Spring, 2018</div> -->
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/facesdark.png" style="transform: translateX(-8rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Eigenface & Bayesian Facial Recognition</div>
+                        <div class="proj-subtext">MATLAB <br>Spring, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/wisp3.gif" style="width: 100%; height: auto;" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Wisp: Kinetic Art Sculpture</div>
+                        <div class="proj-subtext">Embedded C, Arduino, HTML/CSS<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/pid.png" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Robolympics: PID Control Loop</div>
+                        <div class="proj-subtext">Mathematica, Arduino C<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/ransac.png" style="transform: translateX(-4rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent</div>
+                        <div class="proj-subtext">MATLAB<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/wallpaper.png" style="width: 100%; height: auto;" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Desert Sunset Interactive Illustration</div>
+                        <div class="proj-subtext">Python, Photoshop, Pygame<br>Spring, 2018</div>
+                    </div>
+                </div>
+                <!-- <div class="proj-item">
+                    <img src="img/yagp.png" style="transform: translateX(-1rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">YAGP Ballet Competition Winners: Where Do They Come From?</div>
+                        <div class="proj-subtext">Tableau<br>Spring, 2020</div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="subtitle-container"><div class="subtitle">// Design Projects -----------</div></div>
+            <div id="projects">
+                <a href="#projects"></a>
+                <div class="proj-item" onclick="window.location.href='lda.html'">
+                    <img src="img/ldabuddydark.png" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">LDA Research Buddy: Dynamic Topic Modeling</div>
+                        <div class="proj-subtext">Machine Learning, Pytorch <br>Fall, 2020</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/heap.jpg" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Explicit Free List Heap Allocator</div>
+                        <div class="proj-subtext">C, gdb<br>Fall, 2019</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/chest.gif" style="transform: translateX(-8rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">3D Graphics with OpenGL</div>
+                        <div class="proj-subtext">C++, CMake, OpenCV, OpenGL <br>Spring, 2019</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/modern3.gif" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Swiss Modernism Poster Generator</div>
+                        <div class="proj-subtext">JavaScript, HTML/CSS<br>Spring, 2020</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/cnnfull.png" style="transform: translateX(-4rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Convolutional Neural Net Implementation With Numpy</div>
+                        <div class="proj-subtext">Machine Learning, Python <br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/paletteful.png" style="transform: translateX(-4rem);"alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Paletteful: Image-Based Color Palette Generator</div>
+                        <div class="proj-subtext">Python, OpenCV, Tensorflow<br>Spring, 2018</div>
+                        <!-- <div class="proj-subtext">OpenCV Image Processing, Tensorflow, Python<br>Spring, 2018</div> -->
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/facesdark.png" style="transform: translateX(-8rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Eigenface & Bayesian Facial Recognition</div>
+                        <div class="proj-subtext">MATLAB <br>Spring, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/wisp3.gif" style="width: 100%; height: auto;" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Wisp: Kinetic Art Sculpture</div>
+                        <div class="proj-subtext">Embedded C, Arduino, HTML/CSS<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/pid.png" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Robolympics: PID Control Loop</div>
+                        <div class="proj-subtext">Mathematica, Arduino C<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/ransac.png" style="transform: translateX(-4rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent</div>
+                        <div class="proj-subtext">MATLAB<br>Fall, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/wallpaper.png" style="width: 100%; height: auto;" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">Desert Sunset Interactive Illustration</div>
+                        <div class="proj-subtext">Python, Photoshop, Pygame<br>Spring, 2018</div>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <img src="img/yagp.png" style="transform: translateX(-1rem);" alt="">
+                    <div class="overlay">
+                        <div class="proj-text">YAGP Ballet Competition Winners: Where Do They Come From?</div>
+                        <div class="proj-subtext">Tableau<br>Spring, 2020</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle-container"><div class="subtitle">// Illustration -----------</div></div>
+            
+            <div id="contact">
+                <div>
+                    <a href="mailto:hwei-shin.harriman@gmail.com">E-Mail</a>
+                    <span>&nbsp; | &nbsp;</span>
+                    <a href="www.linkedin.com/in/hsharriman">LinkedIn</a>
+                    <span>&nbsp; | &nbsp;</span>
+                    <a href="https://github.com/hsharriman">Github</a>
+                </div>
+                <div>Copyright Hwei-Shin Harriman, 2020. Website designed and coded by yours truly.</div>
             </div>
         </div>
     </body>
+    <script>
+        document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+    } 
+}; 
+        new kursor({
+            type: 2,
+            removeDefaultCursor: true,
+            color: 'rgba(97, 243, 219, 0.2)',
+        });
+        // window.setInterval(sparkle, Math.floor(Math.random() * 500 + 500));
+    </script>
 </html>

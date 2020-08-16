@@ -1,0 +1,101 @@
+@import url(index.css);
+
+/* ABOUT SECTION */
+#about-container {
+    padding: var(--margin);
+    text-align: left !important;
+}
+
+#about-img {
+    display: flex;
+    width: 25vw;
+    height: 25vw;
+    background-color: none;
+    border: 4px solid white;
+    border-radius: 4px;
+    float: left;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    max-width: 1200px;
+    padding-bottom: 10rem;
+}
+
+.about-text h3 {
+    color: white;
+    padding-left: 0;
+}
+
+
+.about-title {
+    color: var(--blue);
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.about-section {
+    margin-top: 4rem;
+    column-gap: 4rem;
+}
+
+
+/* RESUME */
+#resume {
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10rem;
+}
+
+#resume button {
+    background-color: transparent;
+    border: 4px solid var(--blue);
+    color: var(--blue);
+    margin: 4rem;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3rem 5rem 3rem 5rem;
+    font-size: 3rem;
+    font-family: var(--mono);
+    transition: all .25s ease-in 0s;
+}
+
+#resume button:hover {
+    transform: scale(1.2);
+    border-color: white;
+    color: white;
+}
+
+@media (max-width: 1875px) {
+    .about-text {
+        max-width: 80vw;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .about-text {
+        max-width: 90vw;
+    }
+    .about-section {
+        margin-top: 2rem;
+    }
+    #about-img {
+        width: 40vw;
+        height: 40vw;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-section h2 {
+        font-size: 2rem;
+    }
+}

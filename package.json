@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsharriman/hsharriman.github.io.git"
+  },
+  "author": "hwei-shin harriman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsharriman/hsharriman.github.io/issues"
+  },
+  "homepage": "https://github.com/hsharriman/hsharriman.github.io#readme",
+  "dependencies": {
+    "kursor": "^0.1.6"
+  }
+}
