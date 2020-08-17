@@ -265,6 +265,7 @@ h3 span {
     position: relative;
     transition: all .25 ease-in 0s;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .proj-text {
