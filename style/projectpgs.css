@@ -15,6 +15,7 @@ h2 {
     top: 2rem;
     left: calc(65vw + 4rem);
     z-index: 3;
+    cursor: pointer;
 }
 
 /* #back {
@@ -26,6 +27,7 @@ h2 {
     top: 2rem;
     right: 2rem;
     z-index: 3;
+    cursor: pointer;
 }
 
 #left-section {
@@ -63,6 +65,14 @@ h2 {
     height: auto;
     position: relative;
     overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+.imgnoborder {
+    width: 65vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 img {
@@ -77,23 +87,36 @@ img {
     padding-bottom: 1rem;
 }
 
-.mini-gallery {
-    width: 100%;
-    height: auto;
+.minigallery {
+    padding-top: calc(100% - var(--margin));
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
 }
 
 .thumb {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: relative;
-    transition: all .25 ease-in 0s;
     overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease-in 0s;
 }
 
-.thumb:hover {
-    transform: scale(1.1);
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease-in;
+    background-color: rgba(4, 3, 24, 0.85);
+}
+
+.thumb:hover > .overlay {
+    opacity: 0;
 }
 
 @media (max-width: 1000px) {

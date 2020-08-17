@@ -6,8 +6,6 @@
         <title>Hwei-Shin Harriman</title>
         <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/kursor.css">
-        <script src="https://unpkg.com/kursor"></script>
         <script src="index.js"></script>
     </head>
     <!-- this is a comment! -->
@@ -109,6 +107,7 @@
                     <div id="circle2" class="circle circle-m" onclick="window.location.href='about.html'">About Me</div>
                     <div id="circle3" class="circle circle-s" onclick="scrollToSection('resume');">Resume</div>
                     <div id="circle4" class="circle circle-s" onclick="scrollToSection('contact');">Contact</div>
+                    <div id="circle5" class="circle circle-m" onclick="window.location.href='illustration.html'">Illustration Gallery</div>
                 </div>
             </div>
             <div class="subtitle-container"><div class="subtitle">// Software Projects -----------</div></div>
@@ -305,19 +304,14 @@
     </body>
     <script>
         document.onreadystatechange = function() { 
-    if (document.readyState !== "complete") { 
-        document.querySelector("body").style.visibility = "hidden"; 
-        document.querySelector("#loader").style.visibility = "visible"; 
-    } else { 
-        document.querySelector("#loader").style.display = "none"; 
-        document.querySelector("body").style.visibility = "visible"; 
-    } 
-}; 
-        new kursor({
-            type: 2,
-            removeDefaultCursor: true,
-            color: 'rgba(97, 243, 219, 0.2)',
-        });
+            if (document.readyState !== "complete") { 
+                document.querySelector("body").style.visibility = "hidden"; 
+                document.querySelector("#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector("#loader").style.display = "none"; 
+                document.querySelector("body").style.visibility = "visible"; 
+            } 
+         }; 
         // window.setInterval(sparkle, Math.floor(Math.random() * 500 + 500));
     </script>
 </html>

@@ -77,7 +77,8 @@ class CircleManager {
             new Circle(5, 30, 'blue', 3),
             new Circle(20, 35, 'mint', 1),
             new Circle(35, 20, 'purple', 2),
-            new Circle(20, 12, 'red', 4)
+            new Circle(20, 12, 'red', 4),
+            new Circle(40, 5, 'pink', 5)
         ];
         // console.log(this.circles);
     }
