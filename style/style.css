@@ -244,6 +244,7 @@ h3 span {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     column-gap: 2rem;
 }
@@ -280,7 +281,7 @@ li:hover > .thumb {
     position: absolute;
     top: -100px;
     right: 2rem;
-    z-index: -1;
+    z-index: -10;
     transition: all .25s linear 0s;
     overflow: hidden;
 }
@@ -306,8 +307,11 @@ li:hover > .thumb {
 
 @media (max-width: 1250px) {
     .circle-container {
-        left: var(--margin);
-        width: 100vw;
+        left: 40vw;
+        width: 50vw;
+    }
+    .circle {
+        border: 2px solid white;
     }
     .circle:hover {
         font-size: 1.8rem;
@@ -330,18 +334,11 @@ li:hover > .thumb {
 }
 
 @media (max-width: 1000px) {
+    .circle-container {
+        left: var(--margin);
+    }
     .about-text {
         max-width: 90vw;
-    }
-    .proj-text {
-        font-size: 1.8rem;
-    }
-    .proj-subtext {
-        font-size: 1.4rem;
-    }
-    .proj-item {
-        width: 50vw;
-        height: 50vw;
     }
 }
 
@@ -351,10 +348,23 @@ li:hover > .thumb {
     }
 }
 
+@media (max-width: 750px) {
+    #contact {
+        height: 15vh;
+        font-size: 1.4rem;
+    }
+
+    #contact a {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 600px) {
-    .proj-item {
-        width: 100vw;
-        height: 100vw;
+    h1 {
+        padding-top: 0;
+    }
+    .circle-container {
+        display: none;
     }
 
 }

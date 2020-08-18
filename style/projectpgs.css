@@ -18,9 +18,10 @@ h2 {
     cursor: pointer;
 }
 
-/* #back {
-    
-} */
+.projicon {
+    top: 2rem !important;
+    left: calc(65vw + 2rem) !important;
+}
 
 #next { 
     position: fixed;
@@ -37,7 +38,7 @@ h2 {
 }
 
 #right-section {
-    width: calc(100% - 65vw - 6rem);
+    width: calc(100% - 65vw - var(--margin));
     height: 100vh;
     position: fixed;
     top: 0;
@@ -88,6 +89,7 @@ img {
     padding-bottom: 1rem;
     margin-right: var(--margin);
     word-spacing: .25rem;
+    max-width: 450px;
 }
 
 .hyperlink {
@@ -129,21 +131,90 @@ img {
     opacity: 0;
 }
 
-@media (max-width: 1000px) {
+
+
+@media (max-width: 1500px) {
     #right-section {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
+        width: calc(100% - 65vw - 5rem);
+    }
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .projicon {
+        width: 40px;
+        height: 40px;
+    }
+    .body {
+        margin-right: 0;
+        font-size: 1.4rem;
+    }
+
+    .hyperlink {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projicon {
+        width: 50px;
+        height: 50px;
+        left: 2rem !important;
+    }
+
+    #right-section {
+        width: calc(100vw - 10rem);
+        height: auto;
+        position: absolute;
         top: 0;
-        left: var(--margin);
-        padding-top: var(--margin);
+        left: 0;
+        padding-left: 6rem;
+        padding-top: 8rem;
     }
     .img {
         width: 100vw;
     }
-    #left-section {
+    .left-section {
         width: 100vw;
         height: auto;
-        position: relative;
+        position: absolute;
+        top: 50rem;
+        left: 0;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+
+    .body {
+        margin-right: 0;
+        font-size: 1.6rem;
+        max-width: 600px;
+    }
+
+    .hyperlink {
+        font-size: 1.6rem;
+    }
+
+    .tags {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .projicon {
+        width: 40px;
+        height: 40px;
+        left: 1rem !important;
+    }
+    #right-section {
+        width: calc(100vw - 6rem);
+        padding-left: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    .year {
+        font-size: 1.6rem;
     }
 }

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/lists.css">
+        <link rel="stylesheet" href="style/about.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
@@ -20,8 +21,9 @@
         </div>
         <div class="icon" onclick="window.location.href='index.html'"><img src="img/cursors/loading.gif" alt=""></div>
         <div id="links">
-            <a onclick="scrollToSection('landing-pg');">upwards &#129121;</a>
+            <a onclick="window.location.href='#landing-pg'">upwards &#129121;</a>
         </div>
+        <div id="shadow"></div>
         <div id="page-container">
             <div id="landing-pg">
                 <h1 id="fade0" class="fade">
@@ -31,12 +33,10 @@
                     <span class="purple" id="3">I</span>
                     <span class="secondlinebreak"><br></span>
                     <span class="purple" id="4">-</span>
-
                     <span class="mint" id="5">S</span>
                     <span class="red" id="6">H</span>
                     <span class="blue" id="7">I</span>
                     <span class="mint" id="8">N</span>
-                    <span>&nbsp;</span>
                     <span class="linebreak"><br></span>
                     <span class="mint" id="9">H</span>
                     <span class="pink" id="10">A</span>
@@ -131,9 +131,27 @@
                 </div>
             </div>
             <div class="columns">
-                <div class="subtitle" style="color:var(--red);">
-                    <img class="subtitle-pt" src="img/cursors/pt2red.gif" alt=""> About -----------
-                    <div></div>
+                <div id="about-section">
+                    <div class="subtitle" style="color:var(--red);">
+                        <img class="subtitle-pt" src="img/cursors/pt2red.gif" alt=""> Hi, I'm Hwei-Shin (sounds like 'way sheen')
+                    </div>
+                    <div id="about-img"><img src="img/profile.jpeg" alt="headshot"></div>
+                    <p>
+                        I am currently a 4th year software engineering major at Olin College of Engineering. 
+                        I also recently attended Parsons School of Design as a visiting student with the Communications Department.
+                    </p>
+                    <p>
+                        I am passionate about exploring the intersection between technology and design, and gaining a deep understanding of whatever it is I am working on, whether that be machine learning, autonomous vehicles, fullstack engineering, or design.
+                    </p>  
+                    <p>
+                        I have 2 summers of experience working as a full stack software engineering intern with Tableau, where I worked with tools like React/Redux, TypeScript, REST API, Spring, PostGreSQL, Perforce, and C++ on high impact, user-facing features in Tableau's web authoring service.
+                    </p>
+                    <p> 
+                        Outside of my engineering endeavours, I enjoy doing ballet, playing PC video games, drawing, designing t-shirts, playing ultimate frisbee, and cooking.
+                    </p>
+                    <p>
+                        Feel free to check out some of my recent projects below. I hope you enjoy your stay!
+                    </p>
                 </div>
             </div>
             <div class="columns">
@@ -170,10 +188,10 @@
                             </div>
                             <div class="thumb"><img src="img/facesdark.png" alt=""></div>
                         </li>
-                        <li onclick="window.location.href='wisp.html'">
+                        <li onclick="window.location.href='http://poe.olin.edu/2018/sinimun/'">
                             Wisp: Kinetic Art Sculpture
                             <div class="tools">
-                                Illustrator<br>Fall, 2019
+                                Arduino, HTML/CSS<br>Fall, 2018
                             </div>
                             <div class="thumb"><img src="img/wisp2.gif" alt=""></div>
                         </li>
@@ -191,7 +209,7 @@
                             </div>
                             <div class="thumb"><img src="img/ransac.png" alt=""></div>
                         </li>
-                        <li onclick="window.location.href='softdes.html'">
+                        <li onclick="window.location.href='wallpaper.html'">
                             Desert Sunset Interactive Illustration
                             <div class="tools">
                                 Python, Photoshop, Pygame<br>Spring, 2018
@@ -349,20 +367,13 @@
                     <span>&nbsp; | &nbsp;</span>
                     <a href="https://github.com/hsharriman">Github</a>
                 </div>
-                <div>Copyright Hwei-Shin Harriman, 2020. Website designed and coded by yours truly.</div>
+                <div>Copyright Hwei-Shin Harriman, 2020.
+                    <span class="secondlinebreak"><br></span>
+                    Portfolio designed and coded by yours truly.</div>
             </div>
         </div>
     </body>
-    <script>
-        document.onreadystatechange = function() { 
-            if (document.readyState !== "complete") { 
-                document.querySelector("body").style.visibility = "hidden"; 
-                document.querySelector("#loader").style.visibility = "visible"; 
-            } else { 
-                document.querySelector("#loader").style.display = "none"; 
-                document.querySelector("body").style.visibility = "visible"; 
-            } 
-         }; 
-        window.setInterval(sparkle, Math.floor(Math.random() * 250 + 100));
+    <script> 
+        window.setInterval(sparkle, Math.floor(Math.random() * 150 + 100));
     </script>
 </html>

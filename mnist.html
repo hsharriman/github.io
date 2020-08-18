@@ -7,38 +7,48 @@
         <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
+        <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
     <body onload="onload(4)">
+        <div id="loader">
+            <div class="loading-section">
+                <img class="gif" src="img/cursors/loading.gif" alt="">
+                <div class="txt">loading</div>
+            </div>
+        </div>
         <a id="home" onclick="window.location.href='index.html'">< home</a>
         <div id="right-section">
             <div id="fade0" class="fade">
-                <h2>Convolutional Neural Net Implementation<br>with Numpy <span class="year">Fall, 2018</span></h2>
+                <h2>Convolutional Neural Net Implementation with Numpy <span class="year">Fall, 2018</span></h2>
                 <div class="tags">#machine-learning #numpy #matplotlib #mnist #python</div>
             </div>
             <div id="fade2" class="fade">
                 <div class="body">
-                    Created a program which accepts a search term as an input, and scrapes Google, Wikipedia, and Medium
-                    to dynamically output topics that are related to the original search term. The scraped articles were
-                    used to train a machine learning model designed for topic modeling: LDA. This project was created as a final
-                    project for the FA'19 offering of Machine Learning at Olin College of Engineering.
+                    Programmed two separate neural networks using only Python and Numpy to recognize handwritten digits as part of my final
+                    project for the FA'18 offering of Quantitative Engineering Analysis at Olin College of Engineering.
+                 </div>
+                <div class="body">
+                    This project is meant to be a deep exploration into the math behind neural networks, specifically convolutional neural networks. 
+                    As such, there is no use of high-level packages such as Pytorch or Tensorflow, since the goal was to understand the math that 
+                    drives these powerful tools. My implementation was able to achieve 89% accuracy on the test set.
                 </div>
                 <div class="body">
-                    Some words from the project <a class="hyperlink" href="https://github.com/epan547/Topic-Modeling-Buddy">Github:</a>
+                    In addition to implementing a feedforward and convolutional network, I also implemented dataset pre-processing, 
+                    batch and epoch capabilities, incremental testing, as well as saving and loading checkpoints.
                 </div>
                 <div class="body">
-                    "In our experience, sometimes the hardest part of starting a project in a new space is simply knowing where to start. Googling the general term returns some results, but depending on the field and level of technical detail it can be difficult to parse the information. Often times, it takes reading several articles before the core concepts behind a topic become clear.
-                </div>
-                <div class="body">
-                    Thus, the goal of this project was to create a tool that would make it easy for interested individuals to familiarize themselves with a new concept. Using topic modeling, we can take a concept word and present a list of keywords and resources that could help a user gain a broader understanding of the topic they originally searched. For example, if the keyword “machine learning” is entered, some possible results would be “weight, network, layer, backpropagation, etc.”, and some good explainer articles like Wikipedia and various Medium post tutorials would be linked.
-                </div>
-                <div class="body">
-                    At the beginning of this project, Topic Modeling was a new concept that we were both interested in reading theory about and implementing, for a real-life application. If this turns out to be successful, we see the potential for this project to be helpful for students who might not have a lot of resources at their disposal, or don’t know where to start on their own projects."
+                    The link to the source code, as well as the technical write-up detailing the theory, implementation, and analysis necessary
+                    to complete this project can be found <a class="hyperlink" href="https://github.com/hsharriman/qea">here</a>.
                 </div>
             </div>
         </div>
         <div class="left-section fade" id="fade1">
-            <div class="img"><img src="img/software/lda/lda1.png" alt=""></div>
-            <div class="img"><img src="img/software/lda/lda2.png" alt=""></div>
+            <div class="img"><img src="img/software/mnist/mnistnumbers.png" alt=""></div>
+            <div class="img"><img src="img/software/mnist/ff.png" alt=""></div>
+            <div class="img"><img src="img/software/mnist/cnn.png" alt=""></div>
+            <div class="img"><img src="img/software/mnist/train.png" alt=""></div>
+            <div class="img"><img src="img/software/mnist/test.png" alt=""></div>
+
         </div>
     </body>
     <script>

@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <!-- making sure that things render properly-->
+        <meta charset="utf-8">
+        <title>Hwei-Shin Harriman</title>
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/proj-textonly.css">
+        <script src="index.js"></script>
+        <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
+    </head>
+    <body onload="onload(2)">
+        <div id="loader">
+            <div class="loading-section">
+                <img class="gif" src="img/cursors/loading.gif" alt="">
+                <div class="txt">loading</div>
+            </div>
+        </div>
+        <div class="icon" onclick="window.location.href='index.html'">
+            <img src="img/cursors/loading.gif" alt="">
+        </div>
+        <!-- <a id="home" onclick="window.location.href='index.html'">< home</a> -->
+        <div id="page-container">
+            <div id="fade0" class="fade">
+                <h2>Facial Recognition with<br>Eigenfaces and Bayesian<br><span class="year">Spring, 2018</span></h2>
+                <div class="tags">#machine-learning #computer-vision #matlab</div>
+            </div>
+            <div id="fade1" class="fade">
+                <div class="body">
+                    Implemented two facial recognition algorithms using Matlab to correctly identify when 2 portraits
+                    were of the same person. The implementations were tested on a dataset of faces made up from our classmates.
+                    This project was completed as part of the SP'18 offering of Quantitative Engineering Analysis at Olin College of
+                    Engineering.
+                </div>
+                <div class="body">
+                    These facial recognition algorithms make use of the observation that faces are similar enough to each
+                    other in appearance (most faces have 2 eyes, a nose, and a mouth). Because of this, if 2 pictures of a person
+                    are taken at the same angle, with the same lighting and closeness, then it can be reasonably assumed that only
+                    some parts of the image are of importance. By using the eigenvectors and eigenvalues and some linear algebra
+                    concepts, we are able to effectively reduce the number of dimensions needed to represent the face.
+                </div>
+                <div class="body">
+                    The primary difference between the two algorithms is how they determine a "match". In Eigenfaces, the two images with the
+                    smallest difference are considered a match. In Bayesian, a match is determined by the likelihood that two pictures are of
+                    the same person.
+                </div>
+                <div class="body">
+                    To learn more about this project, check out its <a class="hyperlink" href="https://github.com/hsharriman/facialrecognition">Github</a> page.
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    </script>
+</html>

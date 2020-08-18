@@ -2,10 +2,7 @@ function onload(fades) {
     fadeIn(fades);
     let circleManager = new CircleManager();
     document.addEventListener('scroll', hideToTop);
-    // setHoverImgs('engineering');
-    // setHoverImgs('design');
-    // setHoverImgs('other');
-    // document.addEventListener('resize', positionSubHeaders);
+
 }
 
 function fadeIn(fades) {
@@ -139,3 +136,12 @@ function hideToTop() {
 //         li.addEventListener('mouseleave', () => {hideImg(li.id)});
 //     }
 // }
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+    } 
+ };
