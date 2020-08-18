@@ -54,10 +54,10 @@ class CircleManager {
         this.circles = [
             new Circle(3,10,'pink', 0),
             new Circle(8, 30, 'blue', 3),
-            new Circle(25, 40, 'mint', 1),
+            new Circle(25, 35, 'mint', 1),
             new Circle(35, 25, 'red', 2),
-            new Circle(20, 15, 'blue', 4),
-            new Circle(14, 50, 'purple', 5)
+            new Circle(30, 15, 'blue', 4),
+            new Circle(14, 45, 'purple', 5)
         ];
     }
 }
