@@ -87,41 +87,6 @@ function hideToTop() {
     }
 }
 
-// function setHoverImgs(section) {
-//     function showImg(id) {
-//         let thumb = document.getElementById(`thumb${id}`);
-//         thumb.style.transform = 'scaleY(1)';
-//         // thumb.animate([
-//         //     { height: '0' },
-//         //     { height: '200px' }
-//         // ], {
-//         //     duration: 500,
-//         //     easing: 'linear',
-//         //     direction: 'normal'
-//         // });
-//         // thumb.style.opacity = '1';
-//     }
-
-//     function hideImg(id) {
-//         let thumb = document.getElementById(`thumb${id}`);
-//         thumb.style.transform = 'scaleY(0)';
-//         // thumb.animate([
-//         //     { height: '200px'},
-//         //     { height: 0 }
-//         // ], {
-//         //     duration: 1000,
-//         //     easing: 'linear',
-//         //     direction: 'backwards'
-//         // });
-//         // thumb.style.opacity = '0';
-//     }
-//     var lis = document.getElementById(section).getElementsByTagName("li");
-//     for (let i=0; i<lis.length; i++) {
-//         let li = document.getElementById(lis[i]);
-//         li.addEventListener('mouseover', () => {showImg(li.id)});
-//         li.addEventListener('mouseleave', () => {hideImg(li.id)});
-//     }
-// }
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
