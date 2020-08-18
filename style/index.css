@@ -156,7 +156,7 @@ button:hover > a {
 
 #shadow {
     width: 100vw;
-    height: 200px;
+    height: 100px;
     background: var(--background-blue);
     background: linear-gradient(180deg, var(--background-blue) 0%, rgba(0,212,255,0) 82%);
     position: fixed;

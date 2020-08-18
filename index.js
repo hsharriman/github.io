@@ -36,42 +36,28 @@ class Circle {
         circle.style.left = `${left}vw`;
     }
 
-    leftPos() {
-        return this.left;
-    }
-
-    topPos() {
-        return this.top;
-    }
-
     setColor(color) {
         this.color = color;
         document.getElementById(this.id).addEventListener('mouseover', () => {
             let circle = document.getElementById(this.id);
-            circle.style.borderColor = `var(--${color})`;
             circle.style.color = `var(--${color})`;
         });
         document.getElementById(this.id).addEventListener('mouseleave', () => {
             let circle = document.getElementById(this.id);
-            circle.style.borderColor = 'var(--circle-color)';
             circle.style.color = 'var(--circle-color)';
         })
-    }
- 
-    id() {
-        return this.id;
     }
 }
 
 class CircleManager {
     constructor() {
         this.circles = [
-            new Circle(3,0,'pink', 0),
-            new Circle(5, 30, 'blue', 3),
-            new Circle(22, 35, 'mint', 1),
-            new Circle(35, 20, 'purple', 2),
-            new Circle(20, 12, 'red', 4),
-            new Circle(10, 45, 'pink', 5)
+            new Circle(3,10,'pink', 0),
+            new Circle(8, 30, 'blue', 3),
+            new Circle(25, 40, 'mint', 1),
+            new Circle(35, 25, 'red', 2),
+            new Circle(20, 15, 'blue', 4),
+            new Circle(14, 50, 'purple', 5)
         ];
     }
 }

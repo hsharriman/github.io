@@ -1,7 +1,6 @@
 <html>
 
     <head>
-        <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
         <link rel="stylesheet" href="style/index.css">
@@ -9,7 +8,7 @@
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload()">
+    <body onload="onload(3)">
         <div id="loader">
             <div class="loading-section">
                 <img class="gif" src="img/cursors/loading.gif" alt="">
@@ -18,25 +17,27 @@
         </div>
         <div class="icon projicon" onclick="window.location.href='index.html'"><img src="img/cursors/loading.gif" alt=""></div>
         <div id="right-section">
-            <h2>A Summary of One Ballerina's Experience <br><span class="year">Fall, 2019</span></h2>
-            <div class="tags">#design #Illustrator #datavisualization #python #matplotlib</div>
-            <div class="body">
-                Collected and visualized data of my years as a ballerina using Illustrator and matplotlib.
+            <div id="fade0" class"fade>
+                <h2>A Summary of One Ballerina's Experience<br><span class="year">Fall, 2019</span></h2>
+                <div class="tags">#design #Illustrator #datavisualization #python #matplotlib</div>
             </div>
-            <div class="body">
-                This project was created for "Tell the Story of What You Make", a design course offered at Olin College of Engineering. The prompt was to create a poster based on the Feltron reports, using our own personal dataset.
-            </div>
-            <div class="body">
-                As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences. The results are synthesized in the poster to the left.
+            <div id="fade2" class="fade">
+                <div class="body">
+                    Collected and visualized data of my years as a ballerina using Illustrator and matplotlib.
+                </div>
+                <div class="body">
+                    This project was created for "Tell the Story of What You Make", a design course offered at Olin College of Engineering. The prompt was to create a poster based on the Feltron reports, using our own personal dataset.
+                </div>
+                <div class="body">
+                    As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences. The results are synthesized in the poster to the left.
+                </div>
             </div>
         </div>
-        <div id="left-section">
+        <div class="left-section fade" id="fade1">
             <div style="width: 100%; height: 10vh; background-color: white;"></div>
             <div class="imgnoborder"><img src="img/design/ballet/ballet1.png" alt=""></div>
             <div class="imgnoborder"><img src="img/design/ballet/ballet2.png" alt=""></div>
             <div class="imgnoborder"><img src="img/design/ballet/ballet3.png" alt=""></div>
         </div>
     </body>
-    <script>
-    </script>
 </html>
