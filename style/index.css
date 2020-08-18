@@ -196,7 +196,7 @@ button:hover > a {
     width: 100vw;
     height: 100px;
     background: var(--background-blue);
-    background: linear-gradient(180deg, var(--background-blue) 0%, rgba(0,212,255,0) 82%);
+    background: linear-gradient(180deg, var(--background-blue) 0%, rgba(0,0,0,0) 82%);
     position: fixed;
     top: 0;
     left: 0;
