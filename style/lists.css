@@ -19,8 +19,9 @@ li {
 }
 .tools {
     font-family: var(--body);
-    color: var(--darkblue);
-    font-size: 1.8rem;
+    color: var(--blue);
+    font-size: 1.6rem;
+    word-spacing: .35rem;
     text-align: start;
 }
 
