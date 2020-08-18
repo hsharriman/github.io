@@ -48,7 +48,6 @@ li:hover {
     margin: var(--margin);
     max-width: 1600px;
 }
-
 .software ul {
     list-style-image: url(../img/cursors/pt1pink.gif);
 }

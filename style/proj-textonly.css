@@ -10,19 +10,27 @@ h2 {
     padding-left: 0;
     padding-bottom: 2rem;
 }
-#home {
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    z-index: 3;
-    cursor: pointer;
-}
 
 #page-container {
     width: 65vw;
     height: auto;
     padding-top: var(--margin);
     margin-left: var(--margin);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projcols {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    max-width: 80vw;
+    margin: 0;
+}
+.column {
+    margin-right: var(--margin);
 }
 
 .tags {
@@ -41,7 +49,7 @@ h2 {
 }
 
 .img {
-    width: 65vw;
+    width: 500px;
     height: auto;
     position: relative;
     overflow: hidden;
@@ -58,9 +66,8 @@ img {
     font-size: 1.6rem;
     color: white;
     padding-bottom: 1rem;
-    margin-right: var(--margin);
     word-spacing: .25rem;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .hyperlink {
@@ -70,21 +77,31 @@ img {
     text-decoration: underline;
 }
 
+ul {
+    list-style-image: url('../img/cursors/pt1.gif');
+}
+
+li {
+    color: white;
+    padding-bottom: 1rem;
+}
+
 @media (max-width: 1000px) {
-    #right-section {
+    #page-container {
         width: 100vw;
-        height: 100vh;
-        position: relative;
-        top: 0;
-        left: var(--margin);
-        padding-top: var(--margin);
+        padding-top: 10rem;
     }
+    .tags {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .body {
+        font-size: 1.4rem;
+    }
+
     .img {
-        width: 100vw;
-    }
-    #left-section {
-        width: 100vw;
-        height: auto;
-        position: relative;
+        width: calc(100vw - 6rem);
     }
 }
