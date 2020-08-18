@@ -58,8 +58,20 @@ p {
     right: 2rem;
     z-index: 12;
     text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     opacity: 0;
     transition: opacity .5s ease-in 0s;
+    color: var(--mint);
+    font-family: var(--mono);
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer !important;
+}
+
+.uparr {
+    transform: rotate(90deg);
 }
 
 a {
