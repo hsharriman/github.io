@@ -71,6 +71,8 @@ p {
 }
 
 .uparr {
+    width: 2rem;
+    height: 2rem;
     transform: rotate(90deg);
 }
 
