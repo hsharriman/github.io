@@ -6,17 +6,25 @@
         <title>Hwei-Shin Harriman</title>
         <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/lists.css">
         <script src="index.js"></script>
+        <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
     <!-- this is a comment! -->
-    <body onload="onload()">
-        <div id="loader" class="center"></div>
+    <body onload="onload(3)">
+        <div id="loader">
+            <div class="loading-section">
+                <img class="gif" src="img/cursors/loading.gif" alt="">
+                <div class="txt">loading</div>
+            </div>
+        </div>
+        <div class="icon" onclick="window.location.href='index.html'"><img src="img/cursors/loading.gif" alt=""></div>
         <div id="links">
             <a onclick="scrollToSection('landing-pg');">upwards &#129121;</a>
         </div>
         <div id="page-container">
             <div id="landing-pg">
-                <h1 id="header">
+                <h1 id="fade0" class="fade">
                     <span class="blue" id="0">H</span>
                     <span class="blue" id="1">W</span>
                     <span class="pink" id="2">E</span>
@@ -40,7 +48,7 @@
                     <span class="purple" id="15">A</span>
                     <span class="purple" id="16">N</span>
                  </h1>   
-                <h2 id="header2">
+                <h2 id="fade1" class="fade">
                     <span class="blue" id="17">S</span>
                     <span class="purple" id="18">o</span>
                     <span class="mint" id="19">f</span>
@@ -71,7 +79,7 @@
                     <span class="red" id="40">e</span>
                     <span class="pink" id="41">r</span>
                 </h2>
-                <h2 style="padding-bottom:25vh;" id="header3">
+                <h2 style="padding-bottom:25vh;" id="fade2" class="fade">
                     <span class="blue" id="42">P</span>
                     <span class="mint" id="43">o</span>
                     <span class="purple" id="44">r</span>
@@ -102,193 +110,236 @@
                     <span class="red" id="69">e</span>
                 </h2>
                 <div class="circle-container">
-                    <div id="circle0" class="circle" onclick="scrollToSection('projects');">Engineering Projects</div>
-                    <div id="circle1" class="circle" onclick="parent.location='https://hweishin.carbonmade.com';" >Design Gallery</div>
-                    <div id="circle2" class="circle circle-m" onclick="window.location.href='about.html'">About Me</div>
-                    <div id="circle3" class="circle circle-s" onclick="scrollToSection('resume');">Resume</div>
-                    <div id="circle4" class="circle circle-s" onclick="scrollToSection('contact');">Contact</div>
-                    <div id="circle5" class="circle circle-m" onclick="window.location.href='illustration.html'">Illustration Gallery</div>
-                </div>
-            </div>
-            <div class="subtitle-container"><div class="subtitle">// Software Projects -----------</div></div>
-            <div id="projects">
-                <a href="#projects"></a>
-                <div class="proj-item" onclick="window.location.href='lda.html'">
-                    <img src="img/ldabuddydark.png" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">LDA Research Buddy: Dynamic Topic Modeling</div>
-                        <div class="proj-subtext">Machine Learning, Pytorch <br>Fall, 2020</div>
+                    <div id="circle0" class="circle" onclick="scrollToSection('projects');">
+                        <img class="medium-pt" src="img/cursors/pt2pink.gif" alt=""> Engineering Projects
                     </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/heap.jpg" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Explicit Free List Heap Allocator</div>
-                        <div class="proj-subtext">C, gdb<br>Fall, 2019</div>
+                    <div id="circle1" class="circle" onclick="parent.location='https://hweishin.carbonmade.com';" >
+                        <img class="medium-pt" src="img/cursors/pt2mint.gif" alt=""> Design Gallery
                     </div>
-                </div>
-                <!-- <div class="proj-item">
-                    <img src="img/chest.gif" style="transform: translateX(-8rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">3D Graphics with OpenGL</div>
-                        <div class="proj-subtext">C++, CMake, OpenCV, OpenGL <br>Spring, 2019</div>
+                    <div id="circle2" class="circle circle-m" onclick="window.location.href='about.html'">
+                        <img class="medium-pt" src="img/cursors/pt2purple.gif" alt=""> About Me
                     </div>
-                </div> -->
-                <!-- <div class="proj-item">
-                    <img src="img/modern3.gif" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Swiss Modernism Poster Generator</div>
-                        <div class="proj-subtext">JavaScript, HTML/CSS<br>Spring, 2020</div>
+                    <div id="circle3" class="circle circle-s" onclick="scrollToSection('resume');">
+                        <img class="medium-pt" src="img/cursors/pt2.gif" alt=""> Resume
                     </div>
-                </div> -->
-                <div class="proj-item">
-                    <img src="img/cnnfull.png" style="transform: translateX(-4rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Convolutional Neural Net Implementation With Numpy</div>
-                        <div class="proj-subtext">Machine Learning, Python <br>Fall, 2018</div>
+                    <div id="circle4" class="circle circle-s" onclick="scrollToSection('contact');">
+                        <img class="medium-pt" src="img/cursors/pt2red.gif" alt=""> Contact
                     </div>
-                </div>
-                <!-- <div class="proj-item">
-                    <img src="img/paletteful.png" style="transform: translateX(-4rem);"alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Paletteful: Image-Based Color Palette Generator</div>
-                        <div class="proj-subtext">Python, OpenCV, Tensorflow<br>Spring, 2018</div>
-                    </div>
-                </div> -->
-                <div class="proj-item">
-                    <img src="img/facesdark.png" style="transform: translateX(-8rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Eigenface & Bayesian Facial Recognition</div>
-                        <div class="proj-subtext">MATLAB <br>Spring, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/wisp3.gif" style="width: 100%; height: auto;" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Wisp: Kinetic Art Sculpture</div>
-                        <div class="proj-subtext">Embedded C, Arduino, HTML/CSS<br>Fall, 2018</div>
-                    </div>
-                </div>
-                <!-- <div class="proj-item">
-                    <img src="img/pid.png" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Robolympics: PID Control Loop</div>
-                        <div class="proj-subtext">Mathematica, Arduino C<br>Fall, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/ransac.png" style="transform: translateX(-4rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent</div>
-                        <div class="proj-subtext">MATLAB<br>Fall, 2018</div>
-                    </div>
-                </div> -->
-                <div class="proj-item">
-                    <img src="img/wallpaper.png" style="width: 100%; height: auto;" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Desert Sunset Interactive Illustration</div>
-                        <div class="proj-subtext">Python, Photoshop, Pygame<br>Spring, 2018</div>
-                    </div>
-                </div>
-                <!-- <div class="proj-item">
-                    <img src="img/yagp.png" style="transform: translateX(-1rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">YAGP Ballet Competition Winners: Where Do They Come From?</div>
-                        <div class="proj-subtext">Tableau<br>Spring, 2020</div>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="subtitle-container"><div class="subtitle">// Design Projects -----------</div></div>
-            <div id="projects">
-                <a href="#projects"></a>
-                <div class="proj-item" onclick="window.location.href='disney.html'">
-                    <img src="img/ldabuddydark.png" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Disney Imaginations Design Competition: Semi-Finalist</div>
-                        <div class="proj-subtext">Research, User Experience, Photoshop, Illustrator<br>Fall, 2020</div>
-                    </div>
-                </div>
-                <div class="proj-item" onclick="window.location.href='ballet.html'">
-                    <img src="img/heap.jpg" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Ballet: Data Visualization</div>
-                        <div class="proj-subtext">Illustrator<br>Fall, 2019</div>
-                    </div>
-                </div>
-                <div class="proj-item" onclick="window.location.href='starcycle.html'">
-                    <img src="img/chest.gif" style="transform: translateX(-8rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Life Cycle of Stars</div>
-                        <div class="proj-subtext">Illustrator, Photoshop, Data Visualization <br>Spring, 2020</div>
-                    </div>
-                </div>
-                <div class="proj-item" onclick="window.location.href='swiss.html'">
-                    <img src="img/modern3.gif" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Swiss Modernism Poster Generator</div>
-                        <div class="proj-subtext">JavaScript, HTML/CSS<br>Spring, 2020</div>
-                    </div>
-                </div>
-                <div class="proj-item"  onclick="window.location.href='moma.html'">
-                    <img src="img/cnnfull.png" style="transform: translateX(-4rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Neri Oxman: Material Ecology<br> MoMA Exhibit Rebranding</div>
-                        <div class="proj-subtext">Machine Learning, Python <br>Fall, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item" onclick="window.location.href='fordvferrari.html'">
-                    <img src="img/paletteful.png" style="transform: translateX(-4rem);"alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Ford v Ferrari Movie Poster Concept</div>
-                        <div class="proj-subtext">Python, OpenCV, Tensorflow<br>Spring, 2018</div>
-                        <!-- <div class="proj-subtext">OpenCV Image Processing, Tensorflow, Python<br>Spring, 2018</div> -->
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/facesdark.png" style="transform: translateX(-8rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Eigenface & Bayesian Facial Recognition</div>
-                        <div class="proj-subtext">MATLAB <br>Spring, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/wisp3.gif" style="width: 100%; height: auto;" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Wisp: Kinetic Art Sculpture</div>
-                        <div class="proj-subtext">Embedded C, Arduino, HTML/CSS<br>Fall, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/pid.png" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Robolympics: PID Control Loop</div>
-                        <div class="proj-subtext">Mathematica, Arduino C<br>Fall, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/ransac.png" style="transform: translateX(-4rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent</div>
-                        <div class="proj-subtext">MATLAB<br>Fall, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <img src="img/wallpaper.png" style="width: 100%; height: auto;" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">Desert Sunset Interactive Illustration</div>
-                        <div class="proj-subtext">Python, Photoshop, Pygame<br>Spring, 2018</div>
-                    </div>
-                </div>
-                <div class="proj-item" onclick="window.location.href='yagp.html'">
-                    <img src="img/yagp.png" style="transform: translateX(-1rem);" alt="">
-                    <div class="overlay">
-                        <div class="proj-text">YAGP Ballet Competition Winners: Where Do They Come From?</div>
-                        <div class="proj-subtext">Tableau<br>Spring, 2020</div>
+                    <div id="circle5" class="circle circle-m" onclick="window.location.href='illustration.html'">
+                        <img class="medium-pt" src="img/cursors/pt2pink.gif" alt=""> Illustration Gallery
                     </div>
                 </div>
             </div>
-            <div class="subtitle-container"><div class="subtitle">// Illustration -----------</div></div>
+            <div class="columns">
+                <div class="subtitle" style="color:var(--red);">
+                    <img class="subtitle-pt" src="img/cursors/pt2red.gif" alt=""> About -----------
+                    <div></div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="software">
+                    <div class="subtitle" style="color: var(--pink);">
+                        <img class="subtitle-pt" src="img/cursors/pt2pink.gif" alt=""> Software Projects -----------
+                    </div>
+                    <ul id="engineering">
+                        <li onclick="window.location.href='lda.html'" id="lda">
+                            LDA Research Buddy
+                            <div class="tools">
+                                Machine Learning, Pytorch<br>Fall, 2019
+                            </div>
+                            <div class="thumb"><img src="img/software/lda/ldathumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='mnist.html'">
+                            Convolutional Neural Net Implementation With Numpy
+                            <div class="tools">
+                                Machine Learning, Python <br>Fall, 2018
+                            </div>
+                            <div class="thumb"><img src="img/cnnfull.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='paletteful.html'">
+                            Paletteful: Image-Based Color Palette Generator
+                            <div class="tools">
+                                Python, OpenCV<br>Spring, 2018
+                            </div>
+                            <div class="thumb"><img src="img/software/paletteful/crop.gif" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='faces.html'">
+                            Eigenface & Bayesian Facial Recognition
+                            <div class="tools">
+                                MATLAB <br>Spring, 2018
+                            </div>
+                            <div class="thumb"><img src="img/facesdark.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='wisp.html'">
+                            Wisp: Kinetic Art Sculpture
+                            <div class="tools">
+                                Illustrator<br>Fall, 2019
+                            </div>
+                            <div class="thumb"><img src="img/wisp2.gif" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='robolympics.html'">
+                            Robolympics: PID Control Loop
+                            <div class="tools">
+                                MATLAB, Arduino<br>Fall, 2018
+                            </div>
+                            <div class="thumb"><img src="img/pid.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='ransac.html'">
+                            Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent
+                            <div class="tools">
+                                MATLAB<br>Fall, 2018
+                            </div>
+                            <div class="thumb"><img src="img/ransac.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='softdes.html'">
+                            Desert Sunset Interactive Illustration
+                            <div class="tools">
+                                Python, Photoshop, Pygame<br>Spring, 2018
+                            </div>
+                            <div class="thumb"><img src="img/illustration/bigsunsetballoonthumb.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-section">
+                    <div class="subtitle-container"><div class="subtitle">
+                        <img class="subtitle-pt" src="img/cursors/pt2mint.gif" alt=""> Design Projects -----------</div></div>
+                    <ul id="design">
+                        <li onclick="window.location.href='swiss.html'">
+                            Swiss Modernism Poster Generator
+                            <div class="tools">
+                                JavaScript, HTML/CSS<br>Spring, 2020
+                            </div>
+                            <div class="thumb"><img src="img/generator.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='starcycle.html'">
+                            Life Cycle of Stars
+                            <div class="tools">
+                                Illustrator, Photoshop, Data Visualization <br>Spring, 2020
+                            </div>
+                            <div class="thumb"><img src="img/design/star/starsmall.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='disney.html'">
+                            Disney Imaginations Design Competition: Semi-Finalist
+                            <div class="tools">
+                                Research, User Experience, Photoshop, Illustrator<br>Fall, 2020
+                            </div>
+                            <div class="thumb"><img src="img/design/disney/disneythumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='yagp.html'">
+                            YAGP Ballet Competition Winners: Where Do They Come From?
+                            <div class="tools">
+                                Tableau <br>Spring, 2020
+                            </div>
+                            <div class="thumb"><img src="img/design/yagp/yagpthumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='ballet.html'">
+                            Ballet: Data Visualization
+                            <div class="tools">
+                                Illustrator<br>Fall, 2019
+                            </div>
+                            <div class="thumb"><img src="img/design/ballet/balletfeltronthumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='moma.html'">
+                            Neri Oxman: Material Ecology MoMA Exhibit Rebranding
+                            <div class="tools">
+                                Illustrator, InDesign <br>Spring, 2020
+                            </div>
+                            <div class="thumb"><img src="img/design/nerioxman/nerioxman2-04thumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='fordvferrari.html'">
+                            Ford v Ferrari Movie Poster Concept
+                            <div class="tools">
+                                Illustrator, Photoshop <br>Fall, 2019
+                            </div>
+                            <div class="thumb"><img src="img/design/fordthumb.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="other-section">
+                    <div class="subtitle-container"><div class="subtitle" style="color: var(--purple);">
+                        <img class="subtitle-pt" src="img/cursors/pt2purple.gif" alt=""> Other Projects -----------</div></div>
+                    <ul id="other">
+                        <li onclick="window.location.href='illustration.html'">
+                            Illustration Gallery
+                            <div class="tools">
+                                Photoshop, Procreate<br>2017-2020
+                            </div>
+                            <div class="thumb"><img src="img/illustration/12thumb.png" alt=""></div>
+                        </li>
+                        <li onclick="window.location.href='spaceman.html'">
+                            "hey, spaceman" Poster
+                            <div class="tools">
+                                Photoshop, Illustrator<br>Fall, 2019
+                            </div>
+                            <div class="thumb"><img src="img/design/spacemanthumb.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="columns">
+                <div id="skill-section">
+                    <div class="subtitle-container"><div class="subtitle" style="color: var(--blue);">
+                        <img class="subtitle-pt" src="img/cursors/pt2.gif" alt=""> Skills -----------</div></div>
+                        <div id="skills">
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Typescript
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Javascript
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                React/Redux
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Python/Numpy/Pytorch
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                HTML/CSS
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Java
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                C++
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                C/gdb/Arduino C
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Git/Perforce
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Ubuntu
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Matlab
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                LaTeX/Markdown
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Adobe Photoshop/Illustrator/InDesign
+                            </div>
+                            <div class="skill">
+                                <img class="bullet" src="img/cursors/pt1.gif" alt="">
+                                Tableau
+                            </div>
+                        </div>
+                </div> -->
+            <!-- </div> -->
             
             <div id="contact">
                 <div>
@@ -312,6 +363,6 @@
                 document.querySelector("body").style.visibility = "visible"; 
             } 
          }; 
-        // window.setInterval(sparkle, Math.floor(Math.random() * 500 + 500));
+        window.setInterval(sparkle, Math.floor(Math.random() * 250 + 100));
     </script>
 </html>

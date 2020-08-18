@@ -1,15 +1,21 @@
-function onload() {
-    let header = document.getElementById('header');
-    let header2 = document.getElementById('header2');
-    let header3 = document.getElementById('header3');
-    header.style.opacity = '1';
-    header2.style.opacity = '1';
-    header3.style.opacity = '1';
+function onload(fades) {
+    fadeIn(fades);
     let circleManager = new CircleManager();
-    window.setInterval(circleManager.circleGlows, Math.floor(Math.random() * 1000 + 1000));
-    // positionSubHeaders();
     document.addEventListener('scroll', hideToTop);
+    // setHoverImgs('engineering');
+    // setHoverImgs('design');
+    // setHoverImgs('other');
     // document.addEventListener('resize', positionSubHeaders);
+}
+
+function fadeIn(fades) {
+    for (let i=0; i<fades; i++) {
+        let id= `fade${i.toString()}`;
+        let ele = document.getElementById(id);
+        ele.style.transitionDelay = (`${0.5*i}s`);
+        ele.style.transform = 'translateY(0rem)';
+        ele.style.opacity = 1;
+    }
 }
 
 class Circle {
@@ -58,16 +64,6 @@ class Circle {
     id() {
         return this.id;
     }
-
-    setGlow() {
-        let cls = `circle${this.color}`;
-        let circle = document.getElementById(this.id);
-        if (circle.classList.contains(cls)) {
-            circle.classList.remove(cls);
-        }
-        circle.classList.add(cls);
-        // console.log(circle.classList);
-    }
 }
 
 class CircleManager {
@@ -75,39 +71,28 @@ class CircleManager {
         this.circles = [
             new Circle(3,0,'pink', 0),
             new Circle(5, 30, 'blue', 3),
-            new Circle(20, 35, 'mint', 1),
+            new Circle(22, 35, 'mint', 1),
             new Circle(35, 20, 'purple', 2),
             new Circle(20, 12, 'red', 4),
-            new Circle(40, 5, 'pink', 5)
+            new Circle(10, 45, 'pink', 5)
         ];
-        // console.log(this.circles);
     }
-
-    circleGlows = () => {
-        let i = Math.floor(Math.random() * 5);
-        this.circles[i].setGlow();
-    }
-}
-
-function scrollToSection(id) {
-    let projects = document.getElementById(id.toString());
-    let scrollY = projects.getBoundingClientRect().y;
-
-    window.scrollTo(0,scrollY);
 }
 
 function sparkle() {
-    let colors = ['blue', 'mint', 'purple', 'red', 'pink'];
-    let index = Math.floor(Math.random() * 75);
+    let colors = ['var(--blue)', 'var(--mint)', 'var(--purple)', 'var(--red)', 'var(--pink)'];
+    let index = Math.floor(Math.random() * 69);
     let letter = document.getElementById(index.toString());
     let ogColor = letter.style.color;
     let sparkleColor = colors[Math.floor(Math.random() * 5)];
-    // console.log(letter, ogColor, sparkleColor);
-    letter.animate('redanimation', {
-        duration: 1000,
-        easing: "ease-in"
-    }
-    );
+
+    letter.animate([
+        { color: sparkleColor},
+        { color: ogColor }
+    ], {
+        duration: 3000,
+        easing: 'ease-in'
+    });
 }
 
 function hideToTop() {
@@ -118,3 +103,39 @@ function hideToTop() {
         link.style.opacity = '1';
     }
 }
+
+// function setHoverImgs(section) {
+//     function showImg(id) {
+//         let thumb = document.getElementById(`thumb${id}`);
+//         thumb.style.transform = 'scaleY(1)';
+//         // thumb.animate([
+//         //     { height: '0' },
+//         //     { height: '200px' }
+//         // ], {
+//         //     duration: 500,
+//         //     easing: 'linear',
+//         //     direction: 'normal'
+//         // });
+//         // thumb.style.opacity = '1';
+//     }
+
+//     function hideImg(id) {
+//         let thumb = document.getElementById(`thumb${id}`);
+//         thumb.style.transform = 'scaleY(0)';
+//         // thumb.animate([
+//         //     { height: '200px'},
+//         //     { height: 0 }
+//         // ], {
+//         //     duration: 1000,
+//         //     easing: 'linear',
+//         //     direction: 'backwards'
+//         // });
+//         // thumb.style.opacity = '0';
+//     }
+//     var lis = document.getElementById(section).getElementsByTagName("li");
+//     for (let i=0; i<lis.length; i++) {
+//         let li = document.getElementById(lis[i]);
+//         li.addEventListener('mouseover', () => {showImg(li.id)});
+//         li.addEventListener('mouseleave', () => {hideImg(li.id)});
+//     }
+// }

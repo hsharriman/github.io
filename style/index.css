@@ -5,16 +5,19 @@
 :root {
     --blue: rgb(68, 133, 231);
     --pink: rgb(252, 151, 218);
-    --purple: rgb(202, 29, 245);
+    --purple: rgb(145, 106, 253);
+    --purple-light:  rgb(195, 173, 255);
     --mint: rgb(97, 243, 219);
     --red: rgb(255, 67, 67);
     --darkblue: rgb(32, 61, 98);
     --background-pink: rgb(44, 0, 33);
+    --background-blue: rgb(8, 8, 29);
     --margin: 10rem;
     --mono: 'IBM Plex Mono', monospace;
     --sans: 'Gordita Bold', sans-serif;
     --body: 'Noto Sans SC', sans-serif;
     overflow-x: hidden;
+    cursor: cell;
 }
 html {
     font-size: 62.5%;
@@ -112,6 +115,51 @@ button:hover > a {
     z-index: 3;
 }
 
+#loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--background-blue);
+    position: absolute;
+    z-index: 10;
+}
+
+.loading-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    color: var(--mint);
+    font-weight: 500;
+}
+
+.gif {
+    transform: scale(.75);
+}
+
+.icon {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 20;
+    width: 50px;
+    height: 50px;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: all .75s ease-in 1s;
+}
 
 @media (max-width: 1250px) {
     h2 {

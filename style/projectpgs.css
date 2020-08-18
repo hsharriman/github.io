@@ -30,7 +30,7 @@ h2 {
     cursor: pointer;
 }
 
-#left-section {
+.left-section {
     width: 65vw;
     height: auto;
     background-color: black;
@@ -87,6 +87,7 @@ img {
     color: white;
     padding-bottom: 1rem;
     margin-right: var(--margin);
+    word-spacing: .25rem;
 }
 
 .hyperlink {

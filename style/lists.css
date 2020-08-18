@@ -1,0 +1,87 @@
+@import url(index.css);
+
+
+ul {
+    list-style-image: url(../img/cursors/pt1mint.gif);
+    padding-left: 7rem;
+}
+
+li {
+    font-family: var(--mono);
+    color: var(--mint);
+    font-size: 2.5rem;
+    text-align: start;
+    padding-bottom: 2.5rem;
+    transition: all .25s ease-in 0s;
+    max-width:650px;
+}
+.tools {
+    font-family: var(--mono);
+    color: var(--blue);
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+li:hover {
+    transform: translateX(1rem);
+    color: white;
+    font-weight: 700;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle-pt {
+    display: inline;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: var(--margin);
+    max-width: 1600px;
+}
+
+.software ul {
+    list-style-image: url(../img/cursors/pt1pink.gif);
+}
+
+.software li {
+    color: var(--pink);
+}
+
+.software li:hover {
+    color: white;
+}
+
+.other-section ul {
+    list-style-image: url(../img/cursors/pt1purple.gif);
+}
+
+.other-section li {
+    color: var(--purple);
+}
+
+.other-section li:hover {
+    color: white;
+}
+
+.skill {
+    font-size: 1.6rem;
+    font-family: var(--mono);
+    color: var(--blue);
+    padding-bottom: 1.4rem;
+    padding-left: 4rem;
+}
+
+.bullet {
+    display: inline;
+    width: 1.6rem;
+    height: 1.6rem;
+}
