@@ -15,6 +15,7 @@ li {
     padding-bottom: 2.5rem;
     transition: all .25s ease-in 0s;
     max-width:650px;
+    cursor: pointer;
 }
 .tools {
     font-family: var(--body);

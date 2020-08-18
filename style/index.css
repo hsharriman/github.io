@@ -69,6 +69,7 @@ a {
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
+    cursor: pointer !important;
 }
 
 img {
@@ -142,10 +143,33 @@ button:hover > a {
     position: fixed;
     top: 2rem;
     left: 2rem;
-    cursor: pointer;
     z-index: 20;
     width: 5rem;
     height: 5rem;
+    cursor: pointer !important;
+}
+
+.back {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 20;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 2rem;
+    color: var(--mint);
+}
+
+.backarr {
+    width: 2rem;
+    height: 2rem;
+    display: inline;
 }
 
 .fade {
