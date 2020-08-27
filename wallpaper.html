@@ -2,42 +2,40 @@
     <head>
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
-        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload(3)">
+    <body onload="onload()">
         <div id="loader">
             <div class="loading-section">
-                <img class="gif" src="img/cursors/loading.gif" alt="">
-                <div class="txt">loading</div>
+                <img  src="img/cursors/loading.gif" alt="">
+                <div >loading</div>
             </div>
         </div>
-        <div class="back projicon" onclick="window.history.back()">
-            <img class="backarr" src="img/cursors/backs.gif" alt="">back
+        <div class="back" onclick="window.history.back()">
+            <img  src="img/cursors/backs.gif" alt="">back
         </div>
         <div id="right-section">
-            <div id="fade0" class="fade">
+            <div class="fade">
                 <h2>Desert Sunset Interactive<br>Illustration<span class="year"> Spring, 2018</span></h2>
                 <div class="tags">#pygame #photoshop #python</div>
             </div>
-            <div id="fade2" class="fade">
-                <div class="body">
+            <div class="fade">
+                <p>
                     Created a Python program that adds layer of interactivity to an illustration that I created for the project.
-                    The scene loops infinitely, clicking on the sky spawns hot air balloons which peacefully float out of the frame.
-                </div>
-                <div class="body">
+                    The scene loops infinitely, while clicking on the sky spawns hot air balloons which peacefully float out of the frame.
+                </p>
+                <p>
                     The project may be cloned and run locally <a class="hyperlink" href="https://github.com/hsharriman/InteractiveProgramming">here</a>.
-                </div>
+                </p>
             </div>
         </div>
-        <div class="left-section fade" id="fade1">
+        <div class="left-section fade" >
             <div class="img"><img src="img/illustration/desert2.gif" alt=""></div>
             <div class="img"><img src="img/illustration/bigsunsetballoon.png" alt=""></div>
             <div class="img"><img src="img/illustration/bigsunsetballoonleft.png" alt=""></div>
             <div class="img"><img src="img/illustration/bigsunsetballoonright.png" alt=""></div>
         </div>
     </body>
-    <script src="projects.js"></script>
 </html>

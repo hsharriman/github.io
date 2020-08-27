@@ -1,57 +1,52 @@
 <html>
-
     <head>
-        <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
-        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload(4)">
+    <body onload="onload()">
         <div id="loader">
             <div class="loading-section">
-                <img class="gif" src="img/cursors/loading.gif" alt="">
-                <div class="txt">loading</div>
+                <img  src="img/cursors/loading.gif" alt="">
+                <div>loading</div>
             </div>
         </div>
-        <div class="back projicon" onclick="window.history.back()">
-            <img class="backarr" src="img/cursors/backs.gif" alt="">back
+        <div class="back" onclick="window.history.back()">
+            <img src="img/cursors/backs.gif" alt="">back
         </div>
         <div id="right-section">
-            <div id="fade0" class="fade">
+            <div class="fade">
                 <h2>Convolutional Neural Net<br>Implementation with Numpy<br><span class="year">Fall, 2018</span></h2>
                 <div class="tags">#machine-learning #numpy #matplotlib #mnist #python</div>
             </div>
-            <div id="fade2" class="fade">
-                <div class="body">
-                    Programmed two separate neural networks using only Python and Numpy to recognize handwritten digits as part of my final
+            <div class="fade">
+                <p>
+                    Programmed two neural networks using only Python and Numpy to recognize handwritten digits as part of my final
                     project for the FA'18 offering of Quantitative Engineering Analysis at Olin College of Engineering.
-                 </div>
-                <div class="body">
+                </p>
+                <p>
                     This project is meant to be a deep exploration into the math behind neural networks, specifically convolutional neural networks. 
                     As such, there is no use of high-level packages such as Pytorch or Tensorflow, since the goal was to understand the math that 
                     drives these powerful tools. My implementation was able to achieve 89% accuracy on the test set.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     In addition to implementing a feedforward and convolutional network, I also implemented dataset pre-processing, 
                     batch and epoch capabilities, incremental testing, as well as saving and loading checkpoints.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     The link to the source code, as well as the technical write-up detailing the theory, implementation, and analysis necessary
                     to complete this project can be found <a class="hyperlink" href="https://github.com/hsharriman/qea">here</a>.
-                </div>
+                </p>
             </div>
         </div>
-        <div class="left-section fade" id="fade1">
+        <div class="left-section fade" >
             <div class="img"><img src="img/software/mnist/mnistnumbers.png" alt=""></div>
             <div class="img"><img src="img/software/mnist/ff.png" alt=""></div>
             <div class="img"><img src="img/software/mnist/cnn.png" alt=""></div>
             <div class="img"><img src="img/software/mnist/train.png" alt=""></div>
             <div class="img"><img src="img/software/mnist/test.png" alt=""></div>
-
         </div>
     </body>
-    <script src="projects.js"></script>
 </html>

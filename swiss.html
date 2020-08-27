@@ -1,51 +1,48 @@
 <html>
-
     <head>
-        <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
-        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload(4)">
+    <body onload="onload()">
         <div id="loader">
             <div class="loading-section">
-                <img class="gif" src="img/cursors/loading.gif" alt="">
-                <div class="txt">loading</div>
+                <img  src="img/cursors/loading.gif" alt="">
+                <div >loading</div>
             </div>
         </div>
-        <div class="back projicon" onclick="window.history.back()">
-            <img class="backarr" src="img/cursors/backs.gif" alt="">back
+        <div class="back" onclick="window.history.back()">
+            <img  src="img/cursors/backs.gif" alt="">back
         </div>
         <div id="right-section">
-            <div id="fade0" class="fade">
+            <div class="fade">
                 <h2>Swiss Modernism Generator<br><span class="year">Spring, 2020</span></h2>
-                <div class="tags">#HTML #CSS #Javascript #typography</div>
+                <div class="tags">#HTML #CSS #JavaScript #typography</div>
             </div>
-            <div id="fade2" class="fade">
-                <div class="body">
-                    Designed a website that generates posters in the style of Swiss Modernism using Javascript and HTML/CSS. This project was created
+            <div class="fade">
+                <p>
+                    Designed a website that generates posters in the style of Swiss Modernism using JavaScript and HTML/CSS. This project was created
                     for the SP'20 offering of Core Studio Interaction at Parsons School of Design.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     from the project's website:
-                </div>
-                <div class="body">
-                    "Using pure Javascript, the generator pseudo-randomly combines attributes that are commonly found in posters made
-                    in the Swiss International Style to create infinite variations of any given poster, all with the press of a button. 
-                    The text that fills the poster can be filled in by visitors to the site.
-                </div>
-                <div class="body">
+                </p>
+                <p>
+                    "Using pure Javascript, the generator combines attributes that are commonly found in posters made
+                    in the Swiss International Style to create near-infinite variations of any given poster, all with the press of a button. 
+                    The poster's text can be filled in by visitors to the site via input fields.
+                </p>
+                <p>
                     As with all work in the Swiss Style, the posters are created on a strict grid, which sometimes appears rotated with respect to the canvas. 
-                    Sometimes, graphic elements are present, which can take on a number of different shapes and colors. Text is always sans-serif and usually
+                    There is a random chance for graphic elements to appear. These can take on a number of different shapes and colors. Text is always sans-serif and usually
                     black for readability. The Swiss Style emphasizes cleanliness and objectivity, so the titles, subtitles, and body text are clearly distinguished
                     by size. All of these attributes have been coded into the generator, abstracted so that visitors to the site need not get overwhelmed with the details."
-                </div>
+                </p>
             </div>
         </div>
-        <div class="left-section fade" id="fade1">
+        <div class="left-section fade" >
             <div class="img"><img src="img/design/swiss/swissgen.gif" alt=""></div>
             <div class="img"><img src="img/design/swiss/swissgen2.gif" alt=""></div>
             <div class="img"><img src="img/design/swiss/swissgen3.gif" alt=""></div>
@@ -55,5 +52,4 @@
             <div class="img"><img src="img/design/swiss/swissabout.png" alt=""></div>
         </div>
     </body>
-    <script src="projects.js"></script>
 </html>

@@ -1,50 +1,47 @@
 <html>
-
     <head>
-        <!-- making sure that things render properly-->
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
-        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload(4)">
+    <body onload="onload()">
         <div id="loader">
             <div class="loading-section">
-                <img class="gif" src="img/cursors/loading.gif" alt="">
-                <div class="txt">loading</div>
+                <img  src="img/cursors/loading.gif" alt="">
+                <div >loading</div>
             </div>
         </div>
-        <div class="back projicon" onclick="window.history.back()">
-            <img class="backarr" src="img/cursors/backs.gif" alt="">back
+        <div class="back" onclick="window.history.back()">
+            <img  src="img/cursors/backs.gif" alt="">back
         </div>
         <div id="right-section">
-            <div id="fade0" class="fade">
+            <div class="fade">
                 <h2>Paletteful: Image-Based Color<br>Palette Generator <span class="year">Spring, 2018</span></h2>
                 <div class="tags">#opencv #HTML/CSS #python</div>
             </div>
-            <div id="fade2" class="fade">
-                <div class="body">
-                    Created a website which allows users to generate color palettes based on their favorite images.
-                    The user is able to view the hex and rgb codes of the palettes, and easily copy/paste them.
-                    Additionally, the color palettes may be downloaded as .png files to be easily accessed.
-                </div>
-                <div class="body">
-                    The program used OpenCV and knowledge of traditional color palettes (dominant/accent, analogous) to
+            <div class="fade">
+                <p>
+                    Created a website that allows users to generate color palettes based on their favorite images.
+                    The user is able to view the hex and RGB codes of the palettes, and easily copy/paste them.
+                    Additionally, the color palettes may be downloaded as .png files to be accessed by or transferred
+                    to other programs for reference.
+                </p>
+                <p>
+                    The program uses OpenCV and knowledge of traditional color palettes (dominant/accent, analogous) to
                     determine which colors within an image most "define" the palette.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     The project may be cloned and run locally <a class="hyperlink" href="https://github.com/QingmuDeng/SoftDesSP18_FinalProject">here</a>.
-                </div>
+                </p>
             </div>
         </div>
-        <div class="left-section fade" id="fade1">
+        <div class="left-section fade" >
             <div class="img"><img src="img/software/paletteful/intro.gif" alt=""></div>
             <div class="img"><img src="img/software/paletteful/crop.gif" alt=""></div>
             <div class="img"><img src="img/software/paletteful/palettes.png" alt=""></div>
             <div class="img"><img src="img/software/paletteful/palettefulposter.png" alt=""></div>
         </div>
     </body>
-    <script src="projects.js"></script>
 </html>

@@ -1,20 +1,4 @@
-@import url(index.css);
-
-html {
-    display: flex;
-    justify-content: left;
-}
-h2 {
-    color: white;
-    letter-spacing: normal;
-    padding-left: 0;
-    padding-bottom: 2rem;
-}
-
-.projicon {
-    top: 2rem !important;
-    left: calc(65vw + 2rem) !important;
-}
+@import './projects.css';
 
 .left-section {
     width: 65vw;
@@ -32,27 +16,8 @@ h2 {
     overflow: visible;
 }
 
-.tags {
-    font-size: 1.6rem;
-    color: var(--blue);
-    font-weight: 300;
-    font-family: var(--mono);
-    padding-bottom: 5rem;
-}
-
-.year {
-    font-size: 2rem;
-    color: var(--mint);
-    font-weight: 300;
-    font-family: var(--mono);
-}
-
 .img {
     width: 65vw;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 2rem;
 }
 
 .imgnoborder {
@@ -60,23 +25,6 @@ h2 {
     height: auto;
     position: relative;
     overflow: hidden;
-}
-
-.body {
-    font-family: var(--body);
-    font-size: 1.6rem;
-    color: white;
-    padding-bottom: 1rem;
-    margin-right: var(--margin);
-    word-spacing: .25rem;
-    max-width: 450px;
-}
-
-.hyperlink {
-    font-family: var(--body);
-    font-size: 1.6rem;
-    color: var(--mint);
-    text-decoration: underline;
 }
 
 .minigallery {
@@ -121,21 +69,9 @@ h2 {
         font-size: 2rem;
         padding-bottom: 1rem;
     }
-    .body {
-        margin-right: 0;
-        font-size: 1.4rem;
-    }
-
-    .hyperlink {
-        font-size: 1.4rem;
-    }
 }
 
 @media (max-width: 1000px) {
-    .projicon {
-        left: 2rem !important;
-    }
-
     #right-section {
         width: calc(100vw - 10rem);
         height: auto;
@@ -158,26 +94,9 @@ h2 {
     h2 {
         font-size: 3rem;
     }
-
-    .body {
-        margin-right: 0;
-        font-size: 1.6rem;
-        max-width: 600px;
-    }
-
-    .hyperlink {
-        font-size: 1.6rem;
-    }
-
-    .tags {
-        padding-bottom: 3rem;
-    }
 }
 
 @media (max-width: 500px) {
-    .projicon {
-        left: 1rem !important;
-    }
     #right-section {
         width: calc(100vw - 6rem);
         padding-left: 3rem;
@@ -185,8 +104,5 @@ h2 {
 
     h2 {
         font-size: 2rem;
-    }
-    .year {
-        font-size: 1.6rem;
     }
 }

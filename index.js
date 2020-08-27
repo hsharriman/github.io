@@ -1,41 +1,42 @@
-function onload(fades) {
-    fadeIn(fades);
-    let circleManager = new CircleManager();
+function onload() {
+    setGalleryHeight();
+    document.addEventListener("resize", setGalleryHeight);
+    fadeIn();
 }
 
-function fadeIn(fades) {
-    for (let i=0; i<fades; i++) {
-        let id= `fade${i.toString()}`;
-        let ele = document.getElementById(id);
+function onloadHome() {
+    new CircleManager();
+    fadeIn();
+}
+
+function onloadTextOnly() {
+    fadeIn();
+}
+
+function fadeIn() {
+    let i=0;
+    for (let ele of document.getElementsByClassName('fade')) {
         ele.style.transitionDelay = (`${0.5*i}s`);
         ele.style.transform = 'translateY(0rem)';
         ele.style.opacity = 1;
+        i++;
     }
 }
 
 class Circle {
     constructor(left, top, color, id) {
-        this.setId(id);
+        this.id = `circle${id}`;
         this.setPosition(left, top);
         this.setColor(color);
     }
 
-    setId(id) {
-        this.id = `circle${id}`;
-    }
-
     setPosition(left, top) {
-        this.left = left;
-        this.top = top;
-        
-        // position element
         let circle = document.getElementById(this.id);
-        circle.style.top = `${top}vh`;
+        circle.style.top = `${top}rem`;
         circle.style.left = `${left}vw`;
     }
 
     setColor(color) {
-        this.color = color;
         document.getElementById(this.id).addEventListener('mouseover', () => {
             let circle = document.getElementById(this.id);
             circle.style.color = `var(--${color})`;
@@ -50,12 +51,12 @@ class Circle {
 class CircleManager {
     constructor() {
         this.circles = [
-            new Circle(3,10,'pink', 0),
-            new Circle(8, 30, 'blue', 3),
-            new Circle(25, 35, 'mint', 1),
-            new Circle(35, 25, 'red', 2),
-            new Circle(30, 15, 'blue', 4),
-            new Circle(14, 45, 'purple', 5)
+            new Circle(3,15,'pink', 0),
+            new Circle(8, 35, 'blue', 3),
+            new Circle(25, 50, 'mint', 1),
+            new Circle(35, 35, 'red', 2),
+            new Circle(30, 25, 'blue', 4),
+            new Circle(14, 65, 'purple', 5)
         ];
     }
 }
@@ -74,6 +75,15 @@ function sparkle() {
         duration: 3000,
         easing: 'ease-in'
     });
+}
+
+function setGalleryHeight() {
+    if (window.innerWidth <= 1000) {
+        let textEnd = document.getElementById('right-section').getBoundingClientRect().bottom;
+        let pics = document.getElementsByClassName('left-section')[0];
+        pics.style.top = `${textEnd + 100}px`;
+        console.log(pics.style.top);
+    }
 }
 
 document.onreadystatechange = function() { 

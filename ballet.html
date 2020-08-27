@@ -1,43 +1,40 @@
 <html>
-
     <head>
         <meta charset="utf-8">
         <title>Hwei-Shin Harriman</title>
-        <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/projectpgs.css">
         <script src="index.js"></script>
         <link rel="icon" href="img/cursors/loading.gif" type="image/gif">
     </head>
-    <body onload="onload(3)">
+    <body onload="onload()">
         <div id="loader">
             <div class="loading-section">
-                <img class="gif" src="img/cursors/loading.gif" alt="">
-                <div class="txt">loading</div>
+                <img  src="img/cursors/loading.gif" alt="">
+                <div>loading</div>
             </div>
         </div>
-        <div class="back projicon" onclick="window.history.back()">
-            <img class="backarr" src="img/cursors/backs.gif" alt="">back
+        <div class="back" onclick="window.history.back()">
+            <img src="img/cursors/backs.gif" alt="">back
         </div>
         <div id="right-section">
-            <div id="fade0" class"fade>
+            <div class"fade>
                 <h2>A Summary of One Ballerina's Experience<br><span class="year">Fall, 2019</span></h2>
                 <div class="tags">#design #Illustrator #datavisualization #python #matplotlib</div>
             </div>
-            <div id="fade2" class="fade">
-                <div class="body">
+            <div class="fade">
+                <p>
                     Collected and visualized data of my years as a ballerina using Illustrator and matplotlib.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     This project was created for "Tell the Story of What You Make", a design course offered at Olin College of Engineering. The prompt was to create a poster based on the Feltron reports, using our own personal dataset.
-                </div>
-                <div class="body">
+                </p>
+                <p>
                     As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences. The results are synthesized in the poster to the left.
-                </div>
+                </p>
             </div>
         </div>
-        <div class="left-section fade" id="fade1">
+        <div class="left-section fade" >
             <div class="imgnoborder"><img src="img/design/ballet/balletfeltron.png" alt=""></div>
         </div>
     </body>
-    <script src="projects.js"></script>
 </html>

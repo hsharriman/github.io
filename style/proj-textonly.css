@@ -1,14 +1,8 @@
-@import url(index.css);
+@import './projects.css';
 
-html {
-    display: flex;
-    justify-content: left;
-}
-h2 {
-    color: white;
-    letter-spacing: normal;
-    padding-left: 0;
-    padding-bottom: 2rem;
+.back {
+    left: 2rem !important;
+    position: fixed !important;
 }
 
 #page-container {
@@ -33,52 +27,16 @@ h2 {
     margin-right: var(--margin);
 }
 
-.tags {
-    font-size: 1.6rem;
-    color: var(--blue);
-    font-weight: 300;
-    font-family: var(--mono);
-    padding-bottom: 5rem;
-}
-
-.year {
-    font-size: 2rem;
-    color: var(--mint);
-    font-weight: 300;
-    font-family: var(--mono);
-}
-
 .img {
     width: 500px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 2rem;
-}
-
-.body {
-    font-family: var(--body);
-    font-size: 1.6rem;
-    color: white;
-    padding-bottom: 1rem;
-    word-spacing: .25rem;
-    max-width: 500px;
-}
-
-.hyperlink {
-    font-family: var(--body);
-    font-size: 1.6rem;
-    color: var(--mint);
-    text-decoration: underline;
 }
 
 ul {
     list-style-image: url('../img/cursors/pt1.gif');
 }
 
-li {
-    color: white;
-    padding-bottom: 1rem;
+li p {
+    max-width: 425px;
 }
 
 @media (max-width: 1000px) {
@@ -86,16 +44,9 @@ li {
         width: 100vw;
         padding-top: 10rem;
     }
-    .tags {
-        padding-bottom: 2.5rem;
-    }
 }
 
-@media (max-width: 500px) {
-    .body {
-        font-size: 1.4rem;
-    }
-
+@media (max-width: 600px) {
     .img {
         width: calc(100vw - 6rem);
     }

@@ -1,5 +1,3 @@
-@import url(index.css);
-
 /* ABOUT SECTION */
 #about-container {
     padding: var(--margin);
@@ -54,5 +52,11 @@
 @media (max-width: 750px) {
     .about-section h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 1.4rem;
     }
 }

@@ -1,5 +1,4 @@
-@import url(index.css);
-
+@import url('index.css');
 
 ul {
     list-style-image: url(../img/cursors/pt1mint.gif);
@@ -29,6 +28,27 @@ li:hover {
     transform: translateX(1rem);
     color: white;
     font-weight: 700;
+}
+
+li:hover > .thumb {
+    opacity: 1;
+}
+
+.thumb {
+    height: 200px;
+    width: auto;
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+    right: 2rem;
+    z-index: -10;
+    transition: all .25s linear 0s;
+    overflow: hidden;
+}
+
+.thumb img {
+    height: 100%;
+    width: auto;
 }
 
 .subtitle-container {
@@ -61,20 +81,6 @@ li:hover {
 .scrollTo {
     height: 3rem;
     width: auto;
-}
-
-.skill {
-    font-size: 1.6rem;
-    font-family: var(--mono);
-    color: var(--blue);
-    padding-bottom: 1.4rem;
-    padding-left: 4rem;
-}
-
-.bullet {
-    display: inline;
-    width: 1.6rem;
-    height: 1.6rem;
 }
 
 @media (max-width: 750px) {

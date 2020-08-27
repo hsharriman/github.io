@@ -1,12 +1,37 @@
-@import url(index.css);
+@import url('index.css');
 
 :root {
     --circle-color: var(--darkblue);
 }
 
+#page-container {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.4rem;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-family: var(--mono);   
+}
+
+
+/* LANDING PAGE TITLE/SUBTITLES */
+
 #landing-pg {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 300vh;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,48 +48,6 @@ h1 {
     line-height: 18rem;
 }
 
-h2 span {
-    letter-spacing: -1rem;
-}
-
-h3 {
-    margin: 0;
-    font-size: 2.4rem;
-    margin-bottom: 0;
-    text-align: left;
-    color: white;
-    font-family: var(--mono);   
-}
-
-
-#page-container {
-    width: 100vw;
-    height: auto;
-    position: absolute;
-    top: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#contact-btns {
-    position: absolute;
-    left: 2rem;
-    top: calc(100vh - var(--margin) - 180px);
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--pink);
-    margin: 1rem;
-}
-
-/* TEXT COLORS */
 span {
     background-color: none;
     color: white;
@@ -83,10 +66,7 @@ span {
 
 h2 span {
     color: var(--blue);
-}
-
-h3 span {
-    color: white;
+    letter-spacing: -1rem;
 }
 
 .subtitle-container {
@@ -135,25 +115,16 @@ h3 span {
 }
 
 .circle {
-    background-color: transparent;
     position: absolute;
     transition: all .5s ease-in 0s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
     font-family: var(--mono);
     color: var(--circle-color);
     font-weight: 700;
-    flex-wrap: nowrap;
     cursor: pointer;
 }
 
 .circle:hover {
-    transform: scale(1.2);
-    border-color: var(--mint);
-    color: var(--blue);
-    font-size: 3rem;
+    transform: scale(1.25);
 }
 
 .circle-container {
@@ -161,7 +132,7 @@ h3 span {
     top: 10vh;
     left: 40vw;
     width: 50vw;
-    height: 80vh;
+    height: 60vh;
     transition: all 1s ease-in 0s;
 }
 
@@ -191,19 +162,14 @@ h3 span {
     color: var(--mint);
 }
 
-.proj-item:hover > .overlay {
-    opacity: 1;
-}
-
 .small-pt {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .medium-pt {
-    width: 2.5rem;
-    height: 2.5rem;
-    /* display: inline; */
+    width: 3rem;
+    height: 3rem;
 }
 
 .large-pt {
@@ -212,37 +178,18 @@ h3 span {
 }
 
 .star-s {
-    font-size: 1.8rem !important;
-}
-
-.star-m {
     font-size: 2.5rem !important;
 }
 
-.star-l {
+.star-m {
     font-size: 3rem !important;
 }
 
-li:hover > .thumb {
-    opacity: 1;
+.star-l {
+    font-size: 3.5rem !important;
 }
 
-.thumb {
-    height: 200px;
-    width: auto;
-    opacity: 0;
-    position: absolute;
-    top: -100px;
-    right: 2rem;
-    z-index: -10;
-    transition: all .25s linear 0s;
-    overflow: hidden;
-}
 
-.thumb img {
-    height: 100%;
-    width: auto;
-}
 
 @media (max-width: 1875px) {
     .linebreak {
@@ -309,4 +256,16 @@ li:hover > .thumb {
         display: none;
     }
 
+}
+
+@media (max-height: 1275px) {
+    .circle-container {
+        height: 925px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .circle-container {
+        top: 0;
+    }
 }
