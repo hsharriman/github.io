@@ -16,14 +16,6 @@ h2 {
     left: calc(65vw + 2rem) !important;
 }
 
-#next { 
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    z-index: 3;
-    cursor: pointer;
-}
-
 .left-section {
     width: 65vw;
     height: auto;
@@ -32,12 +24,12 @@ h2 {
 
 #right-section {
     width: calc(100% - 65vw - var(--margin));
-    height: 100vh;
-    position: fixed;
+    height: auto;
+    position: absolute;
     top: 0;
     right: 2rem;
-    padding-top: var(--margin);
-    overflow: auto;
+    margin-top: var(--margin);
+    overflow: visible;
 }
 
 .tags {
@@ -68,11 +60,6 @@ h2 {
     height: auto;
     position: relative;
     overflow: hidden;
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 .body {

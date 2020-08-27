@@ -56,11 +56,6 @@ h2 {
     padding-bottom: 2rem;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 .body {
     font-family: var(--body);
     font-size: 1.6rem;

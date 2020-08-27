@@ -1,8 +1,6 @@
 function onload(fades) {
     fadeIn(fades);
     let circleManager = new CircleManager();
-    document.addEventListener('scroll', hideToTop);
-
 }
 
 function fadeIn(fades) {
@@ -76,15 +74,6 @@ function sparkle() {
         duration: 3000,
         easing: 'ease-in'
     });
-}
-
-function hideToTop() {
-    let link = document.getElementById('links');
-    if (Math.round(window.scrollY) < 5) {
-        link.style.opacity = '0';
-    } else if (link.style.opacity == 0 && window.scrollY > 5) {
-        link.style.opacity = '1';
-    }
 }
 
 document.onreadystatechange = function() { 

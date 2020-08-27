@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/hsharriman/hsharriman.github.io/issues"
   },
-  "homepage": "https://github.com/hsharriman/hsharriman.github.io#readme"
+  "homepage": "https://github.com/hsharriman/hsharriman.github.io#readme",
+  "dependencies": {}
 }
