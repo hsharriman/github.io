@@ -1,6 +1,6 @@
 function onload() {
     setGalleryHeight();
-    document.addEventListener("resize", setGalleryHeight);
+    window.addEventListener("resize", setGalleryHeight);
     fadeIn();
 }
 

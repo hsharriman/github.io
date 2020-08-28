@@ -20,15 +20,8 @@
     width: 65vw;
 }
 
-.imgnoborder {
-    width: 65vw;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
 .minigallery {
-    padding-top: calc(100% - var(--margin));
+    padding-top: calc(80% - var(--margin));
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -81,6 +74,11 @@
         padding-left: 6rem;
         padding-top: 8rem;
     }
+
+    .minigallery {
+        padding-top: 5rem;
+    }
+
     .img {
         width: 100vw;
     }
@@ -100,6 +98,11 @@
     #right-section {
         width: calc(100vw - 6rem);
         padding-left: 3rem;
+    }
+
+    .thumb {
+        width: 75px;
+        height: 75px;
     }
 
     h2 {
