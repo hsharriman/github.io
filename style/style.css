@@ -42,7 +42,7 @@ h1 {
     font-size: 16rem;
     text-align: left;
     margin: 0;
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-left: var(--margin);
     letter-spacing: -2.5rem;
     line-height: 18rem;
@@ -116,7 +116,7 @@ h2 span {
 
 .circle {
     position: absolute;
-    transition: all .5s ease-in 0s;
+    transition: all .25s ease-in 0s;
     font-family: var(--mono);
     color: var(--circle-color);
     font-weight: 700;
@@ -133,7 +133,7 @@ h2 span {
     left: 40vw;
     width: 50vw;
     height: 60vh;
-    transition: all 1s ease-in 0s;
+    transition: all .5s ease-in 0s;
 }
 
 
