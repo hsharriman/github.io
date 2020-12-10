@@ -1,0 +1,3 @@
+[submodule "core-interaction"]
+	path = core-interaction
+	url = https://github.com/hsharriman/core-interaction
