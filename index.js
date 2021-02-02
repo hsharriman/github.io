@@ -63,7 +63,7 @@ class CircleManager {
 
 function sparkle() {
     let colors = ['var(--blue)', 'var(--mint)', 'var(--purple)', 'var(--red)', 'var(--pink)'];
-    let index = Math.floor(Math.random() * 69);
+    let index = Math.floor(Math.random() * 41);
     let letter = document.getElementById(index.toString());
     let ogColor = letter.style.color;
     let sparkleColor = colors[Math.floor(Math.random() * 5)];

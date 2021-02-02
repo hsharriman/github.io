@@ -37,9 +37,9 @@ h1 {
 h2 {
     font-family: var(--mono);
     padding-left: var(--margin);
-    letter-spacing: -.75rem;
+    letter-spacing: -.25rem;
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: left;
     padding-bottom: 1rem;  
 }
@@ -56,7 +56,7 @@ a {
     color: var(--mint);
     text-decoration: none;
     font-family: var(--mono);
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 700;
     cursor: pointer !important;

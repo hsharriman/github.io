@@ -19,7 +19,7 @@ p {
 }
 
 .tags {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--blue);
     font-weight: 300;
     font-family: var(--mono);
@@ -27,7 +27,7 @@ p {
 }
 
 .year {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--mint);
     font-weight: 300;
     font-family: var(--mono);
