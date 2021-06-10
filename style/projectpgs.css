@@ -21,11 +21,13 @@
 }
 
 .minigallery {
-    padding-top: calc(80% - var(--margin));
+    /* padding-top: calc(70% - var(--margin)); */
+    padding-top: 7rem;
+    /* top: calc(100% - var(--margin)); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
+    /* position: absolute; */
 }
 
 .thumb {

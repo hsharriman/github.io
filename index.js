@@ -1,4 +1,5 @@
-function onload() {
+function onload(txtPath) {
+    loadText(txtPath);
     setGalleryHeight();
     window.addEventListener("resize", setGalleryHeight);
     fadeIn();
@@ -9,7 +10,8 @@ function onloadHome() {
     fadeIn();
 }
 
-function onloadTextOnly() {
+function onloadTextOnly(txtPath) {
+    loadText(txtPath);
     fadeIn();
 }
 
@@ -84,6 +86,12 @@ function setGalleryHeight() {
         pics.style.top = `${textEnd + 100}px`;
         console.log(pics.style.top);
     }
+}
+
+function loadText(md) {
+    let converter = new showdown.Converter();
+    let html = converter.makeHtml(md);
+    document.getElementById('txt-container').innerHTML = html;
 }
 
 document.onreadystatechange = function() { 

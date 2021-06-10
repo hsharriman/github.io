@@ -20,7 +20,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    max-width: 80vw;
+    align-items: start;
+    width: 90vw;
     margin: 0;
 }
 .column {

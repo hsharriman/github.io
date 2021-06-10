@@ -18,14 +18,6 @@ p {
     max-width: 450px;
 }
 
-.tags {
-    font-size: 1.2rem;
-    color: var(--blue);
-    font-weight: 300;
-    font-family: var(--mono);
-    padding-bottom: 3rem;
-}
-
 .year {
     font-size: 1.6rem;
     color: var(--mint);
@@ -86,10 +78,6 @@ p {
 
     .hyperlink {
         font-size: 1.6rem;
-    }
-
-    .tags {
-        padding-bottom: 2.5rem;
     }
 
     p {
