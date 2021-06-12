@@ -89,6 +89,10 @@ h2 span {
     vertical-align: top;
 }
 
+.subtitle .dash {
+    display: inline;
+}
+
 .blue:hover {
     transition: color 0s;
     color: var(--blue) !important;
@@ -230,6 +234,9 @@ h2 span {
     .about-text {
         max-width: 90vw;
     }
+    .subtitle {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 925px) {
@@ -247,6 +254,9 @@ h2 span {
     #contact a {
         font-size: 1.4rem;
     }
+    .subtitle {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -256,7 +266,12 @@ h2 span {
     .circle-container {
         display: none;
     }
+}
 
+@media (max-width: 575px) {
+    .subtitle .dash {
+        display: none;
+    }
 }
 
 @media (max-height: 1275px) {

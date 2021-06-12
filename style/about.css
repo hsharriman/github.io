@@ -1,9 +1,13 @@
+@import url(./index.css);
 /* ABOUT SECTION */
-#about-container {
-    padding: var(--margin);
+#about-container {  
     text-align: left !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95vw;
+    padding-bottom: 10rem;
 }
-
 #about-img {
     display: flex;
     width: 300px;
@@ -17,13 +21,67 @@
 }
 
 .about-text {
-    max-width: 1200px;
-    padding-bottom: 10rem;
+    padding-right: 2rem;    
 }
 
 #about-section p {
     margin-top: 0;
     max-width: 1200px;
+}
+
+.about-bullet {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    font-size: 1.6rem;
+    color: white;
+    font-family: var(--mono);
+}
+
+.about-bullet img {
+    height: 100%;
+    width: auto;
+    /* width: 25px;
+    height: 25px; */
+    padding-right: 1rem;
+}
+
+.about-bullet ul {
+    list-style-image: url(../img/cursors/pt1purple.gif);
+    padding-left: 3rem;
+    margin-top: 0;
+}
+
+.about-bullet li {
+    font-size: 1.6rem;
+    color: white;
+    font-family: var(--body);
+    font-weight: 500;
+    padding-bottom: 0;
+}
+
+.about-bullet li:hover {
+    cursor: cell;
+}
+
+.about-bullet span {
+    color: var(--pink);
+    font-weight: bold;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.about-bullet .yr {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    color: var(--purple);
+}
+
+.about-subhead {
+    color: var(--blue);
+    font-size: 2.4rem;
+    font-family: var(--mono);
+    font-weight: bold;
 }
 
 

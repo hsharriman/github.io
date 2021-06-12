@@ -68,6 +68,7 @@ li:hover > .thumb {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: var(--margin);
+    margin-top: 5rem;
     max-width: 1600px;
 }
 .software ul {
@@ -83,7 +84,7 @@ li:hover > .thumb {
     width: auto;
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     ul {
         padding-left: 3rem;
     }
@@ -97,6 +98,12 @@ li:hover > .thumb {
 
     .thumb {
         height: 125px;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        font-size: 1.8rem;
     }
 }
 

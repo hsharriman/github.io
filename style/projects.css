@@ -20,8 +20,8 @@ p {
 
 .year {
     font-size: 1.6rem;
-    color: var(--mint);
-    font-weight: 300;
+    color: var(--purple);
+    font-weight: bold;
     font-family: var(--mono);
 }
 

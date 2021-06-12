@@ -88,7 +88,7 @@
         width: 100vw;
         height: auto;
         position: absolute;
-        top: 50rem;
+        top: 500px;
         left: 0;
     }
     h2 {
@@ -96,10 +96,23 @@
     }
 }
 
+@media (max-width: 800px) {
+    #right-section {
+        width: 97vw;
+        padding-left: 1rem;
+    }
+    p {
+        margin-right: 2rem;
+        width: 97%;
+    }
+    .left-section {
+        top: 95vh !important;
+    }
+}
+
 @media (max-width: 500px) {
     #right-section {
         width: calc(100vw - 6rem);
-        padding-left: 3rem;
     }
 
     .thumb {
