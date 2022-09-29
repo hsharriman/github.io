@@ -1,126 +1,130 @@
-@import './projects.css';
+@import "./projects.css";
 
 .left-section {
-    width: 65vw;
-    height: auto;
-    background-color: black;
+  width: 65vw;
+  height: auto;
+  background-color: black;
 }
 
 #right-section {
-    width: calc(100% - 65vw - var(--margin));
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 2rem;
-    margin-top: var(--margin);
-    overflow: visible;
+  width: calc(100% - 65vw - var(--margin));
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  margin-top: var(--margin);
+  overflow: visible;
 }
 
 .img {
-    width: 65vw;
+  width: 65vw;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
 }
 
 .minigallery {
-    /* padding-top: calc(70% - var(--margin)); */
-    padding-top: 7rem;
-    /* top: calc(100% - var(--margin)); */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* position: absolute; */
+  /* padding-top: calc(70% - var(--margin)); */
+  padding-top: 7rem;
+  /* top: calc(100% - var(--margin)); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* position: absolute; */
 }
 
 .thumb {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all .5s ease-in 0s;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in 0s;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    transition: .5s ease-in;
-    background-color: rgba(4, 3, 24, 0.85);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0.5s ease-in;
+  background-color: rgba(4, 3, 24, 0.85);
 }
 
 .thumb:hover > .overlay {
-    opacity: 0;
+  opacity: 0;
 }
 
-
-
 @media (max-width: 1500px) {
-    #right-section {
-        width: calc(100% - 65vw - 5rem);
-    }
-    h2 {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-    }
+  #right-section {
+    width: calc(100% - 65vw - 5rem);
+  }
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
 }
 
 @media (max-width: 1000px) {
-    #right-section {
-        width: calc(100vw - 10rem);
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding-left: 6rem;
-        padding-top: 8rem;
-    }
+  #right-section {
+    width: calc(100vw - 10rem);
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 6rem;
+    padding-top: 8rem;
+  }
 
-    .minigallery {
-        padding-top: 5rem;
-    }
+  .minigallery {
+    padding-top: 5rem;
+  }
 
-    .img {
-        width: 100vw;
-    }
-    .left-section {
-        width: 100vw;
-        height: auto;
-        position: absolute;
-        top: 500px;
-        left: 0;
-    }
-    h2 {
-        font-size: 3rem;
-    }
+  .img {
+    width: 100vw;
+  }
+  .left-section {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    left: 0;
+  }
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 800px) {
-    #right-section {
-        width: 97vw;
-        padding-left: 1rem;
-    }
-    p {
-        margin-right: 2rem;
-        width: 97%;
-    }
-    .left-section {
-        top: 95vh !important;
-    }
+  #right-section {
+    width: 97vw;
+    padding-left: 1rem;
+  }
+  p {
+    margin-right: 2rem;
+    width: 97%;
+  }
+  .left-section {
+    top: 95vh !important;
+  }
 }
 
 @media (max-width: 500px) {
-    #right-section {
-        width: calc(100vw - 6rem);
-    }
+  #right-section {
+    width: calc(100vw - 6rem);
+  }
 
-    .thumb {
-        width: 75px;
-        height: 75px;
-    }
+  .thumb {
+    width: 75px;
+    height: 75px;
+  }
 
-    h2 {
-        font-size: 2rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 }

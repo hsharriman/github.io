@@ -105,11 +105,35 @@ The project may be cloned and run locally [here](https://github.com/hsharriman/I
 
 const yagp_proj_text = `Designed and created an interactive data visualization in Tableau using data from Youth America Grand Prix's website. Created as part of my final project for the SP'20 offering of Data Visualization and Aesthetics, a graduate course at Parsons School of Design.
 
-Feel free to interact with the web-embdedded version to the left, or visit 
-[Tableau Public](https://public.tableau.com/views/WherearetheTopYAGPWinnersGettingTheirTrainingStory/Story1?:language=en&:display_count=y&:origin=viz_share_link) to see the published viz.`;
+You can find the full, interactive viz on 
+[Tableau Public](https://public.tableau.com/views/WherearetheTopYAGPWinnersGettingTheirTrainingStory/Story1?:language=en&:display_count=y&:origin=viz_share_link).`;
 
 const airpartners_proj_text = `Air Partners is a nonprofit organization run by Scott Hersey, PhD, that is involved with several communities in and around East Boston. The work of the organization is focused on policy and advocacy work to help "airproof" local communities, by providing meaningful air quality data through sensors installed strategically around the communities. For a community to be airproofed, it must be aware of the negative health effects of ultrafine particles, have access to indoor filtration (like HEPA filters), and have strategies to reduce exposure to ultrafine particles through democratized air quality data.
 
 As part of my senior capstone, I have automated the data cleaning and visualization process of air quality data coming from sensors installed around Revere, MA, and these visualizations are being used to inform Revere's strategic plan. The source code for this project can be found on [Github](https://github.com/airpartners/data-analysis).
 
 This project is a work-in-progress, so check back in a few months for updates.`;
+
+const penrose_proj_text = `Link to the paper: [PDF](../img/research/edgeworth.pdf).
+
+Edgeworth was a research project I created as part of my research internship at Penrose, a PhD project at Carnegie Mellon that generates math diagrams using plain text. Edgeworth mutates Penrose diagrams in various ways to create alternate plausible diagrams for use in a multiple choice format. This research was published and presented at ACM SPLASH 2021 as part of the Student Research Competition, where it won first place in the undergraduate division. It was also a grand finalist entry at the annual ACM Student Research Competition Grand Finals.
+
+Check out the video of the talk I gave at ACM SPLASH on the left for an overview of the research, or on [Youtube](https://youtu.be/fjcXR4SgNNw). You can also check out the poster I used during the first phase of the competition.
+
+I used Typescript to do all of the program mutation work, Penrose to create the diagrams, and React to build the Edgeworth user interface.
+
+The abstract for the paper:
+
+"Building connections between mathematical expressions and their visual representations increases conceptual understanding and flexibility. However, students rarely practice visualizing abstract mathematical relationships because developing diagrammatic problems is challenging for problem authors.
+
+We introduce Edgeworth, a system that automatically generates correct and incorrect diagrams by mutating a given prompt program. We show that Edgeworth can produce diagrammatic problems with minimal author input by recreating problems in a widely used geometry textbook."`;
+
+const clew3d_proj_text = `Link to the published extended abstract: [PDF](../img/research/clew3d/clew3d_published.pdf).
+
+For individuals who are blind or visually impaired (BVI), the ability to learn navigation routes is critical for their day-to-day activities. Certfied Orientation and Mobility specialists (COMS) work with individuals who are BVI to create routes that can be internalized using specific techniques and language.
+
+This project involved building an extension of Clew, an App available on the App Store used by indiviudals who are BVI and COMS to record and replay navigation routes using the camera's smartphone and built-in sensor kit. The extension leveraged the LIDAR scanner in recent generation iPhones and iPads to capture improved spatial data as well as contextual information about the user's environment during the recording phase. This information is then processed and an auto-generated step-by-step route is incrementally replayed to the user as they navigate their environment. 
+
+I used Swift and ARKit to capture and export the data, Firebase to store the data, and Python to process the data and generate a route narration. I also collaborated with multiple certified O&M specialists throughout the process.
+
+This research was published as part of the ACM ASSETS'21 conference in the poster and demo track. A 1 minute summary video is available on this page, or on [Youtube](https://youtu.be/umTFni_0Bcg). The slides I used for the demo are also available [here](https://docs.google.com/presentation/d/1YMjBeK-KNyID51KiyR0z-tliyOp6NqE_jQWjB3NSC_8/edit?usp=sharing).`;
