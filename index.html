@@ -22,66 +22,13 @@
     <div id="shadow"></div>
     <div id="page-container">
       <div id="landing-pg">
-        <h1 class="fade">
-          <span class="blue" id="0">H</span>
-          <span class="blue" id="1">W</span>
-          <span class="pink" id="2">E</span>
-          <span class="purple" id="3">I</span>
-          <span class="secondlinebreak"><br /></span>
-          <span class="purple" id="4">-</span>
-          <span class="mint" id="5">S</span>
-          <span class="red" id="6">H</span>
-          <span class="blue" id="7">I</span>
-          <span class="mint" id="8">N</span>
-          <span class="linebreak"><br /></span>
-          <span class="mint" id="9">H</span>
-          <span class="pink" id="10">A</span>
-          <span class="red" id="11">R</span>
-          <span class="red" id="12">R</span>
-          <span class="secondlinebreak"
-            ><span class="purple">-</span><br
-          /></span>
-          <span class="mint" id="13">I</span>
-          <span class="blue" id="14">M</span>
-          <span class="purple" id="15">A</span>
-          <span class="purple" id="16">N</span>
-        </h1>
-        <h2 class="fade">
-          <span class="blue" id="17">S</span>
-          <span class="purple" id="18">o</span>
-          <span class="mint" id="19">f</span>
-          <span class="pink" id="20">t</span>
-          <span class="blue" id="21">w</span>
-          <span class="mint" id="22">a</span>
-          <span class="pink" id="23">r</span>
-          <span class="red" id="24">e</span>
-          <span>&nbsp;</span>
-          <span class="red" id="25">E</span>
-          <span class="blue" id="26">n</span>
-          <span class="blue" id="27">g</span>
-          <span class="red" id="28">i</span>
-          <span class="pink" id="29">n</span>
-          <span class="purple" id="30">e</span>
-          <span class="mint" id="31">e</span>
-          <span class="red" id="32">r</span>
-          <span>&nbsp;</span>
-          <span class="mint" id="33">&</span>
-          <span>&nbsp;</span>
-          <span class="secondlinebreak"></span>
-          <span class="mint" id="34">D</span>
-          <span class="purple" id="35">e</span>
-          <span class="blue" id="36">s</span>
-          <span class="purple" id="37">i</span>
-          <span class="pink" id="38">g</span>
-          <span class="mint" id="39">n</span>
-          <span class="red" id="40">e</span>
-          <span class="pink" id="41">r</span>
-        </h2>
+        <h1 class="fade" id="landing-name"></h1>
+        <h2 class="fade" id="landing-subtitle"></h2>
         <div class="circle-container">
           <div
             id="circle0"
             class="circle star-l"
-            onclick="window.location.href='#engineering'"
+            onclick="window.location.href='#projects'"
           >
             <img
               class="large-pt"
@@ -92,7 +39,7 @@
           <div
             id="circle1"
             class="circle star-l"
-            onclick="window.location.href='#design'"
+            onclick="window.location.href='#projects'"
           >
             <img
               class="large-pt"
@@ -158,20 +105,7 @@
         </div>
       </div>
       <div class="scrollTo" id="about"></div>
-      <h3 class="fade">
-        <span class="blue" id="42">A</span>
-        <span class="red" id="43">B</span>
-        <span class="pink" id="44">O</span>
-        <span class="purple" id="45">U</span>
-        <span class="purple" id="46">T</span>
-        <span class="mint" id="47">&nbsp;</span>
-        <span class="purple" id="48">M</span>
-        <span class="pink" id="49">E</span>
-        <span class="red" id="50">&mdash;</span>
-        <span class="purple" id="51">&mdash;</span>
-        <span class="mint" id="52">&mdash;</span>
-        <span class="blue" id="53">&mdash;</span>
-      </h3>
+      <h3 class="fade" id="about-title"></h3>
       <div class="column-container">
         <div class="columns">
           <div id="about-section">
@@ -296,33 +230,13 @@
         </div>
       </div>
 
-      <div class="scrollTo" id="engineering"></div>
-      <h3 class="fade">
-        <span class="blue" id="54">P</span>
-        <span class="red" id="55">R</span>
-        <span class="pink" id="56">O</span>
-        <span class="purple" id="57">J</span>
-        <span class="secondlinebreak"></span>
-        <span class="purple" id="58">E</span>
-        <span class="mint" id="59">C</span>
-        <span class="red" id="60">T</span>
-        <span class="blue" id="61">S</span>
-        <span class="mint" id="62">&mdash;</span>
-        <span class="purple" id="63">&mdash;</span>
-        <span class="pink" id="64">&mdash;</span>
-        <span class="red" id="65">&mdash;</span>
-      </h3>
-      <div class="column-container">
+      <div class="scrollTo" id="publications"></div>
+      <h3 class="fade" id="publications-title"></h3>
+      <div class="column-container" style="margin-bottom: 0">
         <div class="columns">
           <div class="research">
-            <div class="scrollTo" id="publications"></div>
-            <div class="subtitle" style="color: var(--blue)">
-              <img class="subtitle-pt" src="img/cursors/pt2.gif" alt="" />
-              Research Publications
-              <span class="dash" style="color: var(--blue)">-----------</span>
-            </div>
             <ul id="other">
-              <li onclick="window.location.href='research/penrose.html'">
+              <li onclick="window.location.href='research/edgeworth.html'">
                 Edgeworth: Authoring Diagrammatic Math Problems using Program
                 Mutation
                 <div class="tools">
@@ -345,9 +259,13 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="scrollTo" id="projects"></div>
+      <h3 class="fade" id="projects-title"></h3>
+      <div class="column-container">
         <div class="columns">
           <div class="software">
-            <div class="scrollTo"></div>
             <div class="subtitle" style="color: var(--pink)">
               <img class="subtitle-pt" src="img/cursors/pt2pink.gif" alt="" />
               Software Projects
@@ -383,20 +301,16 @@
                 <div class="tools">Firmware<br />Fall, 2018</div>
                 <div class="thumb"><img src="img/wisp2.gif" alt="" /></div>
               </li> -->
-              <!-- <li onclick="window.location.href='engr/robolympics.html'">
-                              Robolympics: PID Control Loop
-                              <div class="tools">
-                                  Firmware, Controls<br>Fall, 2018
-                              </div>
-                              <div class="thumb"><img src="img/pid.png" alt=""></div>
-                          </li>
-                          <li onclick="window.location.href='engr/ransac.html'">
-                              Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent
-                              <div class="tools">
-                                  Mapping, Perception<br>Fall, 2018
-                              </div>
-                              <div class="thumb"><img src="img/ransac.png" alt=""></div>
-                          </li> -->
+              <li onclick="window.location.href='engr/robolympics.html'">
+                Robolympics: PID Control Loop
+                <div class="tools">Firmware, Controls<br />Fall, 2018</div>
+                <div class="thumb"><img src="img/pid.png" alt="" /></div>
+              </li>
+              <li onclick="window.location.href='engr/ransac.html'">
+                Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent
+                <div class="tools">Mapping, Perception<br />Fall, 2018</div>
+                <div class="thumb"><img src="img/ransac.png" alt="" /></div>
+              </li>
               <li onclick="window.location.href='engr/faces.html'">
                 Eigenface & Bayesian Facial Recognition
                 <div class="tools">Computer Vision <br />Spring, 2018</div>
@@ -419,7 +333,6 @@
             </ul>
           </div>
           <div class="list-section">
-            <div class="scrollTo" id="design"></div>
             <div class="subtitle-container">
               <div class="subtitle">
                 <img class="subtitle-pt" src="img/cursors/pt2mint.gif" alt="" />

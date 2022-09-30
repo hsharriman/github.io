@@ -43,7 +43,7 @@ h1 {
   margin: 0;
   padding-top: 0rem;
   padding-left: var(--margin);
-  letter-spacing: -2.5rem;
+  letter-spacing: 3.5rem;
   line-height: 18rem;
 }
 
@@ -56,16 +56,16 @@ span {
 }
 
 .linebreak {
-  display: inline;
+  display: none;
 }
 
 .secondlinebreak {
-  display: inline;
+  display: none;
 }
 
 h2 span {
   color: var(--blue);
-  letter-spacing: -1rem;
+  letter-spacing: 0.75rem;
 }
 
 .subtitle-container {
@@ -238,6 +238,10 @@ h2 span {
 @media (max-width: 925px) {
   .secondlinebreak {
     display: inline;
+  }
+  #landing-pg {
+    justify-content: start;
+    margin-top: 10rem;
   }
 }
 
