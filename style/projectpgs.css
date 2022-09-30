@@ -16,6 +16,12 @@
   overflow: visible;
 }
 
+ul {
+  list-style-image: url(../img/cursors/pt1purple.gif);
+  padding-left: 3rem;
+  margin-top: 0;
+}
+
 .img {
   width: 65vw;
 }

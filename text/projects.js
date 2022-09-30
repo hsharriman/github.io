@@ -2,7 +2,7 @@ const ballet_proj_text = `Collected and visualized data of my years as a balleri
 
 This project was created for "Tell the Story of What You Make", a design course offered at Olin College of Engineering. The prompt was to create a poster based on the Feltron reports using our own personal dataset.  
 
-As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences. The results are synthesized in the poster to the left.
+As someone who pursued professional ballet through childhood and adolescence, I felt that this project would be a good way to reflect on my time and experiences.
 `;
 const disney_proj_text = `Researched, designed, and illustrated a semi-finalist entry to the 29th Annual Walt Disney Imagineering Imaginations Design Competition.  
 
@@ -32,14 +32,19 @@ In our experience, sometimes the hardest part of starting a project in a new spa
 
 The goal of this project was to create a tool that would make it easy for interested individuals to familiarize themselves with a new concept. Using topic modeling, we can take a concept word and present a list of keywords and resources that could help a user gain a broader understanding of the topic they originally searched. For example, if the keyword "machine learning" is entered, some possible results would be "weight, network, layer, backpropagation, etc.", accompanied by "introductory" resources like Wikipedia and various Medium post tutorials.`;
 
-const mnist_proj_text = `Programmed two neural networks using only Python and Numpy to recognize handwritten digits as part of my final project for the FA'18 offering of Quantitative Engineering Analysis at Olin College of Engineering.
+const mnist_proj_text = `For my final project for the FA'18 offering of Quantitative Engineering Analysis at Olin College of Engineering, I did a deep dive convolutional neural networks. Throughout this process I created several deliverables, including: 
+
+* A problem set (and solution set) for my classmates to learn neural network fundamentals, including terminology, sigmoid functions, multivariable chain rule, and iterative gradient descent. The problem set included provides about 3.5 to 4 hours of material, and starter code in a Jupyter notebook. Here are links for the [lesson plan](https://github.com/hsharriman/QEA/blob/master/reports/QEAHomework.pdf) and [companion notebook](https://github.com/hsharriman/QEA/blob/master/QEA%20Night%20Assignment.ipynb).
+
+* Two separate neural networks, a feedforward ([code](https://github.com/hsharriman/QEA/blob/master/ff2.py)) and a convolutional neural network ([code](https://github.com/hsharriman/QEA/blob/master/CNN.ipynb)), using only Python and Numpy to recognize handwritten digits. In addition to implementing a feedforward and convolutional network, I also implemented dataset pre-processing, batch and epoch capabilities, incremental testing, as well as saving and loading checkpoints.
+
+* A [technical write-up](https://github.com/hsharriman/QEA/blob/master/reports/QEAReport.pdf) detailing the concepts, process, and analysis used throughout the project.
+
+* A short presentation introducing my classmates to my project its key outcomes.
 
 This project is meant to be a deep exploration into the math behind neural networks, specifically convolutional neural networks. As such, there is no use of high-level packages such as Pytorch or Tensorflow, since the goal was to understand the math that drives these powerful tools. My implementation was able to achieve 89% accuracy on the test set.
 
-In addition to implementing a feedforward and convolutional network, I also implemented dataset pre-processing, 
-batch and epoch capabilities, incremental testing, as well as saving and loading checkpoints.
-
-The link to the source code, as well as the technical write-up detailing the theory, implementation, and analysis necessary to complete this project can be found [here](https://github.com/hsharriman/qea).`;
+All of the code and materials can be found on [Github](https://github.com/hsharriman/QEA)`;
 
 const moma_proj_text = `Designed an alternative branding concept for Neri Oxman's exhibit at the MoMA for the SP'20 offering of Advanced Typography at Parsons School of Design. The final product involved a poster and wall graphic.
 
@@ -118,7 +123,7 @@ const penrose_proj_text = `Link to the paper: [PDF](../img/research/edgeworth.pd
 
 Edgeworth was a research project I created as part of my research internship at Penrose, a PhD project at Carnegie Mellon that generates math diagrams using plain text. Edgeworth mutates Penrose diagrams in various ways to create alternate plausible diagrams for use in a multiple choice format. This research was published and presented at ACM SPLASH 2021 as part of the Student Research Competition, where it won first place in the undergraduate division. It was also a grand finalist entry at the annual ACM Student Research Competition Grand Finals.
 
-Check out the video of the talk I gave at ACM SPLASH on the left for an overview of the research, or on [Youtube](https://youtu.be/fjcXR4SgNNw). You can also check out the poster I used during the first phase of the competition.
+Check out the video of the talk I gave at ACM SPLASH for an overview of the research here or on [Youtube](https://youtu.be/fjcXR4SgNNw). You can also check out the poster I used during the first phase of the competition.
 
 I used Typescript to do all of the program mutation work, Penrose to create the diagrams, and React to build the Edgeworth user interface.
 
