@@ -119,7 +119,7 @@ As part of my senior capstone, I have automated the data cleaning and visualizat
 
 This project is a work-in-progress, so check back in a few months for updates.`;
 
-const penrose_proj_text = `Link to the paper: [PDF](../img/research/edgeworth.pdf).
+const penrose_proj_text = `Link to the paper: [PDF](../img/research/edgeworth/edgeworth.pdf).
 
 Edgeworth was a research project I created as part of my research internship at Penrose, a PhD project at Carnegie Mellon that generates math diagrams using plain text. Edgeworth mutates Penrose diagrams in various ways to create alternate plausible diagrams for use in a multiple choice format. This research was published and presented at ACM SPLASH 2021 as part of the Student Research Competition, where it won first place in the undergraduate division. It was also a grand finalist entry at the annual ACM Student Research Competition Grand Finals.
 
