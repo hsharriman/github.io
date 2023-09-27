@@ -50,6 +50,7 @@
   font-size: 1.6rem;
   color: white;
   font-family: var(--mono);
+  line-height: 3rem;
 }
 
 .about-bullet img {
