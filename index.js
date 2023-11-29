@@ -9,7 +9,7 @@ getNumSparkle = () => {
 const SPARKLE_TEXT = [
   { str: "HWEI-SHIN", containerId: "landing-name" },
   { str: "HARR-IMAN", containerId: "landing-name" },
-  { str: "Software Engineer & Designer", containerId: "landing-subtitle" },
+  { str: "PhD Student, Software Engineer & Designer", containerId: "landing-subtitle" },
   { str: "ABOUT", dashes: 1, containerId: "about-title" },
   { str: "PUBLICATIONS", dashes: 1, containerId: "publications-title" },
   { str: "PROJECTS", dashes: 1, containerId: "projects-title" },
@@ -65,6 +65,12 @@ function createSparkleLetters() {
         if (idCount === 35 || idCount === 55 || idCount === 66) {
           let lineBreak = document.createElement("span");
           lineBreak.className = "secondlinebreak";
+          lineBreak.appendChild(document.createElement("br"));
+          container.appendChild(lineBreak);
+        }
+        if (idCount === 29 || idCount === 45) {
+          let lineBreak = document.createElement("span");
+          lineBreak.className = "mobilelinebreak";
           lineBreak.appendChild(document.createElement("br"));
           container.appendChild(lineBreak);
         }
