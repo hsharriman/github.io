@@ -1,0 +1,137 @@
+@import './mobile.css';
+
+html {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+    color: white;
+    letter-spacing: normal;
+    padding-left: 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: var(--margin);
+}
+
+p {
+    padding-bottom: 1rem;
+    margin: var(--margin);
+    font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+.year {
+    font-size: 1.6rem;
+    color: var(--purple);
+    font-weight: bold;
+    font-family: var(--mono);
+}
+
+.back {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 20;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 5rem;
+    color: var(--mint);
+}
+
+.back img {
+    width: 4rem;
+    height: 4rem;
+    display: inline;
+}
+
+.hyperlink {
+    font-family: var(--body);
+    font-size: 1.6rem;
+    color: var(--mint);
+    text-decoration: underline;
+}
+
+.img {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+/* PROJECT PAGES */
+
+.left-section {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
+
+#right-section {
+  width: 100vw;
+  height: auto;
+  margin-top: var(--margin);
+  overflow: visible;
+}
+
+ul {
+  list-style-image: url(../img/cursors/pt1purple.gif);
+  padding-left: 3rem;
+  margin-top: 0;
+}
+
+.img {
+  width: 100vw;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.minigallery {
+  /* padding-top: calc(70% - var(--margin)); */
+  padding-top: 7rem;
+  /* top: calc(100% - var(--margin)); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* position: absolute; */
+}
+
+.thumb {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in 0s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0.5s ease-in;
+  background-color: rgba(4, 3, 24, 0.85);
+}
