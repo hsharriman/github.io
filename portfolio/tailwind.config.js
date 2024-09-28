@@ -1,44 +1,35 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-    colors: {
-      blue: "rgb(68, 133, 231)",
-      pink: "rgb(252, 151, 218)",
-      purple: "rgb(145, 106, 253)",
-      mint: "rgb(97, 243, 219)",
-      red: "rgb(255, 67, 67)",
-      darkblue: "rgb(32, 61, 98)",
-      backgroundblue: "rgb(8, 8, 29)",
-    },
-    fontFamily: {
-      sans: ["Noto Sans SC", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-      mono: ["IBM Plex Mono", "monospace"],
+    extend: {
+      fontFamily: {
+        notoSans: ["Noto Sans", "Helvetica", "sans-serif"],
+        notoSerif: ["Noto Serif", "Georgia", "serif"],
+        ibmMono: ["IBM Plex Mono", "monospace"],
+      },
+      colors: {
+        themeBlue: "rgb(68, 133, 231)",
+        themePink: "rgb(252, 151, 218)",
+        themePurple: "rgb(145, 106, 253)",
+        themePurpleLight: "rgb(195, 173, 255)",
+        themeMint: "rgb(97, 243, 219)",
+        themeRed: "rgb(255, 67, 67)",
+        themeDarkBlue: "rgb(32, 61, 98)",
+        themeBackgroundBlue: "rgb(8, 8, 29)",
+      },
+      // that is animation class
+      animation: {
+        fade: "fadeOut 3s ease-in",
+      },
+      // that is actual animation
+      keyframes: (theme) => ({
+        fadeOut: {
+          "0%": { backgroundColor: theme("colors.red.300") },
+          "100%": { backgroundColor: theme("colors.white") },
+        },
+      }),
     },
   },
   plugins: [],
 };
-
-// module.exports = {
-//   theme: {
-//     screens: {
-//       sm: "480px",
-//       md: "768px",
-//       lg: "976px",
-//       xl: "1440px",
-//     },
-
-//     extend: {
-//       spacing: {
-//         128: "32rem",
-//         144: "36rem",
-//       },
-//       borderRadius: {
-//         "4xl": "2rem",
-//       },
-//     },
-//   },
-// };
