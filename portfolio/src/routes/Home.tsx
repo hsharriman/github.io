@@ -1,6 +1,10 @@
 import React from "react";
+import { ClrChangeLetter, HeaderType } from "../components/ClrChangeLetter";
+import { Header } from "../components/Header";
+import { SparkleLink, SparkleLinkProps } from "../components/SparkleLink";
+import { TextHyperlink } from "../components/TextHyperlink";
+import { backgroundCSS, pageMarginCSS } from "../utils/consts";
 import {
-  hoverTextClr,
   initRandomClrArr,
   numCharsInArr,
   randomSparkleCallback,
@@ -16,14 +20,14 @@ const H2LETTERS = ["Software", "Engineer", "//", "Ph.D.", "Student"];
 const SECTIONHEADERS = ["ABOUT_", "PUBLICATIONS_", "PROJECTS_"];
 const LINKARR: SparkleLinkProps[] = [
   {
-    link: "",
+    link: "/",
     text: "Featured Projects",
     color: "pink",
     top: "top-12",
     left: "-left-12",
   },
   {
-    link: "",
+    link: "/publications",
     text: "Publications",
     color: "blue",
     top: "top-1/2",
@@ -31,15 +35,15 @@ const LINKARR: SparkleLinkProps[] = [
   },
   { link: "", text: "Resume", color: "red", top: "top-1/3", left: "left-1/2" },
   {
-    link: "",
+    link: "/",
     text: "Contact",
     color: "mint",
     top: "bottom-64",
     left: "-left-24",
   },
-  { link: "", text: "About", color: "purple", top: "top-48", left: "left-6" },
+  { link: "/", text: "About", color: "purple", top: "top-48", left: "left-6" },
   {
-    link: "",
+    link: "/illustrations",
     text: "Illustration Gallery",
     color: "purple",
     top: "bottom-24",
@@ -80,14 +84,6 @@ export class Home extends React.Component<{}, HomeState> {
     );
   }
 
-  header = () => {
-    return (
-      <div className="fixed top-0 left-0 z-10 w-screen h-20 pt-2 pl-2 bg-gradient-to-t from-transparent to-themeBackgroundBlue">
-        <img src={"/loading.gif"} alt="favicon" className="w-16 h-16" />
-      </div>
-    );
-  };
-
   sectionHeader = (text: string, idx: number = 0) => {
     return (
       <div className="my-4">
@@ -98,7 +94,6 @@ export class Home extends React.Component<{}, HomeState> {
               letter={letter}
               defaultClr="text-white"
               activeColor={this.subClrs[currIdx]}
-              id={this.numLetters + currIdx}
               type={HeaderType.H3}
               isActive={this.state.activeSubLtr[currIdx]}
             />
@@ -114,20 +109,27 @@ export class Home extends React.Component<{}, HomeState> {
         <div id="about" className="w-full grid grid-cols-2">
           <div className="col-span-1"></div>
           <div className="col-span-1">
-            <div className="text-themeMint font-ibmMono text-2xl">
+            <div className="text-white font-ibmMono text-l">
               <p>
-                I am a 2nd year Ph.D. student in Software Engineering at
-                Carnegie Mellon University, advised by Dominik Moritz and Joshua
-                Sunshine. My experience is primarily in full stack engineering,
-                data analysis, and human-computer interaction. I am passionate
-                about making hard problems easier to
+                I am a 2nd year Ph.D. student in software engineering at
+                Carnegie Mellon University, advised by Joshua Sunshine and
+                Dominik Moritz. My experience is primarily in full stack
+                engineering, data visualization and human-computer interaction.
+                I am passionate about improving STEM education, particularly by
+                improving visual communication in learning materials (check out
+                my work on{" "}
+                <TextHyperlink link={"/publications"} text={"Publications"} />
+                <a href="research/edgeworth.html">Edgeworth</a>). I am always
+                looking for interesting ways that technology and design
+                intersect, and I care about working on projects that help
+                people.
               </p>
               <p>
-                I am currently working on a project that aims to improve the
-                performance of machine learning models by leveraging
-                domain-specific knowledge. I am also working on a project that
-                aims to improve the performance of machine learning models by
-                leveraging domain-specific knowledge.
+                Check out my <a href="img/resumesummer2022.pdf">resume</a> for
+                more detailed descriptions of my professional experience and
+                qualifications, and my
+                <a href="#engineering">project gallery</a> to learn more about
+                some of the projects I have worked on.
               </p>
             </div>
           </div>
@@ -202,7 +204,6 @@ export class Home extends React.Component<{}, HomeState> {
                     letter={letter}
                     defaultClr="text-white"
                     activeColor={this.clrs[i]}
-                    id={i}
                     type={HeaderType.H1}
                     isActive={this.state.active[i]}
                   />
@@ -225,7 +226,6 @@ export class Home extends React.Component<{}, HomeState> {
                   letter={letter}
                   defaultClr="text-themeBlue"
                   activeColor={this.clrs[i]}
-                  id={i}
                   type={HeaderType.H2}
                   isActive={this.state.active[i]}
                 />
@@ -244,10 +244,10 @@ export class Home extends React.Component<{}, HomeState> {
       return this.sectionHeader(str, newIdx);
     });
     return (
-      <>
-        {this.header()}
-        <div className="ml-16 mr-8">
-          <div className="grid grid-cols-12 grid-rows-1 pt-12 h-screen">
+      <div className={backgroundCSS}>
+        <Header />
+        <div className={pageMarginCSS}>
+          <div className="grid grid-cols-12 pt-12 grid-rows-1 h-screen">
             <div className="col-span-7" key="homepg-text">
               <div className="h-auto w-3/4">{h1Letters}</div>
               <div className=" flex flex-wrap flex-row">{h2Letters}</div>
@@ -264,73 +264,7 @@ export class Home extends React.Component<{}, HomeState> {
           {projHeader}
           {this.footer()}
         </div>
-      </>
+      </div>
     );
   }
 }
-
-export interface ClrChangeLetterProps {
-  letter: string;
-  defaultClr: string;
-  activeColor: string;
-  isActive: boolean;
-  id: number;
-  type: HeaderType;
-}
-export enum HeaderType {
-  H1 = "h1",
-  H2 = "h2",
-  H3 = "h3",
-}
-export const ClrChangeLetter = (props: ClrChangeLetterProps) => {
-  let baseCls = `font-ibmMono hover:${props.activeColor} hover:ease-out hover:duration-500 `;
-  switch (props.type) {
-    case HeaderType.H1:
-      baseCls += `text-[160px] tracking-[2rem] leading-[11rem] `;
-      break;
-    case HeaderType.H2:
-      baseCls += `text-3xl leading-4 `;
-      break;
-    case HeaderType.H3:
-      baseCls += `text-5xl uppercase tracking-[1rem] `;
-      break;
-    default:
-      break;
-  }
-  baseCls += props.isActive
-    ? props.activeColor
-    : `${props.defaultClr} ease-out duration-500`;
-  return (
-    <span className={baseCls} id={`cl-${props.id}`}>
-      {props.letter}
-    </span>
-  );
-};
-
-export interface SparkleLinkProps {
-  text: string;
-  link: string;
-  color: string;
-  top: string;
-  left: string;
-}
-export const SparkleLink = (props: SparkleLinkProps) => {
-  const hoverColor = hoverTextClr(props.color);
-  const gif = (
-    <img
-      className="w-8 h-8"
-      src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
-      alt=""
-    />
-  );
-  return (
-    <div
-      className={`absolute ${props.top} ${props.left} text-themeDarkBlue font-ibmMono flex flex-row text-3xl align-text-bottom ${hoverColor} sparklelink flex justify-between gap-5`}
-      // onClick={}
-    >
-      {gif}
-      {props.text}
-      {gif}
-    </div>
-  );
-};
