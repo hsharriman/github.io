@@ -10,6 +10,7 @@ export enum HeaderType {
   H2 = "h2",
   H3 = "h3",
   H4 = "h4",
+  H5 = "h5",
 }
 export const ClrChangeLetter = (props: ClrChangeLetterProps) => {
   let baseCls = `font-ibmMono hover:${props.activeColor} hover:ease-out hover:duration-500 `;
@@ -25,6 +26,9 @@ export const ClrChangeLetter = (props: ClrChangeLetterProps) => {
       break;
     case HeaderType.H4:
       baseCls += `text-xl tracking-[.5rem] uppercase font-medium leading-tight `;
+      break;
+    case HeaderType.H5:
+      baseCls += `text-2xl tracking-[.15rem] font-medium leading-tight `;
       break;
     default:
       break;

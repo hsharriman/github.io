@@ -1,13 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouteObject,
+  RouterProvider,
+} from "react-router-dom";
+import cv from "./assets/cv.md";
+import { PublicationPage } from "./components/PublicationPage";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import { MarkdownCV } from "./routes/CV";
 import { Home } from "./routes/Home";
 import { Illustrations } from "./routes/Illustrations";
 import { Publications } from "./routes/Publications";
+import { publications } from "./utils/consts";
 
-const router = createBrowserRouter([
+const objs: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
@@ -24,7 +32,19 @@ const router = createBrowserRouter([
     path: "/resume",
     element: "/resumesummer2022.pdf",
   },
-]);
+  {
+    path: "/cv",
+    element: <MarkdownCV mdFile={cv} />,
+  },
+];
+
+const publicationPageRoutes: RouteObject[] = publications
+  .filter((pub) => pub.links.pdf)
+  .map((pub) => {
+    return { path: pub.id, element: <PublicationPage {...pub} /> };
+  });
+
+const router = createBrowserRouter(objs.concat(publicationPageRoutes));
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

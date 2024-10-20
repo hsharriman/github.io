@@ -17,3 +17,7 @@ html {
 .sparklelink:hover {
   transform: scale(1.25);
 }
+
+.proj:hover {
+  transform: translateX(1rem);
+}

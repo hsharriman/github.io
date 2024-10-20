@@ -1,9 +1,11 @@
 import React from "react";
+import aboutMD from "../assets/about.md";
+import { About } from "../components/About";
 import { ClrChangeLetter, HeaderType } from "../components/ClrChangeLetter";
 import { Header } from "../components/Header";
+import { Publication } from "../components/Publication";
 import { SparkleLink, SparkleLinkProps } from "../components/SparkleLink";
-import { TextHyperlink } from "../components/TextHyperlink";
-import { backgroundCSS, pageMarginCSS } from "../utils/consts";
+import { backgroundCSS, pageMarginCSS, publications } from "../utils/consts";
 import {
   initRandomClrArr,
   numCharsInArr,
@@ -33,7 +35,13 @@ const LINKARR: SparkleLinkProps[] = [
     top: "top-1/2",
     left: "left-48",
   },
-  { link: "", text: "Resume", color: "red", top: "top-1/3", left: "left-1/2" },
+  {
+    link: "/cv",
+    text: "Resume",
+    color: "red",
+    top: "top-1/3",
+    left: "left-1/2",
+  },
   {
     link: "/",
     text: "Contact",
@@ -86,7 +94,7 @@ export class Home extends React.Component<{}, HomeState> {
 
   sectionHeader = (text: string, idx: number = 0) => {
     return (
-      <div className="my-4">
+      <div className="mb-4 mt-8">
         {Array.from(text).map((letter, i) => {
           const currIdx = idx + i;
           return (
@@ -107,35 +115,20 @@ export class Home extends React.Component<{}, HomeState> {
     return (
       <>
         <div id="about" className="w-full grid grid-cols-2">
-          <div className="col-span-1"></div>
-          <div className="col-span-1">
-            <div className="text-white font-ibmMono text-l">
-              <p>
-                I am a 2nd year Ph.D. student in software engineering at
-                Carnegie Mellon University, advised by Joshua Sunshine and
-                Dominik Moritz. My experience is primarily in full stack
-                engineering, data visualization and human-computer interaction.
-                I am passionate about improving STEM education, particularly by
-                improving visual communication in learning materials (check out
-                my work on{" "}
-                <TextHyperlink link={"/publications"} text={"Publications"} />
-                <a href="research/edgeworth.html">Edgeworth</a>). I am always
-                looking for interesting ways that technology and design
-                intersect, and I care about working on projects that help
-                people.
-              </p>
-              <p>
-                Check out my <a href="img/resumesummer2022.pdf">resume</a> for
-                more detailed descriptions of my professional experience and
-                qualifications, and my
-                <a href="#engineering">project gallery</a> to learn more about
-                some of the projects I have worked on.
-              </p>
+          <div className="col-span-1 text-white font-notoSans text-l">
+            <div className="font-ibmMono text-themeBlue text-2xl py-4 flex flex-row items-center gap-4">
+              <img src="/cursors/pt2blue.gif" className="h-6" />
+              Hi, I'm Hwei-Shin (sounds like "Way-Sheen").
             </div>
+            <About mdFile={aboutMD} />
           </div>
         </div>
       </>
     );
+  };
+
+  publications = () => {
+    return publications.map((p) => <Publication {...p} />);
   };
 
   footer = () => {
@@ -261,6 +254,7 @@ export class Home extends React.Component<{}, HomeState> {
           {aboutHeader}
           {this.aboutSection()}
           {pubHeader}
+          {this.publications()}
           {projHeader}
           {this.footer()}
         </div>
