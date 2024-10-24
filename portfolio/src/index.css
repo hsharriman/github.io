@@ -21,3 +21,11 @@ html {
 .proj:hover {
   transform: translateX(1rem);
 }
+
+.proj:hover > .thumb {
+  opacity: 1;
+}
+
+.thumb {
+  transition: all 0.25s linear 0s;
+}

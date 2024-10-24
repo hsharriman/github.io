@@ -4,6 +4,7 @@ import { hoverTextClr } from "../utils/random";
 export interface SparkleLinkProps {
   text: string;
   link: string;
+  scrollTo?: () => void;
   isFile?: boolean;
   color: string;
   top: string;
@@ -25,14 +26,24 @@ export const SparkleLink = (props: SparkleLinkProps) => {
       {gif}
     </>
   );
-  const css = `absolute ${props.top} ${props.left} text-themeDarkBlue font-ibmMono flex flex-row text-3xl align-text-bottom ${hoverColor} sparklelink flex justify-between gap-5`;
-  return props.isFile ? (
-    <a className={css} href={props.link} target="_blank">
-      {innerText}
-    </a>
-  ) : (
-    <NavLink className={css} to={props.link}>
-      {innerText}
-    </NavLink>
-  );
+  const css = `absolute ${props.top} ${props.left} text-themeDarkBlue font-ibmMono flex flex-row text-4xl align-text-bottom ${hoverColor} sparklelink flex justify-between gap-5`;
+  if (props.scrollTo) {
+    return (
+      <button className={css} onClick={props.scrollTo}>
+        {innerText}
+      </button>
+    );
+  } else if (props.isFile) {
+    return (
+      <a className={css} href={props.link} target="_blank">
+        {innerText}
+      </a>
+    );
+  } else {
+    return (
+      <NavLink className={css} to={props.link}>
+        {innerText}
+      </NavLink>
+    );
+  }
 };

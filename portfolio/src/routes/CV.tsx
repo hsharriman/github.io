@@ -46,7 +46,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <code
-                    className="text-end text-slate-600 font-notoSans inline-flex text-sm"
+                    className="text-end text-slate-500 font-notoSans inline-flex text-sm"
                     {...rest}
                   />
                 );

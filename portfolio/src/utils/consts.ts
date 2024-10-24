@@ -1,3 +1,4 @@
+import { ProjectItemProps } from "../components/ProjectItem";
 import { AwardType, PublicationProps } from "../components/Publication";
 
 export const backgroundCSS =
@@ -91,6 +92,7 @@ export const publications: PublicationProps[] = [
       caption:
         "Edgeworth is a diagrammatic problem authoring tool that automatically generates diagram variations from a single diagram: the author creates an example diagram (1), then Edgeworth generates a myriad of diagram variations (2), from which the author selects diagrams (3) to form a diagrammatic multiple choice problem (4).",
     },
+    thumb: "/thumbnails/edgeworththumb.png",
     abstract:
       "Building connections between mathematical expressions and their visual representations increases conceptual understanding and flexibility. However, students rarely practice visualizing abstract mathematical relationships because developing diagrammatic problems is challenging for problem authors. We introduce Edgeworth, a system that automatically generates correct and incorrect diagrams by mutating a given prompt program. We show that Edgeworth can produce diagrammatic problems with minimal author input by recreating problems in a widely used geometry textbook.",
   },
@@ -110,6 +112,11 @@ export const publications: PublicationProps[] = [
       pdf: "/pubs/assets21-clew3d.pdf",
       video: "https://youtu.be/umTFni_0Bcg?si=1skykjbiPFG3EhLT",
     },
+    teaser: {
+      img: "/pubs/clew3d/clew1.png",
+      caption: "",
+    },
+    thumb: "/thumbnails/clew3dthumb.png",
     venue: "ASSETS'21, Demo",
     abstract:
       "Certified orientation and mobility specialists (COMS) work with clients who are blind or visually impaired (BVI) to help them travel independently with confidence. Part of this process involves creating a narrative description of a route and using specific techniques to help the client internalize it. We focus on the problem of automatically generating a narrative description of an indoor route based on a recording from a smartphone.  These automatically generated narrations could be used in cases where a COMS is not available or to enable clients to independently practice routes that were originally learned with the help of a COMS. Specifically, we introduce Clew3D, a mobile app that leverages LIDAR-equipped iOS devices to identify orientation and mobility (O&M) landmarks and their relative location along a recorded route. The identified landmarks are then used to provide a spoken narration modeled after traditional O&M techniques. Our solution is co-designed with COMS and uses methods and language that they employ when creating route narrations for their clients. In addition to presenting Clew3D, we report the results of an analysis conducted with COMS regarding techniques and terminology used in traditional, in-person O&M instruction.  We also discuss challenges posed by vision-based systems to achieve automatic narrations that are reliable. Finally, we provide an example of an automatically generated route description and compare it with the same route provided by a COMS.",
@@ -121,5 +128,52 @@ export const publications: PublicationProps[] = [
       "Object classification",
       "Orientation and mobility",
     ],
+  },
+];
+
+// PROJECTS =
+export const projects: ProjectItemProps[] = [
+  {
+    title: "Ender: Interactive Two-Column Geometric Proofs",
+    color: "pink",
+    year: "2020",
+    topic: "Interactive Visualization, STEM Education",
+    thumb: "/thumbnails/ender.png",
+    link: "/ender",
+  },
+  {
+    title: "Air Partners: Data Analysis of Air Quality in Boston",
+    color: "pink",
+    year: "2021",
+    topic: "Data Visualization and Analysis",
+    thumb: "/thumbnails/airpartners.jpeg",
+    link: "/airpartners",
+    github: "https://github.com/airpartners/data-analysis",
+  },
+  {
+    title: "Swiss Modernism Poster Generator",
+    color: "pink",
+    year: "2020",
+    topic: "Web Design",
+    thumb: "/thumbnails/generator.png",
+    link: "/swiss",
+    github: "https://github.com/hsharriman/swiss",
+  },
+  {
+    title: "All About MNIST & Convolutional Neural Nets",
+    color: "pink",
+    year: "2018",
+    topic: "Machine Learning",
+    thumb: "thumbnails/cnnfull.png",
+    link: "/mnist",
+    github: "https://github.com/hsharriman/qea",
+  },
+  {
+    title: "Paletteful: Color Palette Generator",
+    color: "pink",
+    year: "2018",
+    topic: "Image Processing",
+    thumb: "/software/paletteful/crop.gif",
+    link: "/paletteful",
   },
 ];

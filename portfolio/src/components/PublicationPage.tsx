@@ -6,6 +6,7 @@ import { Header } from "./Header";
 import { PublicationProps } from "./Publication";
 import { PublicationLinks } from "./PublicationLinks";
 import { SparkleLetters } from "./SparkleLetters";
+import { SparkleLineBreak } from "./SparkleLineBreak";
 
 export class PublicationPage extends React.Component<PublicationProps> {
   constructor(props: PublicationProps) {
@@ -58,12 +59,7 @@ export class PublicationPage extends React.Component<PublicationProps> {
                 ))}
               <span className="italic">{this.props.venue}.</span>
             </div>
-            <SparkleLetters
-              text={["--------------------"]}
-              prefix="title"
-              type={HeaderType.H5}
-              defaultClr="text-white"
-            />
+            <SparkleLineBreak />
             {this.props.teaser && (
               <div className="py-2">
                 <img src={this.props.teaser.img} className="w-fit pb-1" />

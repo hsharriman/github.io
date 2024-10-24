@@ -10,8 +10,7 @@
 
 #### **Ph.D. Student in Software Engineering, Carnegie Mellon University** `2023 – present`
 
-_Advisors_: [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/), [Dominik Moritz](https://www.domoritz.de/)  
-Expected Graduation: 2028
+_Advisors_: [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/), [Dominik Moritz](https://www.domoritz.de/)
 
 #### **B.S. in Software Engineering, Olin College of Engineering** `2017 – 2021`
 
@@ -51,6 +50,12 @@ Wode Ni, Sam Estep, **Hwei-Shin Harriman**, Kenneth R. Koedinger, Joshua Sunshin
 
 ## Work Experience
 
+#### **[Carnegie Mellon University](https://www.cmu.edu/), Pittsburgh, PA** `Aug, 2022 - present`
+
+_Graduate Researcher; member of [Penrose](https://penrose.cs.cmu.edu/) group and the [Data Interaction Group](https://dig.cmu.edu)_  
+_Advisors_: [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/), [Dominik Moritz](https://www.domoritz.de/)  
+Working to make geometry proofs easier to understand using interactive visualizations and building tools to make interactive diagrams.
+
 #### **[Tableau](https://www.tableau.com/), Palo Alto, CA** `Jan, 2022 - August, 2023`
 
 _Full Stack Engineer; Collections, Teapot teams_  
@@ -69,12 +74,12 @@ Created robust data collection, cleaning, storage, analysis, and visualization p
 #### **[Tableau](https://www.tableau.com/), Palo Alto, CA** `Summer, 2020`
 
 _Fullstack Software Engineering Intern; Publishing Team_  
-Built and tested UI for Tableau’s Online AutoSave feature.
+Built and tested UI for Tableau Online's AutoSave feature. Shipped in 2022.
 
 #### **[Tableau](https://www.tableau.com/), Seattle, WA** `Summer, 2019`
 
 _Fullstack Software Engineering Intern; Dashapps Team_  
-Ported ‘Go To Sheet’ action from Tableau Desktop to Tableau’s browser-based editor.
+Ported a core feature from Tableau's editor, [‘Go To Sheet’](https://help.tableau.com/current/pro/desktop/en-us/actions_dashboards.htm) action, from Tableau Desktop to Tableau’s browser-based editor. Shipped in 2020.
 
 ---
 
@@ -84,13 +89,9 @@ Ported ‘Go To Sheet’ action from Tableau Desktop to Tableau’s browser-base
 
 Building interactive visualizations of two-column, high-school geometry proofs using Typescript/React as part of an ongoing research project to investigate whether specific visual cues can structure student focus and help to manage cognitive load.
 
-#### **Edgeworth** `2021`
+#### **Data Analysis of Air Quality in Boston** `2021`
 
-Built an extension of [Penrose](https://penrose.cs.cmu.edu/) using Typescript/React that allows authors to generate many correct and incorrect diagrams from one source diagram. The system uses program mutation to alter the semantic content of the diagram in order to create closely related alternatives. These options are useful for building diagrammatic multiple choice problems.
-
-#### **Clew3D** `2021`
-
-Built an extension to the [Clew](https://apps.apple.com/us/app/clew/id1268077870) app that leverages LIDAR data from iPhones using Swift and Python to automatically identify features in the user's environment. This environment data is used to automatically generate narrated routes resembling instructions that a human orientation and mobility (O&M) specialist would give to their client (predates ChatGPT).
+Analyzed the concentrations of dangerous ultrafine particles (UFPs) near roadways and the Logan International Airport using Python, using raw data pulled from special UFP sensors on an hourly basis. The data was used by an air quality app that notified users of the current risk of exposure to UFPs in their area. The visualizations were used to help activists and policy-makers argue for better community education about UFPs and increased government accountability.
 
 #### **Swiss Poster Generator** `2020`
 

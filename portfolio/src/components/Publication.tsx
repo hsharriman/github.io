@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { icons } from "../assets/icons";
-import { PublicationLinkProps, PublicationLinks } from "./PublicationLinks";
+import { HoverItem } from "./HoverItem";
+import { PublicationLinkProps } from "./PublicationLinks";
 
 export enum AwardType {
   HonorableMention = "Best Paper Honorable Mention",
@@ -24,12 +25,13 @@ export interface PublicationProps {
   abstract?: string;
   keywords?: string[];
   teaser?: TeaserProps;
+  thumb?: string;
 }
 
 export const Publication = (props: PublicationProps) => {
   const authors = props.authors.map((author, idx) => (
     <span
-      className={`font-notoSans whitespace-nowrap text-themePurpleLight ${
+      className={`font-notoSans whitespace-nowrap text-themeBlue ${
         author.includes("Harriman") ? "font-bold" : ""
       }`}
     >
@@ -40,20 +42,18 @@ export const Publication = (props: PublicationProps) => {
   ));
   const linkContent = (
     <>
-      <span className="font-notoSans text-white text-lg">
-        <img src="/cursors/pt1pink.gif" className="h-4 inline pr-2" />
+      <span className="font-ibmMono text-white text-xl">
+        <img src="/cursors/pt1purple.gif" className="h-4 inline pr-2" />
         {props.title}
       </span>
       <p className="flex flex-wrap break-words">
         {authors}
-        <span className="italic text-themePurpleLight">
-          {props.venue + "."}
-        </span>
+        <span className="italic text-themeBlue">{props.venue + "."}</span>
       </p>
     </>
   );
-  return (
-    <span className="flex flex-col pb-4 proj transition-all duration-500">
+  const innerContent = (
+    <span className="flex flex-col static">
       {props.links.pdf ? (
         <NavLink to={props.id}>{linkContent}</NavLink>
       ) : (
@@ -66,7 +66,7 @@ export const Publication = (props: PublicationProps) => {
             {a}
           </span>
         ))}
-      <PublicationLinks {...props.links} />
     </span>
   );
+  return <HoverItem innerContent={innerContent} thumb={props.thumb} />;
 };

@@ -6,14 +6,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import cv from "./assets/cv.md";
+import { ProjectItem } from "./components/ProjectItem";
 import { PublicationPage } from "./components/PublicationPage";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { MarkdownCV } from "./routes/CV";
 import { Home } from "./routes/Home";
 import { Illustrations } from "./routes/Illustrations";
-import { Publications } from "./routes/Publications";
-import { publications } from "./utils/consts";
+import { projects, publications } from "./utils/consts";
 
 const objs: RouteObject[] = [
   {
@@ -21,16 +21,8 @@ const objs: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "/publications",
-    element: <Publications />,
-  },
-  {
     path: "/illustrations",
     element: <Illustrations />,
-  },
-  {
-    path: "/resume",
-    element: "/resumesummer2022.pdf",
   },
   {
     path: "/cv",
@@ -44,7 +36,13 @@ const publicationPageRoutes: RouteObject[] = publications
     return { path: pub.id, element: <PublicationPage {...pub} /> };
   });
 
-const router = createBrowserRouter(objs.concat(publicationPageRoutes));
+const projectPageRoutes: RouteObject[] = projects.map((proj) => {
+  return { path: proj.link, element: <ProjectItem {...proj} /> };
+});
+
+const router = createBrowserRouter(
+  objs.concat(publicationPageRoutes).concat(projectPageRoutes)
+);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
