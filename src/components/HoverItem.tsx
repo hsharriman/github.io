@@ -7,7 +7,10 @@ export const HoverItem = (props: {
       {props.innerContent}
       {props.thumb && (
         <div className="thumb absolute opacity-0 -top-10 -right-20 -z-10 transition-all duration-500 rounded-md overflow-hidden">
-          <img src={props.thumb} className="w-auto h-[150px] opacity-50"></img>
+          <img
+            src={props.thumb}
+            className="h-0 w-0 md:w-auto md:h-[150px] md:opacity-50"
+          ></img>
         </div>
       )}
     </div>
