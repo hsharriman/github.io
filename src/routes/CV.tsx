@@ -4,7 +4,7 @@ import { MarkdownLoader } from "../components/MarkdownLoader";
 export class MarkdownCV extends MarkdownLoader {
   render() {
     return (
-      <div className="bg-slate-100 w-full h-full min-h-screen flex justify-center py-10 sm:py-10 md:max-2xl:py-20">
+      <div className="bg-slate-100 w-full h-full min-h-screen flex justify-center py-10 sm:py-10 md:py-20">
         <div className="h-3 w-full bg-themePurple absolute top-0 left-0"></div>
         <div className={`w-full px-2 lg:w-8/12 md:w-10/12 sm:w-full sm:px-2`}>
           <Markdown
@@ -13,7 +13,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <h1
-                    className="text-2xl sm:text-sm md:max-2xl:text-4xl font-semibold text-slate-800 pb-4"
+                    className="text-2xl sm:text-sm md:text-4xl font-semibold text-slate-800 pb-4"
                     {...rest}
                   />
                 );
@@ -22,7 +22,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <h2
-                    className="text-lg font-semibold text-slate-500 pb-2 sm:text-sm md:max-2xl:text-2xl"
+                    className="text-lg font-semibold text-slate-500 pb-2 sm:text-sm md:text-2xl"
                     {...rest}
                   />
                 );
@@ -31,7 +31,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <a
-                    className="text-sm text-themeBlue border-none hover:underline sm:text-sm md:max-2xl:text-base"
+                    className="text-sm text-themeBlue border-none hover:underline sm:text-sm md:text-base"
                     {...rest}
                   />
                 );
@@ -40,7 +40,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <p
-                    className="text-sm text-slate-800 pb-2 sm:text-sm md:max-2xl:text-base"
+                    className="text-sm text-slate-800 pb-2 sm:text-sm md:text-base"
                     {...rest}
                   />
                 );
@@ -58,7 +58,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <h4
-                    className="flex justify-between text-slate-800 pb-0 items-baseline text-sm sm:text-sm md:max-2xl:text-base"
+                    className="flex justify-between text-slate-800 pb-0 items-baseline text-sm sm:text-sm md:text-base"
                     {...rest}
                   />
                 );
@@ -90,7 +90,7 @@ export class MarkdownCV extends MarkdownLoader {
                 const { node, ...rest } = props;
                 return (
                   <li
-                    className="text-sm text-slate-800 pb-2 sm:text-sm md:max-2xl:text-base"
+                    className="text-sm text-slate-800 pb-2 sm:text-sm md:text-base"
                     {...rest}
                   />
                 );

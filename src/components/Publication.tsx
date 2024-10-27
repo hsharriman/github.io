@@ -42,7 +42,7 @@ export const Publication = (props: PublicationProps) => {
   ));
   const linkContent = (
     <>
-      <span className="font-ibmMono text-white flex flex-row items-start gap-3 text-base lg:max-2xl:text-xl">
+      <span className="font-ibmMono text-white flex flex-row items-start gap-3 text-base lg:text-xl">
         <img src="/cursors/pt1purple.gif" className="h-4 inline mt-1" />
         {props.title}
       </span>

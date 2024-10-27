@@ -45,7 +45,7 @@ export class PublicationPage extends React.Component<PublicationProps> {
         <Header showName={false} />
         <div
           className={
-            "pt-16 sm:pt-16 md:max-2xl:pt-24 pb-8 w-screen flex h-full justify-center"
+            "pt-16 sm:pt-16 md:pt-24 pb-8 w-screen flex h-full justify-center"
           }
         >
           <div className={pageMarginCSS + "max-w-screen-md"}>

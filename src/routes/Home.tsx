@@ -28,7 +28,7 @@ const H1LETTERS = ["HWEI", "-SHIN", "HARR-", "IMAN"];
 const H2LETTERS = ["Software", "Engineer", "//", "Ph.D.", "Student"];
 const SECTIONHEADERS = ["About Me_", "Publications", "Projects_"];
 const subsectionHeaderCss =
-  "font-ibmMono text-xl sm:text-xl md:max-2xl:text-3xl py-4 flex flex-row items-center gap-4 mt-20 ";
+  "font-ibmMono text-xl sm:text-xl md:text-3xl py-4 flex flex-row items-center gap-4 mt-20 ";
 
 export class Home extends React.Component<{}, HomeState> {
   private numSubHeaderLetters = 0;
@@ -50,18 +50,18 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "About Me",
       color: "blue",
-      top: "top-[15rem]",
-      left: "left-[3rem]",
-      textSize: "lg:max-2xl:text-2xl",
+      top: "top-[10rem]",
+      left: "left-[3rem] -md:left-[3rem]",
+      textSize: "lg:text-2xl",
     },
     {
       // CV
       link: "/cv",
       text: "CV",
       color: "red",
-      top: "top-[35rem]",
-      left: "-left-[8rem]",
-      textSize: "lg:max-2xl:text-5xl",
+      top: "top-[32rem]",
+      left: "-left-[12rem] -md:left-[14rem]",
+      textSize: "lg:text-5xl",
     },
     {
       // PUBLICATIONS
@@ -73,9 +73,9 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "Publications",
       color: "purple",
-      top: "top-[25rem]",
-      left: "-left-[5rem]",
-      textSize: "lg:max-2xl:text-5xl",
+      top: "top-[20rem]",
+      left: "-left-[8rem] -md:left-[11rem]",
+      textSize: "lg:text-5xl",
     },
     {
       // PROJECTS
@@ -87,20 +87,21 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "Featured Projects",
       color: "pink",
-      top: "top-[8rem]",
-      left: "-left-[10rem]",
-      textSize: "lg:max-2xl:text-3xl",
+      top: "top-[3rem]",
+      left: "-left-[15rem] -md:left-[16rem]",
+      textSize: "lg:text-3xl",
     },
     {
       // ILLUSTRATIONS
       link: "/illustrations",
       text: "Illustrations",
       color: "blue",
-      top: "top-[42rem]",
-      left: "left-[2rem]",
-      textSize: "lg:max-2xl:text-2xl",
+      top: "top-[27rem]",
+      left: "-left-[5rem] -md:left-[10rem]",
+      textSize: "lg:text-2xl",
     },
     {
+      // CONTACT
       link: "/",
       scrollTo: () =>
         this.contactRef.current?.scrollIntoView({
@@ -109,9 +110,9 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "Contact",
       color: "mint",
-      top: "top-[32rem]",
-      left: "left-[12rem]",
-      textSize: "lg:max-2xl:text-2xl",
+      top: "top-[37rem]",
+      left: "left-[8rem] md:left-[0rem]",
+      textSize: "lg:text-2xl",
     },
   ];
 
@@ -203,7 +204,7 @@ export class Home extends React.Component<{}, HomeState> {
       <div
         id="contact"
         ref={this.contactRef}
-        className="w-full grid grid-rows-2 justify-center font-mono text-themeMint text-md mt-8 pb-8 sm:pb-8 md:max-2xl:pb-20 gap-4"
+        className="w-full grid grid-rows-2 justify-center font-mono text-themeMint text-md mt-8 pb-8 sm:pb-8 md:pb-20 gap-4"
       >
         <div className="flex justify-center text-center flex-wrap">
           <a
@@ -235,7 +236,7 @@ export class Home extends React.Component<{}, HomeState> {
             ORCID
           </a>
         </div>
-        <div className="flex justify-center text-center text-sm md:max-2xl:text-md">
+        <div className="flex justify-center text-center text-sm md:text-md">
           <div className="text-themeBlue">
             Copyright Hwei-Shin Harriman, 2024. Portfolio designed and coded by
             yours truly.
@@ -248,7 +249,7 @@ export class Home extends React.Component<{}, HomeState> {
   render() {
     let i = 0;
     const h1Letters = (
-      <div className="md:max-2xl:grid md:max-2xl:grid-rows-4 md:max-2xl:grid-cols-1">
+      <div className="md:grid md:grid-rows-4 md:grid-cols-1">
         {H1LETTERS.map((substr) => {
           return (
             <div className="row-span-1 whitespace-nowrap">
@@ -287,7 +288,7 @@ export class Home extends React.Component<{}, HomeState> {
     //           );
     //         })
     //         .concat(
-    //           <span className="text-2xl lg:max-2xl:text-[50px] lg:max-2xl:leading-10">
+    //           <span className="text-2xl lg:text-[50px] lg:leading-10">
     //             &nbsp;&nbsp;
     //           </span>
     //         )}
@@ -305,18 +306,20 @@ export class Home extends React.Component<{}, HomeState> {
         <Header />
         <SparkleBackground />
         <div className={pageMarginCSS + "relative"}>
-          <div className="-ml-4 pt-16 flex justify-center w-screen h-screen items-center flex-row flex-wrap lg:max-2xl:grid lg:max-2xl:grid-cols-12 lg:max-2xl:pt-12 lg:max-2xl:grid-rows-1 lg:max-2xl:h-screen">
-            <div className="w-fit md:max-2xl:col-span-7" key="homepg-text">
-              <div className="w-fit h-auto md:max-2xl:w-3/4">{h1Letters}</div>
-              {/* <div className="flex flex-wrap flex-row">{h2Letters}</div> */}
-            </div>
-            <div
-              className="grid grid-flow-row gap-1 lg:max-2xl:h-screen md:col-span-3 md:col-start-9 lg:max-2xl:col-span-5 lg:max-2xl:relative"
-              key="link-container"
-            >
-              {this.linkArr.map((link) => (
-                <SparkleLink {...link} />
-              ))}
+          <div className="-ml-4 flex justify-center w-screen h-screen items-center lg:justify-start">
+            <div className="flex lg:justify-start justify-center w-screen h-screen items-center flex-row flex-wrap lg:gap-[5svw] xl:gap-48 lg:grid lg:grid-flow-col lg:pt-12 lg:h-fit ">
+              <div className="w-fit" key="homepg-text">
+                <div className="w-fit h-auto">{h1Letters}</div>
+                {/* <div className="flex flex-wrap flex-row">{h2Letters}</div> */}
+              </div>
+              <div
+                className="grid grid-flow-row gap-1 lg:h-full lg:relative"
+                key="link-container"
+              >
+                {this.linkArr.map((link) => (
+                  <SparkleLink {...link} />
+                ))}
+              </div>
             </div>
           </div>
           {/* {aboutHeader} */}
@@ -327,7 +330,7 @@ export class Home extends React.Component<{}, HomeState> {
               <img src="/cursors/pt2purple.gif" className="h-6" />
               Publications ---
             </div>
-            <div className="grid grid-flow-row xl:max-2xl:grid xl:max-2xl:grid-flow-col xl:max-2xl:grid-cols-2 xl:max-2xl:grid-rows-3 xl:max-2xl:gap-3">
+            <div className="grid grid-flow-row xl:grid xl:grid-flow-col xl:grid-cols-2 xl:grid-rows-3 xl:gap-3">
               {this.publications()}
             </div>
           </div>
@@ -338,7 +341,7 @@ export class Home extends React.Component<{}, HomeState> {
             </div>
           </div>
           <div>
-            <div className="grid grid-flow-row xl:max-2xl:grid xl:max-2xl:grid-flow-col xl:max-2xl:grid-cols-2 xl:max-2xl:grid-rows-3 xl:max-2xl:gap-3">
+            <div className="grid grid-flow-row xl:grid xl:grid-flow-col xl:grid-cols-2 xl:grid-rows-3 xl:gap-3">
               {projects.map((p) => (
                 <ProjectItem {...p} />
               ))}

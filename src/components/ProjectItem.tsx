@@ -21,14 +21,14 @@ export class ProjectItem extends React.Component<ProjectItemProps> {
         <NavLink className="" to={this.props.link}>
           <div className="flex flex-row items-center gap-3">
             <img src={`/cursors/pt1${this.props.color}.gif`} className="h-4" />
-            <div className="text-white font-ibmMono text-base lg:max-2xl:text-xl">
+            <div className="text-white font-ibmMono text-base lg:text-xl">
               {this.props.title}
             </div>
           </div>
-          <div className="ml-1 pl-6 text-themeBlue text-base lg:max-2xl:text-lg font-bold">
+          <div className="ml-1 pl-6 text-themeBlue text-base lg:text-lg font-bold">
             {this.props.topic}
           </div>
-          <div className="ml-1 pl-6 text-themeBlue text-base lg:max-2xl:text-lg font-bold">
+          <div className="ml-1 pl-6 text-themeBlue text-base lg:text-lg font-bold">
             {this.props.year}
           </div>
         </NavLink>

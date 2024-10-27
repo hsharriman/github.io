@@ -15,7 +15,7 @@ export const SparkleLink = (props: SparkleLinkProps) => {
   const hoverColor = hoverTextClr(props.color);
   const gif = (
     <img
-      className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8"
+      className="w-6 h-6 lg:w-8 lg:h-8"
       src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
       alt=""
     />
@@ -23,19 +23,19 @@ export const SparkleLink = (props: SparkleLinkProps) => {
   const innerText = (
     <>
       <img
-        className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8"
+        className="w-6 h-6 lg:w-8 lg:h-8"
         src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
         alt=""
       />
       {props.text}
       <img
-        className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8 lg:max-2xl:hidden"
+        className="w-6 h-6 lg:w-8 lg:h-8 lg:hidden"
         src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
         alt=""
       />
     </>
   );
-  const css = `lg:max-2xl:absolute ${props.textSize} ${props.top} ${props.left} text-white lg:max-2xl:text-themeDarkBlue font-ibmMono flex flex-row gap-2 items-center lg:max-2xl:text-4xl text-lg align-text-bottom ${hoverColor} sparklelink flex justify-between lg:max-2xl:gap-5`;
+  const css = `lg:absolute ${props.textSize} ${props.top} ${props.left} text-white lg:text-themeDarkBlue font-ibmMono flex flex-row text-nowrap gap-2 items-center lg:text-4xl text-lg align-text-bottom ${hoverColor} sparklelink flex justify-between lg:gap-5`;
   if (props.scrollTo) {
     return (
       <button className={css} onClick={props.scrollTo}>
