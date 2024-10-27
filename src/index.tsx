@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouteObject,
   RouterProvider,
 } from "react-router-dom";
@@ -40,7 +40,7 @@ const projectPageRoutes: RouteObject[] = projects.map((proj) => {
   return { path: proj.link, element: <ProjectPage {...proj} /> };
 });
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   objs.concat(publicationPageRoutes).concat(projectPageRoutes)
 );
 

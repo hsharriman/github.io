@@ -1,6 +1,6 @@
 # Hwei-Shin Harriman
 
-![](/cv-svgs/home.svg) [hsharriman.github.io](https://hsharriman.github.io) || ![](/cv-svgs/mail.svg) [harriman@cmu.edu](mailto:harriman@cmu.edu) || ![](/cv-svgs/linkedin.svg) [LinkedIn](https://www.linkedin.com/in/hsharriman)
+![](/cv-svgs/home.svg) [hwei-shin.com](https://www.hwei-shin.com) || ![](/cv-svgs/mail.svg) [harriman@cmu.edu](mailto:harriman@cmu.edu) || ![](/cv-svgs/linkedin.svg) [LinkedIn](https://www.linkedin.com/in/hsharriman)
 
 ![](/cv-svgs/scholar.svg) [Google Scholar](https://scholar.google.com/citations?hl=en&user=0OxDklkAAAAJ&view_op=list_works&authuser=1&gmla=ALUCkoWrPxvAN073sVI2qCz6MNsdkr9JzrMSipPFnoO1B1ej6U-MWe0EBnziU--9y45scI-tOKsv-Xrom0Xd7n2D) || ![](/cv-svgs/scholar.svg) [ORCID](https://orcid.org/0000-0002-3746-4808) || ![](/cv-svgs/github.svg) [@hsharriman](https://github.com/hsharriman)
 
@@ -85,15 +85,15 @@ Ported a core feature from Tableau's editor, [‘Go To Sheet’](https://help.ta
 
 ## Project Experience
 
-#### **[Ender](https://hsharriman.github.io/ender/examples)** `2024-present`
+#### **[Ender](https://www.hwei-shin.com/enderProject)** `2024-present`
 
 Building interactive visualizations of two-column, high-school geometry proofs using Typescript/React as part of an ongoing research project to investigate whether specific visual cues can structure student focus and help to manage cognitive load.
 
-#### **Data Analysis of Air Quality in Boston** `2021`
+#### **[Data Analysis of Air Quality in Boston](https://www.hwei-shin.com/airpartners)** `2021`
 
 Analyzed the concentrations of dangerous ultrafine particles (UFPs) near roadways and the Logan International Airport using Python, using raw data pulled from special UFP sensors on an hourly basis. The data was used by an air quality app that notified users of the current risk of exposure to UFPs in their area. The results from these tools have been used to raise awareness and inform policy enactments championing cleaner air in underprivileged communities.
 
-#### **Swiss Poster Generator** `2020`
+#### **[Swiss Poster Generator](https://www.hwei-shin.com/swiss)** `2020`
 
 Built an online generator using HTML/CSS/JS that automatically applies design rules to generate custom posters in the Swiss Modernism style.
 

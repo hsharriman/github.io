@@ -51,7 +51,7 @@ export class Home extends React.Component<{}, HomeState> {
       text: "About Me",
       color: "blue",
       top: "top-[10rem]",
-      left: "left-[3rem] -md:left-[3rem]",
+      left: "-left-[6rem] -md:left-[3rem]",
       textSize: "lg:text-2xl",
     },
     {
@@ -97,8 +97,8 @@ export class Home extends React.Component<{}, HomeState> {
       text: "Illustrations",
       color: "blue",
       top: "top-[27rem]",
-      left: "-left-[5rem] -md:left-[10rem]",
-      textSize: "lg:text-2xl",
+      left: "left-[5rem] -md:left-[10rem]",
+      textSize: "lg:text-xl",
     },
     {
       // CONTACT
