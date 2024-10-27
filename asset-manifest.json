@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b73f7c2.css",
+    "main.js": "/static/js/main.460f83a3.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/cv.md": "/static/media/cv.6cded6354afbcfe3dfb4.md",
+    "static/media/mnist.md": "/static/media/mnist.299b1a812178e82464a2.md",
+    "static/media/about.md": "/static/media/about.463c0d3283b98befbc79.md",
+    "static/media/swiss.md": "/static/media/swiss.02824e07b9c45e55a25b.md",
+    "static/media/airpartners.md": "/static/media/airpartners.2be0aac10b443aa2270b.md",
+    "index.html": "/index.html",
+    "static/media/paletteful.md": "/static/media/paletteful.396c1db016080c26beae.md",
+    "static/media/ender.md": "/static/media/ender.4c1a642fb45a2eaf5a35.md",
+    "main.7b73f7c2.css.map": "/static/css/main.7b73f7c2.css.map",
+    "main.460f83a3.js.map": "/static/js/main.460f83a3.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b73f7c2.css",
+    "static/js/main.460f83a3.js"
+  ]
+}

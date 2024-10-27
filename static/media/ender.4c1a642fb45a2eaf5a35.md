@@ -1,0 +1,1 @@
+Ender is an online tool to visualize the underlying structure of geometric proofs. It is being built as part of an ongoing research project at Carnegie Mellon University. The project's example gallery can be found [here](https://hsharriman.github.io/ender).
