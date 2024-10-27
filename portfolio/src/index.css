@@ -29,3 +29,7 @@ html {
 .thumb {
   transition: all 0.25s linear 0s;
 }
+
+.purpleSparklePt {
+  list-style-image: url(../public/cursors/pt1purple.gif);
+}

@@ -1,10 +1,19 @@
+import airpartnersMD from "../assets/airpartners.md";
+import enderMD from "../assets/ender.md";
+import mnistMD from "../assets/mnist.md";
+import palettefulMD from "../assets/paletteful.md";
+import swissMD from "../assets/swiss.md";
 import { ProjectItemProps } from "../components/ProjectItem";
 import { AwardType, PublicationProps } from "../components/Publication";
 
 export const backgroundCSS =
-  "bg-gradient-to-br from-themeBackgroundBlue from-30% via-black via-50% to-themeBackgroundBlue to-70% w-screen h-full cursor-cell min-h-screen";
+  "bg-gradient-to-br from-themeBackgroundBlue from-30% via-black via-50% to-themeBackgroundBlue to-70% w-screen h-full cursor-cell min-h-screen ";
 
-export const pageMarginCSS = "ml-16 mr-8 ";
+export const pageMarginCSS =
+  "mx-4 2xl:ml-16 2xl:mr-8 xl:ml-16 xl:mr-8 lg:ml-16 lg:mr-8 md:ml-16 md:mr-8 sm:mx-4 max-w-screen-2xl ";
+
+export const defaultIconTextCss =
+  "underline text-themeBlue flex flex-row items-center font-bold";
 
 // ----- PUBLICATIONS -----
 export const publications: PublicationProps[] = [
@@ -44,6 +53,7 @@ export const publications: PublicationProps[] = [
       "Automatic Diagram Layout",
       "Natural Diagramming Interface",
     ],
+    thumb: "/thumbnails/diagramsthumb.png",
   },
   {
     id: "/las-edgeworth",
@@ -74,6 +84,7 @@ export const publications: PublicationProps[] = [
       caption:
         "Edgeworth is a diagrammatic problem authoring tool that automatically generates diagram variations from a single diagram: the author creates an example diagram (1), then Edgeworth generates a myriad of diagram variations (2), from which the author selects diagrams (3) to form a diagrammatic multiple choice problem (4).",
     },
+    thumb: "/thumbnails/lasedgeworth.png",
   },
   {
     id: "/splash-edgeworth",
@@ -139,7 +150,10 @@ export const projects: ProjectItemProps[] = [
     year: "2020",
     topic: "Interactive Visualization, STEM Education",
     thumb: "/thumbnails/ender.png",
-    link: "/ender",
+    link: "/enderProject",
+    md: enderMD,
+    imgs: ["/software/ender/ender-gallery.png"],
+    github: "https://github.com/hsharriman/ender",
   },
   {
     title: "Air Partners: Data Analysis of Air Quality in Boston",
@@ -149,6 +163,11 @@ export const projects: ProjectItemProps[] = [
     thumb: "/thumbnails/airpartners.jpeg",
     link: "/airpartners",
     github: "https://github.com/airpartners/data-analysis",
+    imgs: [
+      "/software/airpartners/report1.jpeg",
+      "/software/airpartners/report2.jpeg",
+    ],
+    md: airpartnersMD,
   },
   {
     title: "Swiss Modernism Poster Generator",
@@ -158,15 +177,24 @@ export const projects: ProjectItemProps[] = [
     thumb: "/thumbnails/generator.png",
     link: "/swiss",
     github: "https://github.com/hsharriman/swiss",
+    imgs: [
+      "/software/swiss/swissgen.gif",
+      "/software/swiss/swissgen2.gif",
+      "/software/swiss/swissgen3.gif",
+      "/software/swiss/swissexamples.png",
+    ],
+    md: swissMD,
   },
   {
-    title: "All About MNIST & Convolutional Neural Nets",
+    title: "Deep Dive into Convolutional Neural Nets",
     color: "pink",
     year: "2018",
     topic: "Machine Learning",
     thumb: "thumbnails/cnnfull.png",
     link: "/mnist",
     github: "https://github.com/hsharriman/qea",
+    imgs: ["/software/mnist/ff.png", "/software/mnist/cnn.png"],
+    md: mnistMD,
   },
   {
     title: "Paletteful: Color Palette Generator",
@@ -175,5 +203,13 @@ export const projects: ProjectItemProps[] = [
     topic: "Image Processing",
     thumb: "/software/paletteful/crop.gif",
     link: "/paletteful",
+    imgs: [
+      "/software/paletteful/intro.gif",
+      "/software/paletteful/crop.gif",
+      "/software/paletteful/palettes.png",
+      "/software/paletteful/palettefulposter.png",
+    ],
+    github: "https://github.com/QingmuDeng/SoftDesSP18_FinalProject",
+    md: palettefulMD,
   },
 ];

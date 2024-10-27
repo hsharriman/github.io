@@ -9,24 +9,33 @@ export interface SparkleLinkProps {
   color: string;
   top: string;
   left: string;
+  textSize: string;
 }
 export const SparkleLink = (props: SparkleLinkProps) => {
   const hoverColor = hoverTextClr(props.color);
   const gif = (
     <img
-      className="w-8 h-8"
+      className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8"
       src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
       alt=""
     />
   );
   const innerText = (
     <>
-      {gif}
+      <img
+        className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8"
+        src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
+        alt=""
+      />
       {props.text}
-      {gif}
+      <img
+        className="w-6 h-6 lg:max-2xl:w-8 lg:max-2xl:h-8 lg:max-2xl:hidden"
+        src={`/cursors/pt2${props.color.toLowerCase()}.gif`}
+        alt=""
+      />
     </>
   );
-  const css = `absolute ${props.top} ${props.left} text-themeDarkBlue font-ibmMono flex flex-row text-4xl align-text-bottom ${hoverColor} sparklelink flex justify-between gap-5`;
+  const css = `lg:max-2xl:absolute ${props.textSize} ${props.top} ${props.left} text-white lg:max-2xl:text-themeDarkBlue font-ibmMono flex flex-row gap-2 items-center lg:max-2xl:text-4xl text-lg align-text-bottom ${hoverColor} sparklelink flex justify-between lg:max-2xl:gap-5`;
   if (props.scrollTo) {
     return (
       <button className={css} onClick={props.scrollTo}>

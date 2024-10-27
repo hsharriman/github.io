@@ -9,7 +9,11 @@ export const Header = (props: HeaderProps) => {
   return (
     <div className="fixed top-0 left-0 z-10 w-screen h-20 pt-2 pl-2 bg-gradient-to-t from-transparent to-themeBackgroundBlue flex flex-row gap-4">
       <NavLink to="/">
-        <img src={"/loading.gif"} alt="favicon" className="w-16 h-16" />
+        <img
+          src={"/loading.gif"}
+          alt="favicon"
+          className="w-12 h-auto sm:w-12 md:w-16 lg:w-16 xl:w-16 2xl:w-16"
+        />
       </NavLink>
       {props.showName && (
         <div

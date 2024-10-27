@@ -1,11 +1,12 @@
 import React from "react";
 import aboutMD from "../assets/about.md";
-import { About } from "../components/About";
 import { ClrChangeLetter, HeaderType } from "../components/ClrChangeLetter";
 import { Header } from "../components/Header";
 import { ProjectItem } from "../components/ProjectItem";
 import { Publication } from "../components/Publication";
+import { SparkleBackground } from "../components/SparkleBackground";
 import { SparkleLink, SparkleLinkProps } from "../components/SparkleLink";
+import { StyledMarkdown } from "../components/StyledMarkdown";
 import {
   backgroundCSS,
   pageMarginCSS,
@@ -26,6 +27,8 @@ interface HomeState {
 const H1LETTERS = ["HWEI", "-SHIN", "HARR-", "IMAN"];
 const H2LETTERS = ["Software", "Engineer", "//", "Ph.D.", "Student"];
 const SECTIONHEADERS = ["About Me_", "Publications", "Projects_"];
+const subsectionHeaderCss =
+  "font-ibmMono text-xl sm:text-xl md:max-2xl:text-3xl py-4 flex flex-row items-center gap-4 mt-20 ";
 
 export class Home extends React.Component<{}, HomeState> {
   private numSubHeaderLetters = 0;
@@ -38,6 +41,44 @@ export class Home extends React.Component<{}, HomeState> {
   private contactRef: React.RefObject<HTMLDivElement>;
   private linkArr: SparkleLinkProps[] = [
     {
+      // ABOUT
+      link: "/",
+      scrollTo: () =>
+        this.aboutRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        }),
+      text: "About Me",
+      color: "blue",
+      top: "top-[15rem]",
+      left: "left-[3rem]",
+      textSize: "lg:max-2xl:text-2xl",
+    },
+    {
+      // CV
+      link: "/cv",
+      text: "CV",
+      color: "red",
+      top: "top-[35rem]",
+      left: "-left-[8rem]",
+      textSize: "lg:max-2xl:text-5xl",
+    },
+    {
+      // PUBLICATIONS
+      link: "/publications",
+      scrollTo: () =>
+        this.publicationsRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        }),
+      text: "Publications",
+      color: "purple",
+      top: "top-[25rem]",
+      left: "-left-[5rem]",
+      textSize: "lg:max-2xl:text-5xl",
+    },
+    {
+      // PROJECTS
       link: "/",
       scrollTo: () =>
         this.projectsRef.current?.scrollIntoView({
@@ -46,27 +87,18 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "Featured Projects",
       color: "pink",
-      top: "top-12",
-      left: "-left-12",
+      top: "top-[8rem]",
+      left: "-left-[10rem]",
+      textSize: "lg:max-2xl:text-3xl",
     },
     {
-      link: "/publications",
-      scrollTo: () =>
-        this.publicationsRef.current?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        }),
-      text: "Publications",
+      // ILLUSTRATIONS
+      link: "/illustrations",
+      text: "Illustrations",
       color: "blue",
-      top: "top-1/2",
-      left: "left-48",
-    },
-    {
-      link: "/cv",
-      text: "CV",
-      color: "red",
-      top: "top-1/3",
-      left: "left-0",
+      top: "top-[42rem]",
+      left: "left-[2rem]",
+      textSize: "lg:max-2xl:text-2xl",
     },
     {
       link: "/",
@@ -77,27 +109,9 @@ export class Home extends React.Component<{}, HomeState> {
         }),
       text: "Contact",
       color: "mint",
-      top: "bottom-64",
-      left: "-left-24",
-    },
-    {
-      link: "/",
-      scrollTo: () =>
-        this.aboutRef.current?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        }),
-      text: "About",
-      color: "purple",
-      top: "top-48",
-      left: "left-1/3",
-    },
-    {
-      link: "/illustrations",
-      text: "Illustrations",
-      color: "purple",
-      top: "bottom-24",
-      left: "left-6",
+      top: "top-[32rem]",
+      left: "left-[12rem]",
+      textSize: "lg:max-2xl:text-2xl",
     },
   ];
 
@@ -156,19 +170,21 @@ export class Home extends React.Component<{}, HomeState> {
   aboutSection = () => {
     return (
       <>
-        <div id="about" className="w-full grid grid-cols-2" ref={this.aboutRef}>
-          <div className="col-span-1 text-white font-notoSans text-l">
-            <div className="font-ibmMono text-themeBlue text-2xl py-4 flex flex-row items-center gap-4">
+        <div id="about" className="w-full" ref={this.aboutRef}>
+          <div className="text-white font-notoSans text-l">
+            <div className={subsectionHeaderCss + "text-themeBlue"}>
               <img src="/cursors/pt2blue.gif" className="h-6" />
-              Hi, I'm Hwei-Shin (sounds like "Way-Sheen").
+              Hi, I'm Hwei-Shin (sounds like "way-sheen")
             </div>
-            <About mdFile={aboutMD} />
+            <div className="max-w-screen-md">
+              <StyledMarkdown mdFile={aboutMD} />
+            </div>
           </div>
           <div>
-            <img
+            {/* <img
               src="/portrait.jpg"
-              className="w-48 dashed border-themeBlue border-2 rounded-sm"
-            />
+              className="w-48 dashed border-themeBlue border-2 rounded-md"
+            /> */}
           </div>
         </div>
       </>
@@ -187,9 +203,9 @@ export class Home extends React.Component<{}, HomeState> {
       <div
         id="contact"
         ref={this.contactRef}
-        className="w-full grid grid-rows-2 justify-center font-mono text-themeMint text-md mt-8 pb-20 gap-4"
+        className="w-full grid grid-rows-2 justify-center font-mono text-themeMint text-md mt-8 pb-8 sm:pb-8 md:max-2xl:pb-20 gap-4"
       >
-        <div className="flex justify-center text-center">
+        <div className="flex justify-center text-center flex-wrap">
           <a
             href="mailto:hwei-shin.harriman@gmail.com"
             className={decorationCls}
@@ -219,7 +235,7 @@ export class Home extends React.Component<{}, HomeState> {
             ORCID
           </a>
         </div>
-        <div className="flex justify-center text-center">
+        <div className="flex justify-center text-center text-sm md:max-2xl:text-md">
           <div className="text-themeBlue">
             Copyright Hwei-Shin Harriman, 2024. Portfolio designed and coded by
             yours truly.
@@ -232,7 +248,7 @@ export class Home extends React.Component<{}, HomeState> {
   render() {
     let i = 0;
     const h1Letters = (
-      <div className="grid grid-rows-4 grid-cols-1">
+      <div className="md:max-2xl:grid md:max-2xl:grid-rows-4 md:max-2xl:grid-cols-1">
         {H1LETTERS.map((substr) => {
           return (
             <div className="row-span-1 whitespace-nowrap">
@@ -254,44 +270,50 @@ export class Home extends React.Component<{}, HomeState> {
       </div>
     );
 
-    const h2Letters = H2LETTERS.map((substr) => {
-      return (
-        <div className="row-span-1">
-          {Array.from(substr)
-            .map((letter) => {
-              i += 1;
-              return (
-                <ClrChangeLetter
-                  letter={letter}
-                  defaultClr="text-themeBlue"
-                  activeColor={this.clrs[i]}
-                  type={HeaderType.H2}
-                  isActive={this.state.active[i]}
-                />
-              );
-            })
-            .concat(
-              <span className="text-[50px] leading-10">&nbsp;&nbsp;</span>
-            )}
-        </div>
-      );
-    });
-    let j = 0;
-    const [aboutHeader, pubHeader, projHeader] = SECTIONHEADERS.map((str) => {
-      const newIdx = j;
-      j += str.length;
-      return this.sectionHeader(str, newIdx);
-    });
+    // const h2Letters = H2LETTERS.map((substr) => {
+    //   return (
+    //     <div className="row-span-1">
+    //       {Array.from(substr)
+    //         .map((letter) => {
+    //           i += 1;
+    //           return (
+    //             <ClrChangeLetter
+    //               letter={letter}
+    //               defaultClr="text-themeBlue"
+    //               activeColor={this.clrs[i]}
+    //               type={HeaderType.H2}
+    //               isActive={this.state.active[i]}
+    //             />
+    //           );
+    //         })
+    //         .concat(
+    //           <span className="text-2xl lg:max-2xl:text-[50px] lg:max-2xl:leading-10">
+    //             &nbsp;&nbsp;
+    //           </span>
+    //         )}
+    //     </div>
+    //   );
+    // });
+    // let j = 0;
+    // const [aboutHeader, pubHeader, projHeader] = SECTIONHEADERS.map((str) => {
+    //   const newIdx = j;
+    //   j += str.length;
+    //   return this.sectionHeader(str, newIdx);
+    // });
     return (
-      <div className={backgroundCSS}>
+      <div className={backgroundCSS + "static"}>
         <Header />
-        <div className={pageMarginCSS}>
-          <div className="grid grid-cols-12 pt-12 grid-rows-1 h-screen">
-            <div className="col-span-7" key="homepg-text">
-              <div className="h-auto w-3/4">{h1Letters}</div>
-              <div className=" flex flex-wrap flex-row">{h2Letters}</div>
+        <SparkleBackground />
+        <div className={pageMarginCSS + "relative"}>
+          <div className="-ml-4 pt-16 flex justify-center w-screen h-screen items-center flex-row flex-wrap md:max-2xl:grid md:max-2xl:grid-cols-12 md:max-2xl:pt-12 md:max-2xl:grid-rows-1 md:max-2xl:h-screen">
+            <div className="w-fit md:max-2xl:col-span-7" key="homepg-text">
+              <div className="w-fit h-auto md:max-2xl:w-3/4">{h1Letters}</div>
+              {/* <div className="flex flex-wrap flex-row">{h2Letters}</div> */}
             </div>
-            <div className="col-span-5 relative" key="link-container">
+            <div
+              className="grid grid-flow-row gap-1 lg:max-2xl:h-screen md:col-span-3 md:col-start-9 lg:max-2xl:col-span-5 lg:max-2xl:relative"
+              key="link-container"
+            >
               {this.linkArr.map((link) => (
                 <SparkleLink {...link} />
               ))}
@@ -301,20 +323,22 @@ export class Home extends React.Component<{}, HomeState> {
           {this.aboutSection()}
           <div ref={this.publicationsRef}>
             {/* {pubHeader} */}
-            <div className="font-ibmMono text-themePurple text-2xl py-4 flex flex-row items-center gap-4 mt-20">
+            <div className={subsectionHeaderCss + "text-themePurple"}>
               <img src="/cursors/pt2purple.gif" className="h-6" />
-              Publications -----
+              Publications ---
             </div>
-            {this.publications()}
+            <div className="grid grid-flow-row xl:max-2xl:grid xl:max-2xl:grid-flow-col xl:max-2xl:grid-cols-2 xl:max-2xl:grid-rows-3 xl:max-2xl:gap-3">
+              {this.publications()}
+            </div>
           </div>
           <div ref={this.projectsRef}>
-            <div className="font-ibmMono text-themePink text-2xl py-4 flex flex-row items-center gap-4 mt-20">
+            <div className={subsectionHeaderCss + "text-themePink"}>
               <img src="/cursors/pt2pink.gif" className="h-6" />
-              Featured Projects ------
+              Featured Projects ---
             </div>
           </div>
           <div>
-            <div className="grid grid-flow-col grid-cols-2 grid-rows-3 gap-3">
+            <div className="grid grid-flow-row xl:max-2xl:grid xl:max-2xl:grid-flow-col xl:max-2xl:grid-cols-2 xl:max-2xl:grid-rows-3 xl:max-2xl:gap-3">
               {projects.map((p) => (
                 <ProjectItem {...p} />
               ))}

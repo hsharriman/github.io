@@ -1,7 +1,7 @@
 import Markdown from "react-markdown";
 import { MarkdownLoader } from "./MarkdownLoader";
 
-export class About extends MarkdownLoader {
+export class StyledMarkdown extends MarkdownLoader {
   render() {
     return (
       <Markdown
@@ -20,6 +20,15 @@ export class About extends MarkdownLoader {
             return (
               <p
                 className="text-base text-white pb-2 font-notoSans"
+                {...rest}
+              />
+            );
+          },
+          ul(props) {
+            const { node, ...rest } = props;
+            return (
+              <ul
+                className="purpleSparklePt text-base text-white pb-2 font-notoSans pl-4"
                 {...rest}
               />
             );

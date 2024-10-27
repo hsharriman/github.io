@@ -23,13 +23,13 @@ export class Illustrations extends React.Component {
     return (
       <div className={backgroundCSS}>
         <Header showName={false} />
-        <div className={pageMarginCSS + "pt-24"}>
+        <div className={pageMarginCSS + "pt-16 lg:max-2xl:pt-24"}>
           <div className="pb-8">
             <div className="flex flex-row items-bottom gap-4">
               <SparkleLetters
                 text={["Illustration_Gallery_"]}
                 prefix="title"
-                type={HeaderType.H2}
+                type={HeaderType.H3}
                 defaultClr="text-white"
               />
             </div>

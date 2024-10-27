@@ -42,18 +42,18 @@ export const Publication = (props: PublicationProps) => {
   ));
   const linkContent = (
     <>
-      <span className="font-ibmMono text-white text-xl">
-        <img src="/cursors/pt1purple.gif" className="h-4 inline pr-2" />
+      <span className="font-ibmMono text-white flex flex-row items-start gap-3 text-base lg:max-2xl:text-xl">
+        <img src="/cursors/pt1purple.gif" className="h-4 inline mt-1" />
         {props.title}
       </span>
-      <p className="flex flex-wrap break-words">
+      <p className="ml-1 pl-6 flex flex-wrap break-words">
         {authors}
         <span className="italic text-themeBlue">{props.venue + "."}</span>
       </p>
     </>
   );
   const innerContent = (
-    <span className="flex flex-col static">
+    <span className="flex flex-col static w-fit min-w-[350px] lg:max-w-[550px]">
       {props.links.pdf ? (
         <NavLink to={props.id}>{linkContent}</NavLink>
       ) : (
@@ -61,7 +61,7 @@ export const Publication = (props: PublicationProps) => {
       )}
       {props.award &&
         props.award.map((a) => (
-          <span className="text-base text-themeMint flex flex-row items-center">
+          <span className="ml-1 pl-6 text-base text-themeMint flex flex-row items-center">
             {icons.ribbon}
             {a}
           </span>

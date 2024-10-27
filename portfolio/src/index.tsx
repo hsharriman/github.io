@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import cv from "./assets/cv.md";
-import { ProjectItem } from "./components/ProjectItem";
+import { ProjectPage } from "./components/ProjectPage";
 import { PublicationPage } from "./components/PublicationPage";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
@@ -37,7 +37,7 @@ const publicationPageRoutes: RouteObject[] = publications
   });
 
 const projectPageRoutes: RouteObject[] = projects.map((proj) => {
-  return { path: proj.link, element: <ProjectItem {...proj} /> };
+  return { path: proj.link, element: <ProjectPage {...proj} /> };
 });
 
 const router = createBrowserRouter(

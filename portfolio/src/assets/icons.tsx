@@ -19,7 +19,7 @@ const ribbon = (
 
 const video = (
   <svg
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 512 512"
     height="1em"
     width="1em"
@@ -32,7 +32,7 @@ const video = (
 
 const pdf = (
   <svg
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 384 512"
     height="1em"
     width="1em"
@@ -44,7 +44,7 @@ const pdf = (
 );
 const bib = (
   <svg
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 16 16"
     height="1em"
     width="1em"

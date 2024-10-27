@@ -91,7 +91,7 @@ Building interactive visualizations of two-column, high-school geometry proofs u
 
 #### **Data Analysis of Air Quality in Boston** `2021`
 
-Analyzed the concentrations of dangerous ultrafine particles (UFPs) near roadways and the Logan International Airport using Python, using raw data pulled from special UFP sensors on an hourly basis. The data was used by an air quality app that notified users of the current risk of exposure to UFPs in their area. The visualizations were used to help activists and policy-makers argue for better community education about UFPs and increased government accountability.
+Analyzed the concentrations of dangerous ultrafine particles (UFPs) near roadways and the Logan International Airport using Python, using raw data pulled from special UFP sensors on an hourly basis. The data was used by an air quality app that notified users of the current risk of exposure to UFPs in their area. The results from these tools have been used to raise awareness and inform policy enactments championing cleaner air in underprivileged communities.
 
 #### **Swiss Poster Generator** `2020`
 

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { icons } from "../assets/icons";
+import { defaultIconTextCss } from "../utils/consts";
 
 export interface PublicationLinkProps {
   pdf?: string;
@@ -8,8 +9,6 @@ export interface PublicationLinkProps {
 }
 
 export const PublicationLinks = (props: PublicationLinkProps) => {
-  const defaultIconTextCss =
-    "underline text-themeBlue flex flex-row items-center font-bold";
   return (
     <div className="flex flex-row gap-3">
       {props.pdf && (
