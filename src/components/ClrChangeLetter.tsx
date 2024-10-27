@@ -16,7 +16,7 @@ export const ClrChangeLetter = (props: ClrChangeLetterProps) => {
   let baseCls = `font-ibmMono hover:${props.activeColor} hover:ease-out hover:duration-500 `;
   switch (props.type) {
     case HeaderType.H1:
-      baseCls += `text-8xl tracking-widest leading-12 md:max-2xl:text-[160px] md:max-2xl:tracking-[2rem] md:max-2xl:leading-[11rem] `;
+      baseCls += `text-8xl tracking-widest leading-12 lg:max-2xl:text-[160px] lg:max-2xl:tracking-[2rem] lg:max-2xl:leading-[11rem] `;
       break;
     case HeaderType.H2:
       baseCls += `hidden lg:max-2xl:inline lg:max-2xl:text-3xl lg:max-2xl:leading-4 `;

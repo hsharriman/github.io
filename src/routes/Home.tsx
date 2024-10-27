@@ -305,7 +305,7 @@ export class Home extends React.Component<{}, HomeState> {
         <Header />
         <SparkleBackground />
         <div className={pageMarginCSS + "relative"}>
-          <div className="-ml-4 pt-16 flex justify-center w-screen h-screen items-center flex-row flex-wrap md:max-2xl:grid md:max-2xl:grid-cols-12 md:max-2xl:pt-12 md:max-2xl:grid-rows-1 md:max-2xl:h-screen">
+          <div className="-ml-4 pt-16 flex justify-center w-screen h-screen items-center flex-row flex-wrap lg:max-2xl:grid lg:max-2xl:grid-cols-12 lg:max-2xl:pt-12 lg:max-2xl:grid-rows-1 lg:max-2xl:h-screen">
             <div className="w-fit md:max-2xl:col-span-7" key="homepg-text">
               <div className="w-fit h-auto md:max-2xl:w-3/4">{h1Letters}</div>
               {/* <div className="flex flex-wrap flex-row">{h2Letters}</div> */}
