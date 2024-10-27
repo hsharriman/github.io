@@ -1,0 +1,484 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hwei-Shin Harriman</title>
+    <link rel="stylesheet" href="style/root.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/lists.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <script src="index.js"></script>
+    <link rel="icon" href="img/cursors/loading.gif" type="image/gif" />
+  </head>
+  <body onload="onloadHome()">
+    <div id="loader">
+      <div class="loading-section">
+        <img src="img/cursors/loading.gif" alt="" />
+        <div>loading</div>
+      </div>
+    </div>
+    <div class="icon" onclick="window.location.href='#landing-pg'">
+      <img src="img/cursors/loading.gif" alt="" />
+    </div>
+    <div id="shadow"></div>
+    <div id="page-container">
+      <div id="landing-pg">
+        <h1 class="fade" id="landing-name"></h1>
+        <h2 class="fade" id="landing-subtitle"></h2>
+        <div class="circle-container">
+          <div
+            id="circle0"
+            class="circle star-l"
+            onclick="window.location.href='#projects'"
+          >
+            <img
+              class="large-pt"
+              src="img/cursors/pt2pink.gif"
+              alt=""
+            />&nbsp;Engineering Projects
+          </div>
+          <div
+            id="circle1"
+            class="circle star-l"
+            onclick="window.location.href='#projects'"
+          >
+            <img
+              class="large-pt"
+              src="img/cursors/pt2mint.gif"
+              alt=""
+            />&nbsp;Design Projects
+          </div>
+          <div
+            id="circle2"
+            class="circle star-m"
+            onclick="window.location.href='#about'"
+          >
+            <img
+              class="medium-pt"
+              src="img/cursors/pt2.gif"
+              alt=""
+            />&nbsp;About Me
+          </div>
+          <div
+            id="circle3"
+            class="circle star-s"
+            onclick="window.open('img/resumesummer2022.pdf')"
+          >
+            <img
+              class="small-pt"
+              src="img/cursors/pt2purple.gif"
+              alt=""
+            />&nbsp;Resume
+          </div>
+          <div
+            id="circle4"
+            class="circle star-s"
+            onclick="window.location.href='#contact'"
+          >
+            <img
+              class="small-pt"
+              src="img/cursors/pt2mint.gif"
+              alt=""
+            />&nbsp;Contact
+          </div>
+          <div
+            id="circle5"
+            class="circle star-m"
+            onclick="window.location.href='other_proj/illustration.html'"
+          >
+            <img
+              class="medium-pt"
+              src="img/cursors/pt2purple.gif"
+              alt=""
+            />&nbsp;Illustration Gallery
+          </div>
+          <div
+            id="circle6"
+            class="circle star-l"
+            onclick="window.location.href='#publications'"
+          >
+            <img
+              class="large-pt"
+              src="img/cursors/pt2red.gif"
+              alt=""
+            />&nbsp;Research Publications
+          </div>
+        </div>
+      </div>
+      <div class="scrollTo" id="about"></div>
+      <h3 class="fade" id="about-title"></h3>
+      <div class="column-container">
+        <div class="columns">
+          <div id="about-section">
+            <div class="subtitle" style="color: var(--blue)">
+              <img class="subtitle-pt" src="img/cursors/pt2.gif" alt="" /> Hi,
+              I'm Hwei-Shin (sounds like 'way sheen')
+            </div>
+            <div id="about-intro">
+              <div id="about-img">
+                <img src="img/self_portrait.gif" alt="headshot" />
+              </div>
+              <p>
+                I am a first-year PhD student in software engineering at Carnegie Mellon University, advised by Josh Sunshine and Dominik Moritz. 
+                My experience is primarily in full stack engineering, data analysis
+                and data visualization. I am passionate about improving STEM
+                education, particularly by improving visual communication in
+                learning materials (check out my work on
+                <a href="research/edgeworth.html">Edgeworth</a>). I am always
+                looking for interesting ways that technology and design
+                intersect, and I care about working on impactful projects that
+                have the power to make the world a better place.
+              </p>
+              <p class="mobilehide">
+                Check out my <a href="img/resumesummer2022.pdf">resume</a> for
+                more detailed descriptions of my professional experience and
+                qualifications, and my
+                <a href="#engineering">project gallery</a> to learn more about
+                some of the projects I have worked on.
+              </p>
+              <div class="about-text">
+                <div class="about-bullet">
+                  <div>
+                    <span>Experience:</span>
+                    <ul>
+                      <li>
+                        Student Researcher at Carnegie Mellon University,
+                        <span class="yr">'23-present</span>
+                      </li>
+                      <li>
+                        Fullstack Software Engineer at Tableau,
+                        <span class="yr">'22-'23</span>
+                      </li>
+                      <li>
+                        Research Intern at
+                        <a href="http://penrose.ink/">Penrose</a> (Carnegie
+                        Mellon University),
+                        <span class="yr">'21</span>
+                      </li>
+                      <li>
+                        Vehicle Software Engineering Intern at Tesla Motors,
+                        <span class="yr">'20</span>
+                      </li>
+                      <li>
+                        Fullstack Engineering Intern at Tableau,
+                        <span class="yr">'19, '20</span>
+                      </li>
+                      <!-- <li>
+                        Member of Olin's Formula
+                        <a href="https://www.olinelectricmotorsports.com/"
+                          >SAE</a
+                        >
+                        Electrical team,
+                        <span class="yr">2017-18, 2020-21</span>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+                <div class="about-bullet">
+                  <div>
+                    <span>Education:</span>
+                    <ul>
+                      <li>
+                        Carnegie Mellon University, School of Computer Science,
+                        PhD Student
+                      </li>
+                      <li>
+                        Olin College of Engineering, B.S Engineering,
+                        <span class="yr">'22</span>
+                      </li>
+                      <li>
+                        Parsons School of Design (visiting student),
+                        <span class="yr">'20</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="about-bullet">
+                  <div>
+                    <span>Awards:</span>
+                    <ul>
+                      <li>
+                        NSF Graduate Research Fellowship Program Recipient,
+                        <span class="yr">'23</span>
+                      </li>
+                      <li>
+                        ARCS Scholarship Recipient,
+                        <span class="yr">'23</span>
+                      </li>
+                      <li>
+                        Grand Finalist, ACM Student Research Competition
+                        <span class="yr">'21</span>
+                      </li>
+                      <li>
+                        1st Place Undergraduate Division, ACM SPLASH Student Research Competition
+                        <span class="yr">'21</span>
+                      </li>
+                      <li>
+                        Semi-Finalist, Disney Imagineering
+                        <span class="yr">'20</span>
+                      </li>
+                      <li>
+                        50% Tuition Olin Merit Scholarship
+                        <span class="yr">'17-'22</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <div class="about-bullet">
+                  <div>
+                    <span>Tools:</span>
+                    <ul>
+                      <li>
+                        <span class="yr">Languages:</span>
+                        Typescript/Javascript, Python, Golang, C, C#, Java,
+                        LaTeX
+                      </li>
+                      <li>
+                        <span class="yr">Software:</span>
+                        React/Redux, Docker, AWS, Airflow, RabbitMQ, Adobe
+                        Illustrator/Photoshop
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+              <div class="about-text">
+                <div class="about-bullet">
+                  <div>
+                    <span>Outside of Engineering:</span>
+                    <ul>
+                      <li>
+                        Professional ballerina, guests around U.S
+                      </li>
+                      <li>
+                        Digital Illustrator, owner of Arken Designs
+                      </li>
+                      <li>Peet's Coffee Certified Barista</li>
+                      <li>Collegiate Overwatch player for Carnegie Mellon University</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="about-container"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollTo" id="publications"></div>
+      <h3 class="fade" id="publications-title"></h3>
+      <div class="column-container" style="margin-bottom: 0">
+        <div class="columns">
+          <div class="research">
+            <ul id="other">
+              <li onclick="window.location.href='research/edgeworth.html'">
+                Edgeworth: Authoring Diagrammatic Math Problems using Program
+                Mutation
+                <div class="tools">
+                  1st Place, Undergraduate Division<br />
+                  ACM SPLASH Student Research Competition<br />
+                  2021
+                </div>
+                <div class="thumb">
+                  <img src="img/research/edgeworththumb.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='research/clew3d.html'">
+                Clew3D: Automated Generation of O&M Instructions Using
+                LIDAR-Equipped Smartphones
+                <div class="tools">ACM ASSETS Demo<br />2021</div>
+                <div class="thumb">
+                  <img src="img/research/clew3dthumb.png" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollTo" id="projects"></div>
+      <h3 class="fade" id="projects-title"></h3>
+      <div class="column-container">
+        <div class="columns">
+          <div class="software">
+            <div class="subtitle" style="color: var(--pink)">
+              <img class="subtitle-pt" src="img/cursors/pt2pink.gif" alt="" />
+              Software Projects
+              <span class="dash" style="color: var(--pink)">----------</span>
+            </div>
+            <ul>
+              <li onclick="window.location.href='engr/swiss.html'">
+                Swiss Modernism Poster Generator
+                <div class="tools">Web Development<br />Spring, 2020</div>
+                <div class="thumb"><img src="img/generator.png" alt="" /></div>
+              </li>
+              <!-- <li onclick="window.location.href='engr/airpartners.html'">
+                Air Partners: Air Quality Data Analysis
+                <div class="tools">Data Analysis<br />Spring, 2021</div>
+                <div class="thumb"><img src="img/wisp2.gif" alt="" /></div>
+              </li> -->
+              <li onclick="window.location.href='engr/lda.html'" id="lda">
+                LDA Research Buddy
+                <div class="tools">Machine Learning<br />Fall, 2019</div>
+                <div class="thumb">
+                  <img src="img/software/lda/ldathumb.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='engr/mnist.html'">
+                All About MNIST & Convolutional Neural Nets
+                <div class="tools">Machine Learning <br />Fall, 2018</div>
+                <div class="thumb"><img src="img/cnnfull.png" alt="" /></div>
+              </li>
+              <!-- <li
+                onclick="window.location.href='http://poe.olin.edu/2018/sinimun/'"
+              >
+                Wisp: Kinetic Art Sculpture
+                <div class="tools">Firmware<br />Fall, 2018</div>
+                <div class="thumb"><img src="img/wisp2.gif" alt="" /></div>
+              </li> -->
+              <li onclick="window.location.href='engr/robolympics.html'">
+                Robolympics: PID Control Loop
+                <div class="tools">Firmware, Controls<br />Fall, 2018</div>
+                <div class="thumb"><img src="img/pid.png" alt="" /></div>
+              </li>
+              <li onclick="window.location.href='engr/ransac.html'">
+                Robotic Vaccuum Obstacle Course: RANSAC, Gradient Descent
+                <div class="tools">Mapping, Perception<br />Fall, 2018</div>
+                <div class="thumb"><img src="img/ransac.png" alt="" /></div>
+              </li>
+              <li onclick="window.location.href='engr/faces.html'">
+                Eigenface & Bayesian Facial Recognition
+                <div class="tools">Computer Vision <br />Spring, 2018</div>
+                <div class="thumb"><img src="img/facesdark.png" alt="" /></div>
+              </li>
+              <li onclick="window.location.href='engr/paletteful.html'">
+                Paletteful: Image-Based Color Palette Generator
+                <div class="tools">Image Processing<br />Spring, 2018</div>
+                <div class="thumb">
+                  <img src="img/software/paletteful/crop.gif" alt="" />
+                </div>
+              </li>
+              <!-- <li onclick="window.location.href='engr/wallpaper.html'">
+                              Desert Sunset Interactive Illustration
+                              <div class="tools">
+                                  Python, Photoshop<br>Spring, 2018
+                              </div>
+                              <div class="thumb"><img src="img/illustration/bigsunsetballoonthumb.png" alt=""></div>
+                          </li> -->
+            </ul>
+          </div>
+          <div class="list-section">
+            <div class="subtitle-container">
+              <div class="subtitle">
+                <img class="subtitle-pt" src="img/cursors/pt2mint.gif" alt="" />
+                Design Projects
+                <span class="dash" style="color: var(--mint)">-----------</span>
+              </div>
+            </div>
+            <ul>
+              <li onclick="window.location.href='design/starcycle.html'">
+                Life Cycle of Stars
+                <div class="tools">Data Visualization <br />Spring, 2020</div>
+                <div class="thumb">
+                  <img src="img/design/star/starsmall.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='design/yagp.html'">
+                YAGP Ballet Competition Winners: Where Do They Come From?
+                <div class="tools">Data Visualization<br />Spring, 2020</div>
+                <div class="thumb">
+                  <img src="img/design/yagp/yagpthumb.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='design/moma.html'">
+                Neri Oxman: Material Ecology MoMA Exhibit Rebranding
+                <div class="tools">
+                  Illustrator, InDesign <br />Spring, 2020
+                </div>
+                <div class="thumb">
+                  <img
+                    src="img/design/nerioxman/nerioxman2-04thumb.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li onclick="window.location.href='design/disney.html'">
+                Disney Imaginations Design Competition: Semi-Finalist
+                <div class="tools">
+                  Research, User Experience<br />Fall, 2019
+                </div>
+                <div class="thumb">
+                  <img src="img/design/disney/disneythumb.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='design/ballet.html'">
+                Ballet: Data Visualization
+                <div class="tools">Illustrator<br />Fall, 2019</div>
+                <div class="thumb">
+                  <img src="img/design/ballet/balletfeltronthumb.png" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="other-section">
+            <div class="scrollTo" id="other"></div>
+            <div class="subtitle-container">
+              <div class="subtitle" style="color: var(--purple)">
+                <img
+                  class="subtitle-pt"
+                  src="img/cursors/pt2purple.gif"
+                  alt=""
+                />
+                Other Projects
+                <span class="dash" style="color: var(--purple)"
+                  >-----------</span
+                >
+              </div>
+            </div>
+            <ul id="other">
+              <li onclick="window.location.href='other_proj/illustration.html'">
+                Illustration Gallery
+                <div class="tools">2017-2020</div>
+                <div class="thumb">
+                  <img src="img/illustration/12thumb.png" alt="" />
+                </div>
+              </li>
+              <li onclick="window.location.href='other_proj/spaceman.html'">
+                "hey, spaceman" Poster
+                <div class="tools">Fall, 2019</div>
+                <div class="thumb">
+                  <img src="img/design/spacemanthumb.png" alt="" />
+                </div>
+              </li>
+              <!-- <li onclick="window.location.href='other_proj/fordvferrari.html'">
+                              Ford v Ferrari Movie Poster Concept
+                              <div class="tools">
+                                  Illustrator, Photoshop <br>Fall, 2019
+                              </div>
+                              <div class="thumb"><img src="img/design/fordthumb.png" alt=""></div>
+                          </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div>
+          <a href="mailto:hwei-shin.harriman@gmail.com">E-Mail</a>
+          <span>&nbsp; | &nbsp;</span>
+          <a href="https://www.linkedin.com/in/hsharriman">LinkedIn</a>
+          <span>&nbsp; | &nbsp;</span>
+          <a href="https://github.com/hsharriman">Github</a>
+        </div>
+        <div>
+          Copyright Hwei-Shin Harriman, 2024.
+          <span class="secondlinebreak"><br /></span>
+          Portfolio designed and coded by yours truly.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.setInterval(sparkle, Math.floor(Math.random() * 150 + 70));
+  </script>
+</html>

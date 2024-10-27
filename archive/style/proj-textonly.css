@@ -1,0 +1,54 @@
+@import './projects.css';
+
+.back {
+    left: 2rem !important;
+    position: fixed !important;
+}
+
+#page-container {
+    width: 65vw;
+    height: auto;
+    padding-top: var(--margin);
+    margin-left: var(--margin);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projcols {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    width: 90vw;
+    margin: 0;
+}
+.column {
+    margin-right: var(--margin);
+}
+
+.img {
+    width: 500px;
+}
+
+ul {
+    list-style-image: url('../img/cursors/pt1.gif');
+}
+
+li p {
+    max-width: 425px;
+}
+
+@media (max-width: 1000px) {
+    #page-container {
+        width: 100vw;
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .img {
+        width: calc(100vw - 6rem);
+    }
+}

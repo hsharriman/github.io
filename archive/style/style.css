@@ -1,0 +1,287 @@
+@import url("index.css");
+
+:root {
+  --circle-color: var(--darkblue);
+}
+
+#page-container {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  text-align: left;
+  color: white;
+  font-family: var(--mono);
+}
+
+/* LANDING PAGE TITLE/SUBTITLES */
+
+#landing-pg {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 300vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: var(--mono);
+  font-size: 16rem;
+  text-align: left;
+  margin: 0;
+  padding-top: 0rem;
+  padding-left: var(--margin);
+  letter-spacing: 3.5rem;
+  line-height: 18rem;
+}
+
+span {
+  background-color: none;
+  color: white;
+  transition: color 3s ease-out 1s;
+  height: auto;
+  cursor: cell;
+}
+
+.linebreak {
+  display: none;
+}
+
+.secondlinebreak {
+  display: none;
+}
+
+h2 span {
+  color: var(--blue);
+  letter-spacing: 0.75rem;
+}
+
+.subtitle-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-family: var(--mono);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--mint);
+  padding: 3rem;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.subtitle .dash {
+  display: inline;
+}
+
+.blue:hover {
+  transition: color 0s;
+  color: var(--blue) !important;
+}
+
+.pink:hover {
+  transition: color 0s;
+  color: var(--pink);
+}
+
+.purple:hover {
+  transition: color 0s;
+  color: var(--purple);
+}
+
+.mint:hover {
+  transition: color 0s;
+  color: var(--mint);
+}
+
+.red:hover {
+  transition: color 0s;
+  color: var(--red);
+}
+
+.circle {
+  position: absolute;
+  transition: all 0.25s ease-in 0s;
+  font-family: var(--mono);
+  color: var(--circle-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.circle:hover {
+  transform: scale(1.25);
+}
+
+.circle-container {
+  position: absolute;
+  top: 10vh;
+  left: 45vw;
+  width: 53vw;
+  height: 60vh;
+  transition: all 0.5s ease-in 0s;
+}
+
+#contact {
+  height: 20vh;
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--mint);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  column-gap: 2rem;
+}
+
+#contact a {
+  border-bottom: 1px solid var(--mint);
+}
+
+#contact div {
+  margin: 1rem;
+}
+#contact span {
+  color: var(--mint);
+}
+
+.small-pt {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.medium-pt {
+  width: 3rem;
+  height: 3rem;
+}
+
+.large-pt {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.star-s {
+  font-size: 2.5rem !important;
+}
+
+.star-m {
+  font-size: 3rem !important;
+}
+
+.star-l {
+  font-size: 3.5rem !important;
+}
+
+@media (max-width: 1875px) {
+  .linebreak {
+    display: inline;
+  }
+}
+
+@media (max-width: 1500px) {
+  :root {
+    --circle-color: white;
+  }
+  .circle-container {
+    left: 20vw;
+    width: 100vw;
+  }
+  h1 span {
+    color: var(--darkblue);
+  }
+}
+
+@media (max-width: 1250px) {
+  .circle-container {
+    left: 20vw;
+    width: 70vw;
+  }
+  .circle:hover {
+    font-size: 2.2rem;
+  }
+  .circle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .circle-container {
+    left: var(--margin);
+  }
+  .about-text {
+    max-width: 90vw;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 925px) {
+  .secondlinebreak {
+    display: inline;
+  }
+  #landing-pg {
+    justify-content: start;
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 750px) {
+  #contact {
+    height: 15vh;
+    font-size: 1.4rem;
+  }
+
+  #contact a {
+    font-size: 1.4rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    padding-top: 0;
+  }
+  .circle-container {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .subtitle .dash {
+    display: none;
+  }
+}
+
+@media (max-height: 1275px) {
+  .circle-container {
+    height: 925px;
+  }
+}
+
+@media (max-height: 1000px) {
+  .circle-container {
+    top: 0;
+  }
+}

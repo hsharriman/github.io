@@ -1,0 +1,5 @@
+Try out the generator: [Swiss Modernism Generator](https://hsharriman.github.io/core-interaction/project2/index.html).
+
+Using vanilla Javascript/HTML/CSS, the generator combines attributes that are commonly found in posters made in the Swiss International Style to create near-infinite variations of any given poster, all with the press of a button. The poster's text can be filled in by visitors to the site via input fields.
+
+As with all work in the Swiss Style, the posters are created on a strict grid, which sometimes appears rotated with respect to the canvas. There is a random chance for graphic elements to appear. These can take on a number of different shapes and colors. Text is always sans-serif and usually black for readability. The Swiss Style emphasizes cleanliness and objectivity, so the titles, subtitles, and body text are clearly distinguished by size. All of these attributes have been coded into the generator, abstracted so that visitors to the site need not get overwhelm themselves with the details.
