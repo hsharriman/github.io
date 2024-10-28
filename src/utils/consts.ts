@@ -20,7 +20,7 @@ export const publications: PublicationProps[] = [
   {
     id: "/chi-geo",
     title:
-      "(Submitted) Teaching Geometric Proof with Tech: Pitfalls and Possibilities",
+      "(Under Review) Teaching Geometric Proof with Tech: Pitfalls and Possibilities",
     authors: [
       "Hwei-Shin Harriman",
       "Yuchen Jin",

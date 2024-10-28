@@ -15,7 +15,7 @@ module.exports = {
         themePurpleLight: "rgb(195, 173, 255)",
         themeMint: "rgb(97, 243, 219)",
         themeRed: "rgb(255, 67, 67)",
-        themeDarkBlue: "rgb(32, 61, 98)",
+        themeDarkBlue: "rgb(49, 87, 133)",
         themeBackgroundBlue: "rgb(8, 8, 29)",
       },
       // that is animation class
