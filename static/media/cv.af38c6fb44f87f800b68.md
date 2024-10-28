@@ -25,7 +25,7 @@ _Sample Coursework_: Data Visualization, Advanced Typography, Interaction Design
 
 ## Publications
 
-**(Submitted) Teaching Geometric Proof with Tech: Pitfalls and Possibilities**.  
+**(Under Review) Teaching Geometric Proof with Tech: Pitfalls and Possibilities**.  
 **Hwei-Shin Harriman**, Yuchen Jin, Wode Ni, Dominik Moritz, Joshua Sunshine. _CHI'25_.
 
 **[Codifying Visual Representations](/pubs/diagrams-24.pdf)**.  
@@ -54,7 +54,7 @@ Wode Ni, Sam Estep, **Hwei-Shin Harriman**, Kenneth R. Koedinger, Joshua Sunshin
 
 _Graduate Researcher; member of [Penrose](https://penrose.cs.cmu.edu/) group and the [Data Interaction Group](https://dig.cmu.edu)_  
 _Advisors_: [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/), [Dominik Moritz](https://www.domoritz.de/)  
-Working to make geometry proofs easier to understand using interactive visualizations and building tools to make interactive diagrams.
+Using interactivity to make high-school geometric proofs easier to understand and building tools to make interactive diagrams.
 
 #### **[Tableau](https://www.tableau.com/), Palo Alto, CA** `Jan, 2022 - August, 2023`
 
