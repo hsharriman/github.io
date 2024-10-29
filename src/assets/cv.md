@@ -151,6 +151,8 @@ ACM ASSETS '21: International ACM SIGACCESS Conference on Computers and Accessib
 
 #### ARCS Scholarship Recipient `2023-2026`
 
+_Awarded to one first-year PhD student in Carnegie Mellon's School of Computer Science in 2023_
+
 #### NSF Travel Grant to DIAGRAMS Conference `2024`
 
 #### ACM L@S Best Paper Honorable Mention `2024`
@@ -166,6 +168,8 @@ ACM ASSETS '21: International ACM SIGACCESS Conference on Computers and Accessib
 ---
 
 ## Service
+
+#### CMU S3D Software Engineering PhD Admissions Committee `2025`
 
 #### CMU REUSE Admissions Committee `2024`
 
