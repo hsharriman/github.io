@@ -25,8 +25,6 @@ interface HomeState {
 }
 
 const H1LETTERS = ["HWEI", "-SHIN", "HARR-", "IMAN"];
-const H2LETTERS = ["Software", "Engineer", "//", "Ph.D.", "Student"];
-const SECTIONHEADERS = ["About Me_", "Publications", "Projects_"];
 const subsectionHeaderCss =
   "font-ibmMono text-xl sm:text-xl md:text-3xl py-4 flex flex-row items-center gap-4 mt-20 ";
 
@@ -118,8 +116,7 @@ export class Home extends React.Component<{}, HomeState> {
 
   constructor(props: {}) {
     super(props);
-    this.numLetters = numCharsInArr(H1LETTERS.concat(H2LETTERS));
-    this.numSubHeaderLetters = numCharsInArr(SECTIONHEADERS);
+    this.numLetters = numCharsInArr(H1LETTERS);
     this.state = {
       active: new Array(this.numLetters).fill(false),
       activeSubLtr: new Array(this.numSubHeaderLetters).fill(false),
@@ -271,36 +268,6 @@ export class Home extends React.Component<{}, HomeState> {
       </div>
     );
 
-    // const h2Letters = H2LETTERS.map((substr) => {
-    //   return (
-    //     <div className="row-span-1">
-    //       {Array.from(substr)
-    //         .map((letter) => {
-    //           i += 1;
-    //           return (
-    //             <ClrChangeLetter
-    //               letter={letter}
-    //               defaultClr="text-themeBlue"
-    //               activeColor={this.clrs[i]}
-    //               type={HeaderType.H2}
-    //               isActive={this.state.active[i]}
-    //             />
-    //           );
-    //         })
-    //         .concat(
-    //           <span className="text-2xl lg:text-[50px] lg:leading-10">
-    //             &nbsp;&nbsp;
-    //           </span>
-    //         )}
-    //     </div>
-    //   );
-    // });
-    // let j = 0;
-    // const [aboutHeader, pubHeader, projHeader] = SECTIONHEADERS.map((str) => {
-    //   const newIdx = j;
-    //   j += str.length;
-    //   return this.sectionHeader(str, newIdx);
-    // });
     return (
       <div className={backgroundCSS + "static"}>
         <Header />
@@ -310,7 +277,6 @@ export class Home extends React.Component<{}, HomeState> {
             <div className="flex lg:justify-start justify-center w-screen h-screen items-center flex-row flex-wrap lg:gap-[5svw] xl:gap-48 lg:grid lg:grid-flow-col lg:pt-12 lg:h-fit ">
               <div className="w-fit" key="homepg-text">
                 <div className="w-fit h-auto">{h1Letters}</div>
-                {/* <div className="flex flex-wrap flex-row">{h2Letters}</div> */}
               </div>
               <div
                 className="grid grid-flow-row gap-1 lg:h-full lg:relative"
@@ -322,10 +288,8 @@ export class Home extends React.Component<{}, HomeState> {
               </div>
             </div>
           </div>
-          {/* {aboutHeader} */}
           {this.aboutSection()}
           <div ref={this.publicationsRef}>
-            {/* {pubHeader} */}
             <div className={subsectionHeaderCss + "text-themePurple"}>
               <img src="/cursors/pt2purple.gif" className="h-6" />
               Publications ---
