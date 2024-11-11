@@ -17,20 +17,20 @@ export const defaultIconTextCss =
 
 // ----- PUBLICATIONS -----
 export const publications: PublicationProps[] = [
-  {
-    id: "/chi-geo",
-    title:
-      "(Under Review) Teaching Geometric Proof with Tech: Pitfalls and Possibilities",
-    authors: [
-      "Hwei-Shin Harriman",
-      "Yuchen Jin",
-      "Wode Ni",
-      "Dominik Moritz",
-      "Joshua Sunshine",
-    ],
-    links: {},
-    venue: "CHI'25",
-  },
+  // {
+  //   id: "/chi-geo",
+  //   title:
+  //     "(Under Review) Teaching Geometric Proof with Tech: Pitfalls and Possibilities",
+  //   authors: [
+  //     "Hwei-Shin Harriman",
+  //     "Yuchen Jin",
+  //     "Wode Ni",
+  //     "Dominik Moritz",
+  //     "Joshua Sunshine",
+  //   ],
+  //   links: {},
+  //   venue: "CHI'25",
+  // },
   {
     id: "/diagrams-penrose",
     title: "Codifying Visual Representations",

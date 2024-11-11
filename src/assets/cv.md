@@ -25,9 +25,6 @@ _Sample Coursework_: Data Visualization, Advanced Typography, Interaction Design
 
 ## Publications
 
-**(Under Review) Teaching Geometric Proof with Tech: Pitfalls and Possibilities**.  
-**Hwei-Shin Harriman**, Yuchen Jin, Wode Ni, Dominik Moritz, Joshua Sunshine. _CHI'25_.
-
 **[Codifying Visual Representations](/pubs/diagrams-24.pdf)**.  
 Wode Ni*, Sam Estep*, **Hwei-Shin Harriman\***, Jiří Minarčík, Joshua Sunshine. _DIAGRAMS'24, Poster track_.  
 ![](/cv-svgs/poster.svg) [Poster](/pubs/diagrams24-poster.pdf)
@@ -50,7 +47,7 @@ Wode Ni, Sam Estep, **Hwei-Shin Harriman**, Kenneth R. Koedinger, Joshua Sunshin
 
 ## Work Experience
 
-#### **[Carnegie Mellon University](https://www.cmu.edu/), Pittsburgh, PA** `Aug, 2022 - present`
+#### **[Carnegie Mellon University](https://www.cmu.edu/), Pittsburgh, PA** `Aug, 2023 - present`
 
 _Graduate Researcher; member of [Penrose](https://penrose.cs.cmu.edu/) group and the [Data Interaction Group](https://dig.cmu.edu)_  
 _Advisors_: [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/), [Dominik Moritz](https://www.domoritz.de/)  
